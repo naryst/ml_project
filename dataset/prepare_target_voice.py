@@ -7,7 +7,7 @@ from typing import Tuple
 from pathlib import Path
 import soundfile as sf
 import numpy as np
-import sys
+import random
 
 # Set up logging
 logging.basicConfig(
@@ -74,42 +74,44 @@ def main():
 
     # workaround for hf datasets library
     complete_data = list(zip(audios, transcripts))
-
     
     # Set up save directory
-    save_path = Path("dataset/data")
-    save_path.mkdir(parents=True, exist_ok=True)
-    logger.info(f"Files will be saved to {save_path.absolute()}")
+    target_path = Path("dataset/source_voice")
+    target_path.mkdir(parents=True, exist_ok=True)
+    logger.info(f"Files will be saved to {target_path.absolute()}")
     
     # Process and save files
     success_count = 0
     index_entries = []
 
-    for i, entry in enumerate(complete_data):
-        try:
-            # Get audio data and transcript
-            audio_data = entry[0]
-            name, signal, sampling_rate = audio_data.values()
-            transcript = entry[1]
-
-            # Generate filename
-            filename = name if name else f"audio_{i}"
-            filename = filename.replace(".wav", "")  # Remove .wav extension if present
+    # Randomly select one sample for target voice
+    target_sample = random.choice(complete_data)
+    logger.info("Selected target voice sample")
+    
+    try:
+        # Get audio data and transcript
+        audio_data = target_sample[0]
+        name, signal, sampling_rate = audio_data.values()
+        transcript = target_sample[1]
+        
+        # Generate filename
+        filename = name if name else "target_voice"
+        filename = filename.replace(".wav", "")  # Remove .wav extension if present
+        
+        # Save audio file
+        if save_audio_file(signal, sampling_rate, str(target_path), filename):
+            success_count += 1
+            # Add to index entries only if audio save was successful
+            index_entries.append((filename, transcript))
             
-            # Save audio file
-            if save_audio_file(signal, sampling_rate, str(save_path), filename):
-                success_count += 1
-                # Add to index entries only if audio save was successful
-                index_entries.append((filename, transcript))
-                
-        except Exception as e:
-            logger.error(f"Error processing file {i}: {str(e)}")
+    except Exception as e:
+        logger.error(f"Error processing target voice: {str(e)}")
     
     # Create index.tsv file
     if index_entries:
-        create_index_file(str(save_path), index_entries)
+        create_index_file(str(target_path), index_entries)
     
-    logger.info(f"Successfully saved {success_count} out of {len(complete_data)} files")
+    logger.info(f"Successfully saved target voice to {target_path}")
     logger.info(f"Created index.tsv with {len(index_entries)} entries")
 
 if __name__ == "__main__":
