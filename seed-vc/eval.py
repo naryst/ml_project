@@ -5,6 +5,7 @@ import torch
 import os
 import os.path as osp
 import yaml
+import time
 
 warnings.simplefilter("ignore")
 
@@ -302,6 +303,9 @@ def main(args):
     vc_wer_list = []
     vc_cer_list = []
     dnsmos_list = []
+    total_time_list = []
+    
+    start_time = time.time()
     for source_i, source_line in enumerate(tqdm(source_audio_list)):
         if source_i >= max_samples:
             break
@@ -311,6 +315,7 @@ def main(args):
             target_path = osp.join(target_dir, target_name)
             print(f"Processing {source_path} -> {target_path}")
 
+            conversion_start_time = time.time()
             if os.path.exists(osp.join(conversion_result_dir, source_index, f"{target_name}")):
                 # already converted, load the converted file
                 vc_wave_16k, _ = librosa.load(
@@ -349,6 +354,10 @@ def main(args):
                     vc_wave_16k.cpu(),
                     16000,
                 )
+            conversion_time = time.time() - conversion_start_time
+            total_time_list.append(conversion_time)
+            print(f"Conversion time: {conversion_time:.2f} seconds")
+
             if args.xvector_extractor == "wavlm":
                 ref_inputs = wavlm_feature_extractor(
                     ref_waves_16k.squeeze(0).cpu(), padding=True, return_tensors="pt"
@@ -440,12 +449,16 @@ def main(args):
             f.write(f"VC WER: {sum(vc_wer_list[-len(target_audio_list):]) / len(target_audio_list)}\n")
             f.write(f"VC CER: {sum(vc_cer_list[-len(target_audio_list):]) / len(target_audio_list)}\n")
             f.write(f"Average similarity: {sum(similarity_list[-len(target_audio_list):]) / len(target_audio_list)}\n")
+            f.write(f"Average conversion time: {sum(total_time_list[-len(target_audio_list):]) / len(target_audio_list):.2f} seconds\n")
 
     print(f"Average WER: {sum(gt_wer_list) / len(gt_wer_list)}")
     print(f"Average CER: {sum(gt_cer_list) / len(gt_cer_list)}")
     print(f"Average WER: {sum(vc_wer_list) / len(vc_wer_list)}")
     print(f"Average CER: {sum(vc_cer_list) / len(vc_cer_list)}")
     print(f"Average similarity: {sum(similarity_list) / len(similarity_list)}")
+    print(f"Average conversion time: {sum(total_time_list) / len(total_time_list):.2f} seconds")
+    print(f"Total evaluation time: {time.time() - start_time:.2f} seconds")
+    
     # save similarity list
     with open(osp.join(conversion_result_dir, f"{args.xvector_extractor}_similarity.tsv"), "w") as f:
         f.write("\n".join([str(s) for s in similarity_list]))
@@ -455,6 +468,8 @@ def main(args):
         f.write(f"GT CER: {sum(gt_cer_list) / len(gt_cer_list)}\n")
         f.write(f"VC WER: {sum(vc_wer_list) / len(vc_wer_list)}\n")
         f.write(f"VC CER: {sum(vc_cer_list) / len(vc_cer_list)}\n")
+        f.write(f"Average conversion time: {sum(total_time_list) / len(total_time_list):.2f} seconds\n")
+        f.write(f"Total evaluation time: {time.time() - start_time:.2f} seconds\n")
 
     print(f"Average DNS MOS SIG: {sum([x[0] for x in dnsmos_list]) / len(dnsmos_list)}")
     print(f"Average DNS MOS BAK: {sum([x[1] for x in dnsmos_list]) / len(dnsmos_list)}")
