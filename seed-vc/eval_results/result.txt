@@ -1,0 +1,6 @@
+GT WER: 1.095747113997114
+GT CER: 0.9778434570965525
+VC WER: 1.12848055539232
+VC CER: 0.9826882411811989
+Average conversion time: 1.19 seconds
+Total evaluation time: 288.84 seconds

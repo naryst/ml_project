@@ -1,0 +1,2595 @@
+Warning: Skipped loading some keys due to shape mismatch: {'estimator.f0_embedder.weight', 'estimator.input_pos'}
+cfm loaded
+length_regulator loaded
+Loading weights from nvidia/bigvgan_v2_22khz_80band_256x
+Removing weight norm...
+  0%|          | 0/141594 [00:00<?, ?it/s]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Processing ../dataset/source_voice/audio_115892.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+  3%|▎         | 1/30 [00:00<00:09,  3.16it/s][A
+ 27%|██▋       | 8/30 [00:00<00:00, 22.78it/s][A
+ 50%|█████     | 15/30 [00:00<00:00, 35.23it/s][A
+ 73%|███████▎  | 22/30 [00:00<00:00, 43.34it/s][A
+ 97%|█████████▋| 29/30 [00:00<00:00, 48.85it/s][A100%|██████████| 30/30 [00:00<00:00, 37.74it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 1/141594 [00:05<198:01:08,  5.03s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 2.45 seconds
+Similarity: tensor([0.9336])
+GT WER: 1.0, CER: 0.8857142857142857
+VC WER: 1.1428571428571428, CER: 0.9142857142857143
+Average GT WER: 1.0
+Average GT CER: 0.8857142857142857
+Average VC WER: 1.1428571428571428
+Average VC CER: 0.9142857142857143
+Average similarity: tensor([0.9336])
+Average DNS MOS SIG: 2.8816612982004144
+Average DNS MOS BAK: 3.8020309557857397
+Average DNS MOS OVR: 2.5835759720243257
+Processing ../dataset/source_voice/audio_41390.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+  3%|▎         | 1/30 [00:00<00:04,  6.37it/s][A
+ 27%|██▋       | 8/30 [00:00<00:00, 34.52it/s][A
+ 50%|█████     | 15/30 [00:00<00:00, 45.87it/s][A
+ 73%|███████▎  | 22/30 [00:00<00:00, 51.55it/s][A
+ 97%|█████████▋| 29/30 [00:00<00:00, 54.87it/s][A100%|██████████| 30/30 [00:00<00:00, 47.58it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 2/141594 [00:06<114:17:37,  2.91s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.07 seconds
+Similarity: tensor([0.7327])
+GT WER: 1.6666666666666667, CER: 1.0555555555555556
+VC WER: 1.0, CER: 1.0555555555555556
+Average GT WER: 1.3333333333333335
+Average GT CER: 0.9706349206349206
+Average VC WER: 1.0714285714285714
+Average VC CER: 0.984920634920635
+Average similarity: tensor([0.8332])
+Average DNS MOS SIG: 3.1363069522226508
+Average DNS MOS BAK: 3.967098227159853
+Average DNS MOS OVR: 2.8706994473685423
+Processing ../dataset/source_voice/common_voice_ru_38166687.mp3.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+  3%|▎         | 1/30 [00:00<00:09,  3.00it/s][A
+ 23%|██▎       | 7/30 [00:00<00:01, 20.08it/s][A
+ 43%|████▎     | 13/30 [00:00<00:00, 32.00it/s][A
+ 63%|██████▎   | 19/30 [00:00<00:00, 40.36it/s][A
+ 83%|████████▎ | 25/30 [00:00<00:00, 46.16it/s][A100%|██████████| 30/30 [00:00<00:00, 36.65it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 3/141594 [00:09<124:45:26,  3.17s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.36 seconds
+Similarity: tensor([0.9171])
+GT WER: 1.0, CER: 0.9655172413793104
+VC WER: 1.0, CER: 0.9310344827586207
+Average GT WER: 1.2222222222222223
+Average GT CER: 0.9689290275497172
+Average VC WER: 1.0476190476190477
+Average VC CER: 0.9669585841999635
+Average similarity: tensor([0.8611])
+Average DNS MOS SIG: 3.064756531565122
+Average DNS MOS BAK: 3.9495462385067572
+Average DNS MOS OVR: 2.795077855803214
+Processing ../dataset/source_voice/common_voice_ru_18913380.mp3.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 54.10it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 57.14it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 58.17it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 58.75it/s][A
+100%|██████████| 30/30 [00:00<00:00, 59.09it/s][A100%|██████████| 30/30 [00:00<00:00, 58.38it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 4/141594 [00:12<117:25:23,  2.99s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.05 seconds
+Similarity: tensor([0.9044])
+GT WER: 1.0, CER: 0.8888888888888888
+VC WER: 1.4285714285714286, CER: 0.9722222222222222
+Average GT WER: 1.1666666666666667
+Average GT CER: 0.9489189928845101
+Average VC WER: 1.1428571428571428
+Average VC CER: 0.9682744937055282
+Average similarity: tensor([0.8719])
+Average DNS MOS SIG: 3.0479015842161723
+Average DNS MOS BAK: 3.942026765672342
+Average DNS MOS OVR: 2.7797731816517537
+Processing ../dataset/source_voice/audio_130287.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 56.36it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 57.86it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 56.27it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 53.73it/s][A
+100%|██████████| 30/30 [00:00<00:00, 52.51it/s][A100%|██████████| 30/30 [00:00<00:00, 53.88it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 5/141594 [00:16<131:49:11,  3.35s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.02 seconds
+Similarity: tensor([0.9449])
+GT WER: 1.2222222222222223, CER: 0.9142857142857143
+VC WER: 1.3333333333333333, CER: 0.9285714285714286
+Average GT WER: 1.1777777777777778
+Average GT CER: 0.941992337164751
+Average VC WER: 1.180952380952381
+Average VC CER: 0.9603338806787083
+Average similarity: tensor([0.8865])
+Average DNS MOS SIG: 3.0673035010010743
+Average DNS MOS BAK: 3.9668527977881767
+Average DNS MOS OVR: 2.8045794269689464
+Processing ../dataset/source_voice/audio_81303.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 57.09it/s][A
+ 43%|████▎     | 13/30 [00:00<00:00, 59.03it/s][A
+ 67%|██████▋   | 20/30 [00:00<00:00, 59.63it/s][A
+ 87%|████████▋ | 26/30 [00:00<00:00, 59.71it/s][A100%|██████████| 30/30 [00:00<00:00, 59.43it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 6/141594 [00:20<135:18:14,  3.44s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.04 seconds
+Similarity: tensor([0.6341])
+GT WER: 1.0, CER: 0.9047619047619048
+VC WER: 1.0, CER: 0.9523809523809523
+Average GT WER: 1.1481481481481481
+Average GT CER: 0.9357872650976099
+Average VC WER: 1.150793650793651
+Average VC CER: 0.9590083926290823
+Average similarity: tensor([0.8445])
+Average DNS MOS SIG: 3.0460339510116032
+Average DNS MOS BAK: 3.9445132834953416
+Average DNS MOS OVR: 2.7766311445450884
+Processing ../dataset/source_voice/audio_69744.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 56.95it/s][A
+ 43%|████▎     | 13/30 [00:00<00:00, 57.17it/s][A
+ 67%|██████▋   | 20/30 [00:00<00:00, 58.55it/s][A
+ 90%|█████████ | 27/30 [00:00<00:00, 59.30it/s][A100%|██████████| 30/30 [00:00<00:00, 58.64it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 7/141594 [00:22<116:46:40,  2.97s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.05 seconds
+Similarity: tensor([0.8234])
+GT WER: 1.0, CER: 0.9666666666666667
+VC WER: 1.0, CER: 0.9666666666666667
+Average GT WER: 1.126984126984127
+Average GT CER: 0.9401986081789037
+Average VC WER: 1.1292517006802723
+Average VC CER: 0.9601024317773087
+Average similarity: tensor([0.8414])
+Average DNS MOS SIG: 3.1106645896138265
+Average DNS MOS BAK: 3.934157295578833
+Average DNS MOS OVR: 2.8334980748193472
+Processing ../dataset/source_voice/audio_113277.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 17%|█▋        | 5/30 [00:00<00:00, 48.61it/s][A
+ 37%|███▋      | 11/30 [00:00<00:00, 55.14it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 57.60it/s][A
+ 83%|████████▎ | 25/30 [00:00<00:00, 58.81it/s][A100%|██████████| 30/30 [00:00<00:00, 57.87it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 8/141594 [00:26<137:16:55,  3.49s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.16 seconds
+Similarity: tensor([0.9033])
+GT WER: 1.0, CER: 1.05
+VC WER: 1.3333333333333333, CER: 1.3
+Average GT WER: 1.1111111111111112
+Average GT CER: 0.9539237821565407
+Average VC WER: 1.1547619047619047
+Average VC CER: 1.0025896278051452
+Average similarity: tensor([0.8492])
+Average DNS MOS SIG: 3.08317213372602
+Average DNS MOS BAK: 3.914413202301728
+Average DNS MOS OVR: 2.8028809870875158
+Processing ../dataset/source_voice/audio_107209.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 17%|█▋        | 5/30 [00:00<00:00, 49.35it/s][A
+ 33%|███▎      | 10/30 [00:00<00:00, 48.26it/s][A
+ 50%|█████     | 15/30 [00:00<00:00, 48.26it/s][A
+ 67%|██████▋   | 20/30 [00:00<00:00, 48.68it/s][A
+ 83%|████████▎ | 25/30 [00:00<00:00, 48.83it/s][A
+100%|██████████| 30/30 [00:00<00:00, 48.95it/s][A100%|██████████| 30/30 [00:00<00:00, 48.77it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 9/141594 [00:30<137:16:21,  3.49s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.25 seconds
+Similarity: tensor([0.9625])
+GT WER: 1.0, CER: 0.928
+VC WER: 1.2272727272727273, CER: 0.936
+Average GT WER: 1.0987654320987654
+Average GT CER: 0.9510433619169252
+Average VC WER: 1.1628186628186628
+Average VC CER: 0.9951907802712401
+Average similarity: tensor([0.8618])
+Average DNS MOS SIG: 3.084685873996645
+Average DNS MOS BAK: 3.860406169204891
+Average DNS MOS OVR: 2.7817686548152962
+Processing ../dataset/source_voice/common_voice_ru_19591466.mp3.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 57.10it/s][A
+ 43%|████▎     | 13/30 [00:00<00:00, 58.97it/s][A
+ 67%|██████▋   | 20/30 [00:00<00:00, 59.56it/s][A
+ 87%|████████▋ | 26/30 [00:00<00:00, 59.72it/s][A100%|██████████| 30/30 [00:00<00:00, 59.83it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 10/141594 [00:32<115:31:31,  2.94s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.05 seconds
+Similarity: tensor([0.9609])
+GT WER: 1.2222222222222223, CER: 0.9852941176470589
+VC WER: 1.6666666666666667, CER: 1.0294117647058822
+Average GT WER: 1.1111111111111112
+Average GT CER: 0.9544684374899385
+Average VC WER: 1.2132034632034632
+Average VC CER: 0.9986128787147044
+Average similarity: tensor([0.8717])
+Average DNS MOS SIG: 3.093906920648177
+Average DNS MOS BAK: 3.8623494372694354
+Average DNS MOS OVR: 2.790139038344651
+Processing ../dataset/source_voice/audio_84635.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 56.95it/s][A
+ 43%|████▎     | 13/30 [00:00<00:00, 59.01it/s][A
+ 63%|██████▎   | 19/30 [00:00<00:00, 59.24it/s][A
+ 83%|████████▎ | 25/30 [00:00<00:00, 59.08it/s][A100%|██████████| 30/30 [00:00<00:00, 58.98it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 11/141594 [00:36<133:08:49,  3.39s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.16 seconds
+Similarity: tensor([0.9276])
+GT WER: 1.25, CER: 1.2790697674418605
+VC WER: 1.0, CER: 1.0465116279069768
+Average GT WER: 1.1237373737373737
+Average GT CER: 0.9839776493037496
+Average VC WER: 1.1938213301849665
+Average VC CER: 1.0029673104594563
+Average similarity: tensor([0.8768])
+Average DNS MOS SIG: 3.099491413311626
+Average DNS MOS BAK: 3.8552466767679645
+Average DNS MOS OVR: 2.7906745877841974
+Processing ../dataset/source_voice/audio_109004.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 17%|█▋        | 5/30 [00:00<00:00, 48.91it/s][A
+ 33%|███▎      | 10/30 [00:00<00:00, 49.34it/s][A
+ 53%|█████▎    | 16/30 [00:00<00:00, 49.79it/s][A
+ 73%|███████▎  | 22/30 [00:00<00:00, 49.92it/s][A
+ 93%|█████████▎| 28/30 [00:00<00:00, 50.14it/s][A100%|██████████| 30/30 [00:00<00:00, 49.90it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 12/141594 [00:40<135:40:43,  3.45s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.32 seconds
+Similarity: tensor([0.9506])
+GT WER: 1.0, CER: 0.9145299145299145
+VC WER: 1.25, CER: 0.9487179487179487
+Average GT WER: 1.1134259259259258
+Average GT CER: 0.9781903380725967
+Average VC WER: 1.198502886002886
+Average VC CER: 0.9984465303143306
+Average similarity: tensor([0.8829])
+Average DNS MOS SIG: 3.1145892308573386
+Average DNS MOS BAK: 3.851902309474937
+Average DNS MOS OVR: 2.802647185614435
+Processing ../dataset/source_voice/audio_59193.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 55.18it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 57.21it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 58.26it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 58.22it/s][A
+100%|██████████| 30/30 [00:00<00:00, 58.50it/s][A100%|██████████| 30/30 [00:00<00:00, 58.07it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 13/141594 [00:41<112:22:34,  2.86s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.06 seconds
+Similarity: tensor([0.8450])
+GT WER: 2.0, CER: 1.7142857142857142
+VC WER: 1.0, CER: 1.1428571428571428
+Average GT WER: 1.1816239316239316
+Average GT CER: 1.0348130593197595
+Average VC WER: 1.183233433233433
+Average VC CER: 1.00955503897147
+Average similarity: tensor([0.8800])
+Average DNS MOS SIG: 3.0795664794724353
+Average DNS MOS BAK: 3.86139845441507
+Average DNS MOS OVR: 2.773158851449899
+Processing ../dataset/source_voice/audio_96097.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+max value is  tensor(1.0558, device='cuda:0')
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 54.64it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 53.38it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 53.20it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 55.03it/s][A
+100%|██████████| 30/30 [00:00<00:00, 56.07it/s][A100%|██████████| 30/30 [00:00<00:00, 55.14it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 14/141594 [00:43<97:28:00,  2.48s/it] It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.12 seconds
+Similarity: tensor([0.9394])
+GT WER: 1.0, CER: 0.9285714285714286
+VC WER: 1.0, CER: 0.9285714285714286
+Average GT WER: 1.1686507936507937
+Average GT CER: 1.0272243714091644
+Average VC WER: 1.1701453308596166
+Average VC CER: 1.0037704953714672
+Average similarity: tensor([0.8842])
+Average DNS MOS SIG: 3.078321219464668
+Average DNS MOS BAK: 3.837310628578579
+Average DNS MOS OVR: 2.762271130983709
+Processing ../dataset/source_voice/common_voice_ru_30614725.mp3.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 17%|█▋        | 5/30 [00:00<00:00, 47.39it/s][A
+ 37%|███▋      | 11/30 [00:00<00:00, 50.18it/s][A
+ 57%|█████▋    | 17/30 [00:00<00:00, 50.73it/s][A
+ 77%|███████▋  | 23/30 [00:00<00:00, 50.34it/s][A
+ 97%|█████████▋| 29/30 [00:00<00:00, 50.47it/s][A100%|██████████| 30/30 [00:00<00:00, 50.17it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 15/141594 [00:44<87:10:11,  2.22s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.17 seconds
+Similarity: tensor([0.9545])
+GT WER: 1.0, CER: 0.9230769230769231
+VC WER: 1.0, CER: 0.9743589743589743
+Average GT WER: 1.1574074074074074
+Average GT CER: 1.0202812081870152
+Average VC WER: 1.1588023088023087
+Average VC CER: 1.0018097273039677
+Average similarity: tensor([0.8889])
+Average DNS MOS SIG: 3.109458712877992
+Average DNS MOS BAK: 3.8580040184556097
+Average DNS MOS OVR: 2.798963294180451
+Processing ../dataset/source_voice/common_voice_ru_38566540.mp3.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 17%|█▋        | 5/30 [00:00<00:00, 47.20it/s][A
+ 33%|███▎      | 10/30 [00:00<00:00, 46.12it/s][A
+ 50%|█████     | 15/30 [00:00<00:00, 45.41it/s][A
+ 67%|██████▋   | 20/30 [00:00<00:00, 45.24it/s][A
+ 83%|████████▎ | 25/30 [00:00<00:00, 45.17it/s][A
+100%|██████████| 30/30 [00:00<00:00, 45.07it/s][A100%|██████████| 30/30 [00:00<00:00, 45.32it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 16/141594 [00:49<112:55:17,  2.87s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.19 seconds
+Similarity: tensor([0.9295])
+GT WER: 1.0, CER: 0.9245283018867925
+VC WER: 1.1428571428571428, CER: 0.9528301886792453
+Average GT WER: 1.1475694444444444
+Average GT CER: 1.0142966515432512
+Average VC WER: 1.1578057359307359
+Average VC CER: 0.9987485061399225
+Average similarity: tensor([0.8915])
+Average DNS MOS SIG: 3.1228999581312316
+Average DNS MOS BAK: 3.8577419562450412
+Average DNS MOS OVR: 2.8107129133975386
+Processing ../dataset/source_voice/common_voice_ru_23986232.mp3.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 56.85it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 58.51it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 59.04it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 59.25it/s][A
+100%|██████████| 30/30 [00:00<00:00, 59.45it/s][A100%|██████████| 30/30 [00:00<00:00, 59.09it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 17/141594 [00:50<95:27:36,  2.43s/it] It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.06 seconds
+Similarity: tensor([0.9333])
+GT WER: 1.0, CER: 0.9310344827586207
+VC WER: 1.0, CER: 0.9310344827586207
+Average GT WER: 1.1388888888888888
+Average GT CER: 1.009398876908861
+Average VC WER: 1.1485230455818691
+Average VC CER: 0.9947653282939636
+Average similarity: tensor([0.8939])
+Average DNS MOS SIG: 3.1213266467890457
+Average DNS MOS BAK: 3.864948014442468
+Average DNS MOS OVR: 2.8122142071101077
+Processing ../dataset/source_voice/common_voice_ru_18868320.mp3.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 53.92it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 54.24it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 54.04it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 54.08it/s][A
+100%|██████████| 30/30 [00:00<00:00, 54.12it/s][A100%|██████████| 30/30 [00:00<00:00, 54.09it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 18/141594 [00:52<85:42:29,  2.18s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.11 seconds
+Similarity: tensor([0.9628])
+GT WER: 1.0, CER: 0.958904109589041
+VC WER: 1.0, CER: 0.9452054794520548
+Average GT WER: 1.1311728395061729
+Average GT CER: 1.00659361205776
+Average VC WER: 1.1402717652717653
+Average VC CER: 0.9920120033583019
+Average similarity: tensor([0.8977])
+Average DNS MOS SIG: 3.127229091574307
+Average DNS MOS BAK: 3.8698037970479877
+Average DNS MOS OVR: 2.8194377030382096
+Processing ../dataset/source_voice/audio_78169.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 57.73it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 59.01it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 59.44it/s][A
+ 83%|████████▎ | 25/30 [00:00<00:00, 59.77it/s][A100%|██████████| 30/30 [00:00<00:00, 59.60it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 19/141594 [00:56<110:47:44,  2.82s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.04 seconds
+Similarity: tensor([0.9321])
+GT WER: 1.0, CER: 0.922077922077922
+VC WER: 1.0, CER: 0.935064935064935
+Average GT WER: 1.1242690058479532
+Average GT CER: 1.002145417848295
+Average VC WER: 1.1328890407837775
+Average VC CER: 0.9890147892375984
+Average similarity: tensor([0.8995])
+Average DNS MOS SIG: 3.1310918157318612
+Average DNS MOS BAK: 3.8682371228611174
+Average DNS MOS OVR: 2.821887670518192
+Processing ../dataset/source_voice/audio_62763.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 56.74it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 58.28it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 58.80it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 58.97it/s][A
+100%|██████████| 30/30 [00:00<00:00, 59.24it/s][A100%|██████████| 30/30 [00:00<00:00, 58.87it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 20/141594 [01:00<127:08:35,  3.23s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.15 seconds
+Similarity: tensor([0.9198])
+GT WER: 1.25, CER: 0.9767441860465116
+VC WER: 1.0, CER: 0.9069767441860465
+Average GT WER: 1.1305555555555555
+Average GT CER: 1.0008753562582058
+Average VC WER: 1.1262445887445887
+Average VC CER: 0.9849128869850208
+Average similarity: tensor([0.9006])
+Average DNS MOS SIG: 3.1347234048918384
+Average DNS MOS BAK: 3.859501043858008
+Average DNS MOS OVR: 2.8203528256128436
+Processing ../dataset/source_voice/common_voice_ru_36698088.mp3.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 57.69it/s][A
+ 43%|████▎     | 13/30 [00:00<00:00, 59.56it/s][A
+ 67%|██████▋   | 20/30 [00:00<00:00, 60.30it/s][A
+ 90%|█████████ | 27/30 [00:00<00:00, 60.53it/s][A100%|██████████| 30/30 [00:00<00:00, 60.26it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 21/141594 [01:04<134:56:39,  3.43s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.14 seconds
+Similarity: tensor([0.9422])
+GT WER: 1.0, CER: 0.9285714285714286
+VC WER: 1.0, CER: 0.9285714285714286
+Average GT WER: 1.1243386243386244
+Average GT CER: 0.9974323120826449
+Average VC WER: 1.120232941661513
+Average VC CER: 0.9822299603938973
+Average similarity: tensor([0.9025])
+Average DNS MOS SIG: 3.14510525933586
+Average DNS MOS BAK: 3.865566180646783
+Average DNS MOS OVR: 2.8318107231123792
+Processing ../dataset/source_voice/audio_76274.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 57.29it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 58.80it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 59.23it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 59.47it/s][A
+100%|██████████| 30/30 [00:00<00:00, 59.58it/s][A100%|██████████| 30/30 [00:00<00:00, 59.28it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 22/141594 [01:06<117:06:04,  2.98s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.55 seconds
+Similarity: tensor([0.7562])
+GT WER: 1.4, CER: 1.15625
+VC WER: 1.6, CER: 1.09375
+Average GT WER: 1.136868686868687
+Average GT CER: 1.00465129789707
+Average VC WER: 1.1420405352223535
+Average VC CER: 0.9872990531032656
+Average similarity: tensor([0.8959])
+Average DNS MOS SIG: 3.1443839103140947
+Average DNS MOS BAK: 3.8228495761550154
+Average DNS MOS OVR: 2.8095582568935757
+Processing ../dataset/source_voice/audio_128115.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 58.84it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 59.11it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 59.27it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 59.34it/s][A
+100%|██████████| 30/30 [00:00<00:00, 59.32it/s][A100%|██████████| 30/30 [00:00<00:00, 59.25it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 23/141594 [01:08<110:02:55,  2.80s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.53 seconds
+Similarity: tensor([0.7515])
+GT WER: 1.0, CER: 0.9428571428571428
+VC WER: 1.0, CER: 0.9428571428571428
+Average GT WER: 1.1309178743961354
+Average GT CER: 1.0019645955040297
+Average VC WER: 1.1358648597779033
+Average VC CER: 0.9853667961360429
+Average similarity: tensor([0.8896])
+Average DNS MOS SIG: 3.1426561283543495
+Average DNS MOS BAK: 3.8259987942857836
+Average DNS MOS OVR: 2.8093689192020137
+Processing ../dataset/source_voice/audio_56999.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+min value is  tensor(-1.0046, device='cuda:0')
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 17%|█▋        | 5/30 [00:00<00:00, 49.16it/s][A
+ 37%|███▋      | 11/30 [00:00<00:00, 51.75it/s][A
+ 57%|█████▋    | 17/30 [00:00<00:00, 51.98it/s][A
+ 77%|███████▋  | 23/30 [00:00<00:00, 52.03it/s][A
+ 97%|█████████▋| 29/30 [00:00<00:00, 52.03it/s][A100%|██████████| 30/30 [00:00<00:00, 51.86it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 24/141594 [01:11<105:19:18,  2.68s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.32 seconds
+Similarity: tensor([0.8911])
+GT WER: 1.0, CER: 0.9523809523809523
+VC WER: 1.0, CER: 0.9047619047619048
+Average GT WER: 1.125462962962963
+Average GT CER: 0.9998986103739016
+Average VC WER: 1.130203823953824
+Average VC CER: 0.9820082589954539
+Average similarity: tensor([0.8897])
+Average DNS MOS SIG: 3.1330847704976033
+Average DNS MOS BAK: 3.823873504354745
+Average DNS MOS OVR: 2.8003387963671513
+Processing ../dataset/source_voice/audio_120540.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 17%|█▋        | 5/30 [00:00<00:00, 48.24it/s][A
+ 37%|███▋      | 11/30 [00:00<00:00, 54.77it/s][A
+ 57%|█████▋    | 17/30 [00:00<00:00, 57.01it/s][A
+ 77%|███████▋  | 23/30 [00:00<00:00, 57.94it/s][A
+ 97%|█████████▋| 29/30 [00:00<00:00, 58.54it/s][A100%|██████████| 30/30 [00:00<00:00, 57.30it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 25/141594 [01:12<91:34:20,  2.33s/it] It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.17 seconds
+Similarity: tensor([0.9145])
+GT WER: 3.0, CER: 2.6
+VC WER: 3.0, CER: 2.6
+Average GT WER: 1.2004444444444444
+Average GT CER: 1.0639026659589454
+Average VC WER: 1.204995670995671
+Average VC CER: 1.0467279286356357
+Average similarity: tensor([0.8907])
+Average DNS MOS SIG: 3.1347202225562683
+Average DNS MOS BAK: 3.8364468144017074
+Average DNS MOS OVR: 2.806766614648591
+Processing ../dataset/source_voice/audio_42124.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 52.99it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 52.62it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 52.53it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 52.52it/s][A
+100%|██████████| 30/30 [00:00<00:00, 52.34it/s][A100%|██████████| 30/30 [00:00<00:00, 52.45it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 26/141594 [01:14<87:31:23,  2.23s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.07 seconds
+Similarity: tensor([0.9503])
+GT WER: 1.0, CER: 0.9101123595505618
+VC WER: 1.0555555555555556, CER: 0.9438202247191011
+Average GT WER: 1.1927350427350427
+Average GT CER: 1.0579876541740076
+Average VC WER: 1.1992479742479742
+Average VC CER: 1.0427699400234614
+Average similarity: tensor([0.8930])
+Average DNS MOS SIG: 3.1473690189508763
+Average DNS MOS BAK: 3.8413817928146616
+Average DNS MOS OVR: 2.820293943749763
+Processing ../dataset/source_voice/audio_43847.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 55.36it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 57.66it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 58.53it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 58.94it/s][A100%|██████████| 30/30 [00:00<00:00, 58.73it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 27/141594 [01:18<103:59:56,  2.64s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.05 seconds
+Similarity: tensor([0.8553])
+GT WER: 1.0, CER: 0.9
+VC WER: 1.0, CER: 1.0
+Average GT WER: 1.18559670781893
+Average GT CER: 1.0521362595749704
+Average VC WER: 1.1918684196461973
+Average VC CER: 1.0411858681707404
+Average similarity: tensor([0.8916])
+Average DNS MOS SIG: 3.154671523800992
+Average DNS MOS BAK: 3.832382780918332
+Average DNS MOS OVR: 2.8230774932152483
+Processing ../dataset/source_voice/common_voice_ru_18931893.mp3.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 56.82it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 58.35it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 58.78it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 58.99it/s][A
+100%|██████████| 30/30 [00:00<00:00, 59.14it/s][A100%|██████████| 30/30 [00:00<00:00, 58.83it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 28/141594 [01:19<91:29:14,  2.33s/it] It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.23 seconds
+Similarity: tensor([0.9492])
+GT WER: 1.0, CER: 0.96875
+VC WER: 1.8, CER: 1.09375
+Average GT WER: 1.178968253968254
+Average GT CER: 1.0491581788758642
+Average VC WER: 1.2135874046588333
+Average VC CER: 1.043063158593214
+Average similarity: tensor([0.8936])
+Average DNS MOS SIG: 3.1564296698689582
+Average DNS MOS BAK: 3.8398664910421156
+Average DNS MOS OVR: 2.827364626611834
+Processing ../dataset/source_voice/audio_123717.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 23%|██▎       | 7/30 [00:00<00:00, 60.79it/s][A
+ 47%|████▋     | 14/30 [00:00<00:00, 60.34it/s][A
+ 70%|███████   | 21/30 [00:00<00:00, 60.16it/s][A
+ 93%|█████████▎| 28/30 [00:00<00:00, 60.18it/s][A100%|██████████| 30/30 [00:00<00:00, 60.21it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 29/141594 [01:21<85:12:43,  2.17s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.09 seconds
+Similarity: tensor([0.9521])
+GT WER: 1.0, CER: 0.8888888888888888
+VC WER: 1.0, CER: 0.9259259259259259
+Average GT WER: 1.1727969348659004
+Average GT CER: 1.043631651634934
+Average VC WER: 1.2062223217395631
+Average VC CER: 1.0390239436736524
+Average similarity: tensor([0.8956])
+Average DNS MOS SIG: 3.1616056123154825
+Average DNS MOS BAK: 3.818862367735168
+Average DNS MOS OVR: 2.819837708743734
+Processing ../dataset/source_voice/audio_45528.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 13%|█▎        | 4/30 [00:00<00:00, 39.40it/s][A
+ 33%|███▎      | 10/30 [00:00<00:00, 51.12it/s][A
+ 53%|█████▎    | 16/30 [00:00<00:00, 54.85it/s][A
+ 73%|███████▎  | 22/30 [00:00<00:00, 56.62it/s][A
+ 93%|█████████▎| 28/30 [00:00<00:00, 57.68it/s][A100%|██████████| 30/30 [00:00<00:00, 55.59it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 30/141594 [01:23<84:39:21,  2.15s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.30 seconds
+Similarity: tensor([0.9369])
+GT WER: 1.0, CER: 1.0454545454545454
+VC WER: 1.0, CER: 0.9545454545454546
+Average GT WER: 1.167037037037037
+Average GT CER: 1.0436924147622544
+Average VC WER: 1.1993482443482444
+Average VC CER: 1.0362079940360458
+Average similarity: tensor([0.8970])
+Average DNS MOS SIG: 3.1705019783030495
+Average DNS MOS BAK: 3.8255536293624743
+Average DNS MOS OVR: 2.831058871374606
+Processing ../dataset/source_voice/audio_115950.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 17%|█▋        | 5/30 [00:00<00:00, 47.61it/s][A
+ 37%|███▋      | 11/30 [00:00<00:00, 51.93it/s][A
+ 57%|█████▋    | 17/30 [00:00<00:00, 53.22it/s][A
+ 77%|███████▋  | 23/30 [00:00<00:00, 53.53it/s][A
+ 97%|█████████▋| 29/30 [00:00<00:00, 52.60it/s][A100%|██████████| 30/30 [00:00<00:00, 52.59it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 31/141594 [01:25<75:40:08,  1.92s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.05 seconds
+Similarity: tensor([0.9217])
+GT WER: 1.0, CER: 0.9428571428571428
+VC WER: 1.0, CER: 0.8857142857142857
+Average GT WER: 1.1616487455197133
+Average GT CER: 1.040439664055638
+Average VC WER: 1.1929176558208818
+Average VC CER: 1.031353358283731
+Average similarity: tensor([0.8978])
+Average DNS MOS SIG: 3.1726547622143904
+Average DNS MOS BAK: 3.82416353928653
+Average DNS MOS OVR: 2.832528924891486
+Processing ../dataset/source_voice/audio_134998.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 55.68it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 56.33it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 56.83it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 57.56it/s][A
+100%|██████████| 30/30 [00:00<00:00, 58.05it/s][A100%|██████████| 30/30 [00:00<00:00, 57.47it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 32/141594 [01:26<71:41:04,  1.82s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.07 seconds
+Similarity: tensor([0.9149])
+GT WER: 1.0, CER: 0.9534883720930233
+VC WER: 1.2857142857142858, CER: 0.9767441860465116
+Average GT WER: 1.1565972222222223
+Average GT CER: 1.0377224361818063
+Average VC WER: 1.1958175505050506
+Average VC CER: 1.029646821651318
+Average similarity: tensor([0.8983])
+Average DNS MOS SIG: 3.1736437442904943
+Average DNS MOS BAK: 3.828248112048541
+Average DNS MOS OVR: 2.835027553938586
+Processing ../dataset/source_voice/audio_81979.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 17%|█▋        | 5/30 [00:00<00:00, 48.92it/s][A
+ 37%|███▋      | 11/30 [00:00<00:00, 53.80it/s][A
+ 57%|█████▋    | 17/30 [00:00<00:00, 55.65it/s][A
+ 77%|███████▋  | 23/30 [00:00<00:00, 56.96it/s][A
+ 97%|█████████▋| 29/30 [00:00<00:00, 57.65it/s][A100%|██████████| 30/30 [00:00<00:00, 56.43it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 33/141594 [01:29<81:01:09,  2.06s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.09 seconds
+Similarity: tensor([0.9095])
+GT WER: 1.0, CER: 0.9333333333333333
+VC WER: 1.0, CER: 1.0666666666666667
+Average GT WER: 1.151851851851852
+Average GT CER: 1.0345591300348826
+Average VC WER: 1.1898836853382309
+Average VC CER: 1.0307686351366314
+Average similarity: tensor([0.8987])
+Average DNS MOS SIG: 3.1704031024130885
+Average DNS MOS BAK: 3.8222341350483364
+Average DNS MOS OVR: 2.830035505251207
+Processing ../dataset/source_voice/audio_75369.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 56.68it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 58.31it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 56.27it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 55.95it/s][A
+100%|██████████| 30/30 [00:00<00:00, 57.16it/s][A100%|██████████| 30/30 [00:00<00:00, 56.93it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 34/141594 [01:32<96:48:47,  2.46s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.16 seconds
+Similarity: tensor([0.9062])
+GT WER: 1.0, CER: 0.9047619047619048
+VC WER: 1.0, CER: 0.9047619047619048
+Average GT WER: 1.1473856209150328
+Average GT CER: 1.0307415645856774
+Average VC WER: 1.184298871063577
+Average VC CER: 1.0270625548314924
+Average similarity: tensor([0.8989])
+Average DNS MOS SIG: 3.1681593827506154
+Average DNS MOS BAK: 3.8076634744913593
+Average DNS MOS OVR: 2.820703511431303
+Processing ../dataset/source_voice/audio_52387.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 55.83it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 57.65it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 58.34it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 58.76it/s][A
+100%|██████████| 30/30 [00:00<00:00, 58.85it/s][A100%|██████████| 30/30 [00:00<00:00, 58.44it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 35/141594 [01:34<84:13:58,  2.14s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.05 seconds
+Similarity: tensor([0.9390])
+GT WER: 1.0, CER: 0.9069767441860465
+VC WER: 1.0, CER: 0.9069767441860465
+Average GT WER: 1.1431746031746033
+Average GT CER: 1.0272054268599737
+Average VC WER: 1.179033189033189
+Average VC CER: 1.023631531670194
+Average similarity: tensor([0.9000])
+Average DNS MOS SIG: 3.168296944900638
+Average DNS MOS BAK: 3.8078529470762565
+Average DNS MOS OVR: 2.8212433997647075
+Processing ../dataset/source_voice/common_voice_ru_19446881.mp3.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 52.16it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 52.26it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 52.22it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 51.75it/s][A
+100%|██████████| 30/30 [00:00<00:00, 51.87it/s][A100%|██████████| 30/30 [00:00<00:00, 51.94it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 36/141594 [01:37<93:16:18,  2.37s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.12 seconds
+Similarity: tensor([0.9542])
+GT WER: 1.0, CER: 0.9459459459459459
+VC WER: 1.0, CER: 0.9594594594594594
+Average GT WER: 1.1391975308641975
+Average GT CER: 1.0249482190568064
+Average VC WER: 1.1740600448933782
+Average VC CER: 1.0218489741087846
+Average similarity: tensor([0.9016])
+Average DNS MOS SIG: 3.1700483430169535
+Average DNS MOS BAK: 3.8083882293079228
+Average DNS MOS OVR: 2.8236937813741236
+Processing ../dataset/source_voice/audio_139365.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 56.64it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 58.21it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 58.59it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 56.92it/s][A
+100%|██████████| 30/30 [00:00<00:00, 56.35it/s][A100%|██████████| 30/30 [00:00<00:00, 56.91it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 37/141594 [01:38<82:49:55,  2.11s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.05 seconds
+Similarity: tensor([0.9187])
+GT WER: 1.25, CER: 0.96875
+VC WER: 1.0, CER: 0.9375
+Average GT WER: 1.1421921921921923
+Average GT CER: 1.0234293482714873
+Average VC WER: 1.1693557193557194
+Average VC CER: 1.0195692721058445
+Average similarity: tensor([0.9020])
+Average DNS MOS SIG: 3.162861199904346
+Average DNS MOS BAK: 3.7737251130192915
+Average DNS MOS OVR: 2.7990758646669343
+Processing ../dataset/source_voice/audio_70312.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 52.52it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 56.34it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 57.60it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 58.35it/s][A100%|██████████| 30/30 [00:00<00:00, 58.22it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 38/141594 [01:42<106:16:57,  2.70s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.03 seconds
+Similarity: tensor([0.9814])
+GT WER: 1.0, CER: 0.9259259259259259
+VC WER: 1.0, CER: 0.9259259259259259
+Average GT WER: 1.138450292397661
+Average GT CER: 1.0208634687360778
+Average VC WER: 1.1648989898989899
+Average VC CER: 1.0171049735221624
+Average similarity: tensor([0.9041])
+Average DNS MOS SIG: 3.169733821159249
+Average DNS MOS BAK: 3.7778453652282034
+Average DNS MOS OVR: 2.8073442366098824
+Processing ../dataset/source_voice/audio_83466.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 57.95it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 58.76it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 59.18it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 59.14it/s][A
+100%|██████████| 30/30 [00:00<00:00, 59.20it/s][A100%|██████████| 30/30 [00:00<00:00, 59.06it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 39/141594 [01:47<125:16:43,  3.19s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.19 seconds
+Similarity: tensor([0.8931])
+GT WER: 1.0, CER: 0.9142857142857143
+VC WER: 1.0, CER: 0.8571428571428571
+Average GT WER: 1.134900284900285
+Average GT CER: 1.018130705801453
+Average VC WER: 1.1606708106708108
+Average VC CER: 1.013003380794488
+Average similarity: tensor([0.9038])
+Average DNS MOS SIG: 3.169564378062079
+Average DNS MOS BAK: 3.783800302202917
+Average DNS MOS OVR: 2.809983213078205
+Processing ../dataset/source_voice/audio_59505.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 58.79it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 59.34it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 59.49it/s][A
+ 83%|████████▎ | 25/30 [00:00<00:00, 60.56it/s][A100%|██████████| 30/30 [00:00<00:00, 60.00it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 40/141594 [01:50<123:01:52,  3.13s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.09 seconds
+Similarity: tensor([0.6999])
+GT WER: 1.5, CER: 1.2
+VC WER: 2.0, CER: 1.4
+Average GT WER: 1.1440277777777779
+Average GT CER: 1.0226774381564168
+Average VC WER: 1.1816540404040405
+Average VC CER: 1.0226782962746257
+Average similarity: tensor([0.8987])
+Average DNS MOS SIG: 3.148092696912312
+Average DNS MOS BAK: 3.773717439118902
+Average DNS MOS OVR: 2.7879938269317224
+Processing ../dataset/source_voice/audio_106321.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 17%|█▋        | 5/30 [00:00<00:00, 47.95it/s][A
+ 37%|███▋      | 11/30 [00:00<00:00, 53.60it/s][A
+ 57%|█████▋    | 17/30 [00:00<00:00, 56.31it/s][A
+ 77%|███████▋  | 23/30 [00:00<00:00, 57.69it/s][A
+100%|██████████| 30/30 [00:00<00:00, 58.62it/s][A100%|██████████| 30/30 [00:00<00:00, 57.03it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 41/141594 [01:52<113:14:57,  2.88s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.87 seconds
+Similarity: tensor([0.8676])
+GT WER: 1.0, CER: 0.9
+VC WER: 1.0, CER: 0.95
+Average GT WER: 1.1405149051490515
+Average GT CER: 1.0196853055184554
+Average VC WER: 1.1772234540527224
+Average VC CER: 1.020905654902074
+Average similarity: tensor([0.8980])
+Average DNS MOS SIG: 3.152571290586353
+Average DNS MOS BAK: 3.7722124425604777
+Average DNS MOS OVR: 2.7909443051085714
+Processing ../dataset/source_voice/common_voice_ru_27403684.mp3.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 17%|█▋        | 5/30 [00:00<00:00, 46.64it/s][A
+ 33%|███▎      | 10/30 [00:00<00:00, 45.25it/s][A
+ 50%|█████     | 15/30 [00:00<00:00, 44.90it/s][A
+ 67%|██████▋   | 20/30 [00:00<00:00, 44.73it/s][A
+ 83%|████████▎ | 25/30 [00:00<00:00, 44.53it/s][A
+100%|██████████| 30/30 [00:00<00:00, 44.49it/s][A100%|██████████| 30/30 [00:00<00:00, 44.73it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 42/141594 [01:56<126:31:33,  3.22s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.61 seconds
+Similarity: tensor([0.9579])
+GT WER: 1.0, CER: 0.926829268292683
+VC WER: 1.0, CER: 0.943089430894309
+Average GT WER: 1.1371693121693123
+Average GT CER: 1.0174744474892703
+Average VC WER: 1.173003848003848
+Average VC CER: 1.0190528876637939
+Average similarity: tensor([0.8994])
+Average DNS MOS SIG: 3.155235336304649
+Average DNS MOS BAK: 3.7788503747160243
+Average DNS MOS OVR: 2.796012211132507
+Processing ../dataset/source_voice/audio_130211.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 51.91it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 52.05it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 52.88it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 53.16it/s][A
+100%|██████████| 30/30 [00:00<00:00, 53.37it/s][A100%|██████████| 30/30 [00:00<00:00, 53.04it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 43/141594 [01:58<110:59:52,  2.82s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.17 seconds
+Similarity: tensor([0.8914])
+GT WER: 1.0, CER: 0.9615384615384616
+VC WER: 1.0, CER: 0.9423076923076923
+Average GT WER: 1.1339793281653747
+Average GT CER: 1.0161736106066934
+Average VC WER: 1.168980502701433
+Average VC CER: 1.0172681156787682
+Average similarity: tensor([0.8992])
+Average DNS MOS SIG: 3.1649794123557533
+Average DNS MOS BAK: 3.7873479309057583
+Average DNS MOS OVR: 2.8085303749065202
+Processing ../dataset/source_voice/audio_137113.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 56.64it/s][A
+ 43%|████▎     | 13/30 [00:00<00:00, 60.30it/s][A
+ 67%|██████▋   | 20/30 [00:00<00:00, 60.25it/s][A
+ 90%|█████████ | 27/30 [00:00<00:00, 60.13it/s][A100%|██████████| 30/30 [00:00<00:00, 59.93it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 44/141594 [02:00<109:35:01,  2.79s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.31 seconds
+Similarity: tensor([0.9454])
+GT WER: 1.6, CER: 1.0
+VC WER: 1.6, CER: 1.0555555555555556
+Average GT WER: 1.1445707070707072
+Average GT CER: 1.0158060285474504
+Average VC WER: 1.1787764003673096
+Average VC CER: 1.018138284766877
+Average similarity: tensor([0.9003])
+Average DNS MOS SIG: 3.1605407407385497
+Average DNS MOS BAK: 3.790353358028771
+Average DNS MOS OVR: 2.80624105068927
+Processing ../dataset/source_voice/audio_43044.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 17%|█▋        | 5/30 [00:00<00:00, 49.30it/s][A
+ 37%|███▋      | 11/30 [00:00<00:00, 55.51it/s][A
+ 57%|█████▋    | 17/30 [00:00<00:00, 57.53it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 58.65it/s][A
+100%|██████████| 30/30 [00:00<00:00, 59.06it/s][A100%|██████████| 30/30 [00:00<00:00, 57.86it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 45/141594 [02:05<127:19:31,  3.24s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.36 seconds
+Similarity: tensor([0.9125])
+GT WER: 1.0, CER: 0.9545454545454546
+VC WER: 1.0, CER: 0.9545454545454546
+Average GT WER: 1.1413580246913582
+Average GT CER: 1.0144446824585172
+Average VC WER: 1.1748035914702581
+Average VC CER: 1.0167251107619566
+Average similarity: tensor([0.9005])
+Average DNS MOS SIG: 3.160341848448701
+Average DNS MOS BAK: 3.7936968318692923
+Average DNS MOS OVR: 2.8074057784254576
+Processing ../dataset/source_voice/audio_49840.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 56.25it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 57.87it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 58.43it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 58.72it/s][A
+100%|██████████| 30/30 [00:00<00:00, 58.89it/s][A100%|██████████| 30/30 [00:00<00:00, 58.52it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 46/141594 [02:06<109:12:51,  2.78s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.26 seconds
+Similarity: tensor([0.8726])
+GT WER: 1.0, CER: 0.9230769230769231
+VC WER: 1.0, CER: 0.9230769230769231
+Average GT WER: 1.1382850241545894
+Average GT CER: 1.012458426819787
+Average VC WER: 1.1710035133948178
+Average VC CER: 1.0146892805948906
+Average similarity: tensor([0.8999])
+Average DNS MOS SIG: 3.1651153300679815
+Average DNS MOS BAK: 3.8005755419387315
+Average DNS MOS OVR: 2.8144290935912877
+Processing ../dataset/source_voice/audio_107475.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 17%|█▋        | 5/30 [00:00<00:00, 46.72it/s][A
+ 33%|███▎      | 10/30 [00:00<00:00, 46.44it/s][A
+ 50%|█████     | 15/30 [00:00<00:00, 46.04it/s][A
+ 67%|██████▋   | 20/30 [00:00<00:00, 45.82it/s][A
+ 83%|████████▎ | 25/30 [00:00<00:00, 45.74it/s][A
+100%|██████████| 30/30 [00:00<00:00, 45.68it/s][A100%|██████████| 30/30 [00:00<00:00, 45.85it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 47/141594 [02:11<125:56:41,  3.20s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.50 seconds
+Similarity: tensor([0.9232])
+GT WER: 1.0714285714285714, CER: 0.9595959595959596
+VC WER: 1.2142857142857142, CER: 0.9595959595959596
+Average GT WER: 1.1368625464370146
+Average GT CER: 1.011333693474599
+Average VC WER: 1.1719244112861134
+Average VC CER: 1.0135170822757644
+Average similarity: tensor([0.9004])
+Average DNS MOS SIG: 3.1677240456860285
+Average DNS MOS BAK: 3.7912546085247256
+Average DNS MOS OVR: 2.8122972347137516
+Processing ../dataset/source_voice/audio_111883.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 57.72it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 58.58it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 58.90it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 59.09it/s][A
+100%|██████████| 30/30 [00:00<00:00, 59.18it/s][A100%|██████████| 30/30 [00:00<00:00, 58.96it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 48/141594 [02:14<127:04:37,  3.23s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.15 seconds
+Similarity: tensor([0.9539])
+GT WER: 1.0, CER: 0.9354838709677419
+VC WER: 1.2222222222222223, CER: 0.9193548387096774
+Average GT WER: 1.1340112433862435
+Average GT CER: 1.0097534888390396
+Average VC WER: 1.1729722823472823
+Average VC CER: 1.0115553688681376
+Average similarity: tensor([0.9015])
+Average DNS MOS SIG: 3.1714489077730477
+Average DNS MOS BAK: 3.7877503809945696
+Average DNS MOS OVR: 2.814142690253716
+Processing ../dataset/source_voice/audio_136619.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 57.05it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 58.67it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 58.95it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 59.30it/s][A
+100%|██████████| 30/30 [00:00<00:00, 59.55it/s][A100%|██████████| 30/30 [00:00<00:00, 59.17it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 49/141594 [02:16<114:52:06,  2.92s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.22 seconds
+Similarity: tensor([0.8292])
+GT WER: 1.2, CER: 1.037037037037037
+VC WER: 1.0, CER: 0.9259259259259259
+Average GT WER: 1.1353579527048914
+Average GT CER: 1.010310295945121
+Average VC WER: 1.1694422357687664
+Average VC CER: 1.0098078292162558
+Average similarity: tensor([0.9001])
+Average DNS MOS SIG: 3.164822744288147
+Average DNS MOS BAK: 3.7905291949126796
+Average DNS MOS OVR: 2.8094425910611145
+Processing ../dataset/source_voice/audio_78186.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 17%|█▋        | 5/30 [00:00<00:00, 48.20it/s][A
+ 37%|███▋      | 11/30 [00:00<00:00, 50.10it/s][A
+ 57%|█████▋    | 17/30 [00:00<00:00, 50.68it/s][A
+ 77%|███████▋  | 23/30 [00:00<00:00, 50.91it/s][A
+ 97%|█████████▋| 29/30 [00:00<00:00, 51.09it/s][A100%|██████████| 30/30 [00:00<00:00, 50.76it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 50/141594 [02:19<117:04:29,  2.98s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.16 seconds
+Similarity: tensor([0.8993])
+GT WER: 1.0, CER: 0.9146341463414634
+VC WER: 1.0, CER: 0.8902439024390244
+Average GT WER: 1.1326507936507937
+Average GT CER: 1.0083967729530479
+Average VC WER: 1.1660533910533912
+Average VC CER: 1.0074165506807111
+Average similarity: tensor([0.9000])
+Average DNS MOS SIG: 3.168278394728858
+Average DNS MOS BAK: 3.7970207957084177
+Average DNS MOS OVR: 2.8153485908772327
+Processing ../dataset/source_voice/audio_102768.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 23%|██▎       | 7/30 [00:00<00:00, 60.95it/s][A
+ 47%|████▋     | 14/30 [00:00<00:00, 60.53it/s][A
+ 70%|███████   | 21/30 [00:00<00:00, 60.43it/s][A
+ 93%|█████████▎| 28/30 [00:00<00:00, 60.37it/s][A100%|██████████| 30/30 [00:00<00:00, 60.44it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 51/141594 [02:22<114:56:44,  2.92s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 0.99 seconds
+Similarity: tensor([0.9512])
+GT WER: 1.1111111111111112, CER: 0.9622641509433962
+VC WER: 1.0, CER: 0.9622641509433962
+Average GT WER: 1.1322284469343293
+Average GT CER: 1.0074922117371723
+Average VC WER: 1.1627974422092069
+Average VC CER: 1.0065312095093912
+Average similarity: tensor([0.9010])
+Average DNS MOS SIG: 3.1690799220447174
+Average DNS MOS BAK: 3.800780468870747
+Average DNS MOS OVR: 2.817581608726375
+Processing ../dataset/source_voice/audio_79156.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 56.48it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 57.88it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 58.38it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 58.55it/s][A
+100%|██████████| 30/30 [00:00<00:00, 58.65it/s][A100%|██████████| 30/30 [00:00<00:00, 58.37it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 52/141594 [02:24<99:17:16,  2.53s/it] It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.14 seconds
+Similarity: tensor([0.9575])
+GT WER: 1.0, CER: 1.0
+VC WER: 1.0, CER: 0.9512195121951219
+Average GT WER: 1.1296855921855922
+Average GT CER: 1.0073481307422267
+Average VC WER: 1.1596667221667223
+Average VC CER: 1.0054675230225782
+Average similarity: tensor([0.9021])
+Average DNS MOS SIG: 3.169708941747644
+Average DNS MOS BAK: 3.804298330571136
+Average DNS MOS OVR: 2.8195606562778313
+Processing ../dataset/source_voice/audio_106544.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 17%|█▋        | 5/30 [00:00<00:00, 47.99it/s][A
+ 37%|███▋      | 11/30 [00:00<00:00, 54.67it/s][A
+ 57%|█████▋    | 17/30 [00:00<00:00, 57.06it/s][A
+ 77%|███████▋  | 23/30 [00:00<00:00, 58.10it/s][A
+ 97%|█████████▋| 29/30 [00:00<00:00, 58.67it/s][A100%|██████████| 30/30 [00:00<00:00, 57.38it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 53/141594 [02:28<121:28:42,  3.09s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.08 seconds
+Similarity: tensor([0.9186])
+GT WER: 1.3333333333333333, CER: 1.0666666666666667
+VC WER: 1.0, CER: 0.8666666666666667
+Average GT WER: 1.1335280023959269
+Average GT CER: 1.0084673484011784
+Average VC WER: 1.156654142503199
+Average VC CER: 1.0028486389403912
+Average similarity: tensor([0.9024])
+Average DNS MOS SIG: 3.1634177848821916
+Average DNS MOS BAK: 3.8087602179753874
+Average DNS MOS OVR: 2.815703005150079
+Processing ../dataset/source_voice/audio_112917.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 59.14it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 58.79it/s][A
+ 63%|██████▎   | 19/30 [00:00<00:00, 59.48it/s][A
+ 83%|████████▎ | 25/30 [00:00<00:00, 59.49it/s][A100%|██████████| 30/30 [00:00<00:00, 59.43it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 54/141594 [02:30<102:45:39,  2.61s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.09 seconds
+Similarity: tensor([0.8470])
+GT WER: 1.0, CER: 0.9565217391304348
+VC WER: 1.3333333333333333, CER: 0.9565217391304348
+Average GT WER: 1.1310552616108172
+Average GT CER: 1.0075053926739426
+Average VC WER: 1.1599259793704237
+Average VC CER: 1.001990733388355
+Average similarity: tensor([0.9014])
+Average DNS MOS SIG: 3.1620167175070204
+Average DNS MOS BAK: 3.812038742499772
+Average DNS MOS OVR: 2.8154604585721916
+Processing ../dataset/source_voice/audio_71445.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 59.02it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 59.22it/s][A
+ 63%|██████▎   | 19/30 [00:00<00:00, 59.91it/s][A
+ 87%|████████▋ | 26/30 [00:00<00:00, 60.40it/s][A100%|██████████| 30/30 [00:00<00:00, 60.01it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 55/141594 [02:33<115:29:50,  2.94s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.17 seconds
+Similarity: tensor([0.9339])
+GT WER: 1.0, CER: 1.0
+VC WER: 1.5, CER: 0.9444444444444444
+Average GT WER: 1.1286724386724387
+Average GT CER: 1.0073689309889617
+Average VC WER: 1.1661091433818707
+Average VC CER: 1.0009444372257386
+Average similarity: tensor([0.9020])
+Average DNS MOS SIG: 3.1563937689290613
+Average DNS MOS BAK: 3.800571761955006
+Average DNS MOS OVR: 2.80570636786257
+Processing ../dataset/source_voice/audio_126917.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 56.68it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 58.32it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 58.89it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 59.15it/s][A
+100%|██████████| 30/30 [00:00<00:00, 59.18it/s][A100%|██████████| 30/30 [00:00<00:00, 58.88it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 56/141594 [02:37<119:46:35,  3.05s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.15 seconds
+Similarity: tensor([0.9293])
+GT WER: 1.0, CER: 0.9482758620689655
+VC WER: 1.0, CER: 0.9137931034482759
+Average GT WER: 1.126374716553288
+Average GT CER: 1.0063136976153904
+Average VC WER: 1.163142908678623
+Average VC CER: 0.9993881634082838
+Average similarity: tensor([0.9025])
+Average DNS MOS SIG: 3.15789063799435
+Average DNS MOS BAK: 3.8031418924433287
+Average DNS MOS OVR: 2.8079642071122874
+Processing ../dataset/source_voice/audio_51904.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 55.14it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 56.77it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 57.05it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 56.82it/s][A
+100%|██████████| 30/30 [00:00<00:00, 56.94it/s][A100%|██████████| 30/30 [00:00<00:00, 56.79it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 57/141594 [02:40<123:54:49,  3.15s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.08 seconds
+Similarity: tensor([0.9519])
+GT WER: 1.0, CER: 0.9230769230769231
+VC WER: 1.0, CER: 0.9615384615384616
+Average GT WER: 1.1241576162628795
+Average GT CER: 1.0048534033252419
+Average VC WER: 1.1602807523860155
+Average VC CER: 0.9987241335509185
+Average similarity: tensor([0.9034])
+Average DNS MOS SIG: 3.1566609567941235
+Average DNS MOS BAK: 3.8004862726640054
+Average DNS MOS OVR: 2.806004673240274
+Processing ../dataset/source_voice/common_voice_ru_22525671.mp3.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 49.87it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 50.82it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 51.47it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 51.63it/s][A
+100%|██████████| 30/30 [00:00<00:00, 51.00it/s][A100%|██████████| 30/30 [00:00<00:00, 51.05it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 58/141594 [02:42<116:17:14,  2.96s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.14 seconds
+Similarity: tensor([0.9601])
+GT WER: 1.0, CER: 0.9540229885057471
+VC WER: 1.1818181818181819, CER: 0.9885057471264368
+Average GT WER: 1.122016967706623
+Average GT CER: 1.0039770168628366
+Average VC WER: 1.1606520873762254
+Average VC CER: 0.9985479544746344
+Average similarity: tensor([0.9043])
+Average DNS MOS SIG: 3.1536170828609236
+Average DNS MOS BAK: 3.7997569097316575
+Average DNS MOS OVR: 2.8035665476520046
+Processing ../dataset/source_voice/audio_44387.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 56.47it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 58.14it/s][A
+ 63%|██████▎   | 19/30 [00:00<00:00, 59.50it/s][A
+ 83%|████████▎ | 25/30 [00:00<00:00, 58.91it/s][A100%|██████████| 30/30 [00:00<00:00, 58.81it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 59/141594 [02:47<132:02:54,  3.36s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.04 seconds
+Similarity: tensor([0.9243])
+GT WER: 1.0, CER: 0.92
+VC WER: 1.0, CER: 0.92
+Average GT WER: 1.1199488835082057
+Average GT CER: 1.002553677593975
+Average VC WER: 1.157929170641035
+Average VC CER: 0.9972166332123524
+Average similarity: tensor([0.9047])
+Average DNS MOS SIG: 3.1498533145635337
+Average DNS MOS BAK: 3.8011851629572377
+Average DNS MOS OVR: 2.8010161526291864
+Processing ../dataset/source_voice/common_voice_ru_30642932.mp3.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 17%|█▋        | 5/30 [00:00<00:00, 49.49it/s][A
+ 37%|███▋      | 11/30 [00:00<00:00, 55.52it/s][A
+ 57%|█████▋    | 17/30 [00:00<00:00, 57.27it/s][A
+ 77%|███████▋  | 23/30 [00:00<00:00, 58.17it/s][A
+ 97%|█████████▋| 29/30 [00:00<00:00, 58.54it/s][A100%|██████████| 30/30 [00:00<00:00, 57.51it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 60/141594 [02:51<143:05:18,  3.64s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.09 seconds
+Similarity: tensor([0.9309])
+GT WER: 1.0, CER: 0.9318181818181818
+VC WER: 1.0, CER: 0.9545454545454546
+Average GT WER: 1.1179497354497354
+Average GT CER: 1.0013747526643786
+Average VC WER: 1.1552970177970179
+Average VC CER: 0.9965054469012374
+Average similarity: tensor([0.9051])
+Average DNS MOS SIG: 3.15255368521975
+Average DNS MOS BAK: 3.806218698484982
+Average DNS MOS OVR: 2.8054498709945888
+Processing ../dataset/source_voice/audio_80009.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 59.01it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 58.86it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 58.78it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 58.74it/s][A
+100%|██████████| 30/30 [00:00<00:00, 58.69it/s][A100%|██████████| 30/30 [00:00<00:00, 58.73it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 61/141594 [02:54<134:25:10,  3.42s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 0.92 seconds
+Similarity: tensor([0.6062])
+GT WER: 1.0, CER: 0.8
+VC WER: 1.0, CER: 1.2
+Average GT WER: 1.116016133229248
+Average GT CER: 0.9980735272108641
+Average VC WER: 1.152751165046247
+Average VC CER: 0.999841423181545
+Average similarity: tensor([0.9002])
+Average DNS MOS SIG: 3.1455082899050804
+Average DNS MOS BAK: 3.8069739347303497
+Average DNS MOS OVR: 2.7995743628140115
+Processing ../dataset/source_voice/audio_77643.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 57.27it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 58.79it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 59.29it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 59.49it/s][A100%|██████████| 30/30 [00:00<00:00, 59.36it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 62/141594 [02:57<125:51:22,  3.20s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.04 seconds
+Similarity: tensor([0.9359])
+GT WER: 1.0, CER: 0.9655172413793104
+VC WER: 1.0, CER: 0.9655172413793104
+Average GT WER: 1.1141449052739376
+Average GT CER: 0.9975484258264842
+Average VC WER: 1.1502874365777591
+Average VC CER: 0.9992878073460251
+Average similarity: tensor([0.9008])
+Average DNS MOS SIG: 3.14470818189338
+Average DNS MOS BAK: 3.80639987717287
+Average DNS MOS OVR: 2.798599798684154
+Processing ../dataset/source_voice/audio_53896.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 57.18it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 58.74it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 59.22it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 59.46it/s][A
+100%|██████████| 30/30 [00:00<00:00, 59.54it/s][A100%|██████████| 30/30 [00:00<00:00, 59.25it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 63/141594 [02:59<116:35:37,  2.97s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.17 seconds
+Similarity: tensor([0.9457])
+GT WER: 1.0, CER: 0.8823529411764706
+VC WER: 1.0, CER: 0.9411764705882353
+Average GT WER: 1.1123330813807004
+Average GT CER: 0.9957199260701348
+Average VC WER: 1.1479019217114457
+Average VC CER: 0.9983654051752665
+Average similarity: tensor([0.9015])
+Average DNS MOS SIG: 3.141898963908878
+Average DNS MOS BAK: 3.797201812324563
+Average DNS MOS OVR: 2.792747913181487
+Processing ../dataset/source_voice/audio_121618.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 17%|█▋        | 5/30 [00:00<00:00, 49.50it/s][A
+ 33%|███▎      | 10/30 [00:00<00:00, 48.83it/s][A
+ 50%|█████     | 15/30 [00:00<00:00, 49.27it/s][A
+ 67%|██████▋   | 20/30 [00:00<00:00, 49.20it/s][A
+ 83%|████████▎ | 25/30 [00:00<00:00, 49.19it/s][A
+100%|██████████| 30/30 [00:00<00:00, 49.19it/s][A100%|██████████| 30/30 [00:00<00:00, 49.17it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 64/141594 [03:03<126:27:29,  3.22s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.25 seconds
+Similarity: tensor([0.8406])
+GT WER: 1.0909090909090908, CER: 1.0363636363636364
+VC WER: 1.1818181818181819, CER: 1.0
+Average GT WER: 1.1119983315295816
+Average GT CER: 0.9963549840434708
+Average VC WER: 1.1484318632756132
+Average VC CER: 0.998390945719403
+Average similarity: tensor([0.9005])
+Average DNS MOS SIG: 3.1418566731392765
+Average DNS MOS BAK: 3.7966523529275373
+Average DNS MOS OVR: 2.792559503775493
+Processing ../dataset/source_voice/audio_119789.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 59.38it/s][A
+ 43%|████▎     | 13/30 [00:00<00:00, 60.14it/s][A
+ 67%|██████▋   | 20/30 [00:00<00:00, 60.30it/s][A
+ 90%|█████████ | 27/30 [00:00<00:00, 60.40it/s][A100%|██████████| 30/30 [00:00<00:00, 60.29it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 65/141594 [03:04<103:45:29,  2.64s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.04 seconds
+Similarity: tensor([0.9546])
+GT WER: 1.0, CER: 0.9459459459459459
+VC WER: 1.1666666666666667, CER: 0.972972972972973
+Average GT WER: 1.1102752802752804
+Average GT CER: 0.9955794603804319
+Average VC WER: 1.1487123987123986
+Average VC CER: 0.9979998999848426
+Average similarity: tensor([0.9014])
+Average DNS MOS SIG: 3.139237984853381
+Average DNS MOS BAK: 3.7965910259405544
+Average DNS MOS OVR: 2.7900562215880207
+Processing ../dataset/source_voice/audio_65868.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 54.16it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 54.49it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 54.45it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 54.33it/s][A
+100%|██████████| 30/30 [00:00<00:00, 54.12it/s][A100%|██████████| 30/30 [00:00<00:00, 54.22it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 66/141594 [03:06<98:34:58,  2.51s/it] It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.19 seconds
+Similarity: tensor([0.9543])
+GT WER: 1.0, CER: 0.9325842696629213
+VC WER: 1.0, CER: 0.898876404494382
+Average GT WER: 1.1086044426953519
+Average GT CER: 0.994624987793803
+Average VC WER: 1.1464591805500897
+Average VC CER: 0.9964980288410477
+Average similarity: tensor([0.9022])
+Average DNS MOS SIG: 3.1391546077930816
+Average DNS MOS BAK: 3.7962938643012007
+Average DNS MOS OVR: 2.7900428330757956
+Processing ../dataset/source_voice/audio_120800.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 57.62it/s][A
+ 43%|████▎     | 13/30 [00:00<00:00, 59.24it/s][A
+ 67%|██████▋   | 20/30 [00:00<00:00, 59.77it/s][A
+ 90%|█████████ | 27/30 [00:00<00:00, 59.96it/s][A100%|██████████| 30/30 [00:00<00:00, 59.73it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 67/141594 [03:09<101:58:41,  2.59s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.11 seconds
+Similarity: tensor([0.9001])
+GT WER: 1.0, CER: 0.9230769230769231
+VC WER: 2.0, CER: 1.1538461538461537
+Average GT WER: 1.106983480864078
+Average GT CER: 0.9935571062308645
+Average VC WER: 1.15919859576576
+Average VC CER: 0.9988465083187359
+Average similarity: tensor([0.9022])
+Average DNS MOS SIG: 3.1367519616275756
+Average DNS MOS BAK: 3.799982474535807
+Average DNS MOS OVR: 2.789295315756578
+Processing ../dataset/source_voice/audio_91475.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 52.35it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 56.28it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 57.73it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 58.44it/s][A
+100%|██████████| 30/30 [00:00<00:00, 58.72it/s][A100%|██████████| 30/30 [00:00<00:00, 57.85it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 68/141594 [03:11<87:58:30,  2.24s/it] It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.02 seconds
+Similarity: tensor([0.9576])
+GT WER: 1.0, CER: 0.9565217391304348
+VC WER: 1.0, CER: 0.9347826086956522
+Average GT WER: 1.1054101943807826
+Average GT CER: 0.9930124684793876
+Average VC WER: 1.1568574399456752
+Average VC CER: 0.9979043921478082
+Average similarity: tensor([0.9030])
+Average DNS MOS SIG: 3.1411245196074518
+Average DNS MOS BAK: 3.804752941607915
+Average DNS MOS OVR: 2.7952258019418315
+Processing ../dataset/source_voice/audio_42439.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 52.29it/s][A
+ 43%|████▎     | 13/30 [00:00<00:00, 56.91it/s][A
+ 67%|██████▋   | 20/30 [00:00<00:00, 58.54it/s][A
+ 90%|█████████ | 27/30 [00:00<00:00, 59.28it/s][A100%|██████████| 30/30 [00:00<00:00, 58.51it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 69/141594 [03:14<102:51:23,  2.62s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.06 seconds
+Similarity: tensor([0.9541])
+GT WER: 1.0, CER: 0.9444444444444444
+VC WER: 1.0, CER: 1.0
+Average GT WER: 1.1038825104042496
+Average GT CER: 0.9923085840730841
+Average VC WER: 1.1545841437145785
+Average VC CER: 0.9979347632761009
+Average similarity: tensor([0.9037])
+Average DNS MOS SIG: 3.139302637404492
+Average DNS MOS BAK: 3.8000586661785243
+Average DNS MOS OVR: 2.7920376283183983
+Processing ../dataset/source_voice/audio_106431.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 56.05it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 55.19it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 56.89it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 57.55it/s][A
+100%|██████████| 30/30 [00:00<00:00, 57.86it/s][A100%|██████████| 30/30 [00:00<00:00, 57.27it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 70/141594 [03:18<123:48:29,  3.15s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.15 seconds
+Similarity: tensor([0.8826])
+GT WER: 1.0, CER: 0.9473684210526315
+VC WER: 1.0, CER: 0.9473684210526315
+Average GT WER: 1.1023984745413318
+Average GT CER: 0.9916665817442204
+Average VC WER: 1.1523757988043701
+Average VC CER: 0.9972123869586227
+Average similarity: tensor([0.9034])
+Average DNS MOS SIG: 3.1384908831605265
+Average DNS MOS BAK: 3.801399888233765
+Average DNS MOS OVR: 2.7920183147276916
+Processing ../dataset/source_voice/audio_91711.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 57.40it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 57.81it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 58.31it/s][A
+ 83%|████████▎ | 25/30 [00:00<00:00, 59.27it/s][A100%|██████████| 30/30 [00:00<00:00, 59.04it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 71/141594 [03:20<104:31:26,  2.66s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.09 seconds
+Similarity: tensor([0.9046])
+GT WER: 1.0, CER: 0.9090909090909091
+VC WER: 1.0, CER: 0.9090909090909091
+Average GT WER: 1.1009562425055384
+Average GT CER: 0.990503544101216
+Average VC WER: 1.1502296607930411
+Average VC CER: 0.995971239383021
+Average similarity: tensor([0.9034])
+Average DNS MOS SIG: 3.132217812642971
+Average DNS MOS BAK: 3.8061330491489187
+Average DNS MOS OVR: 2.788138877220398
+Processing ../dataset/source_voice/common_voice_ru_22117318.mp3.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 50.80it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 50.69it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 50.62it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 50.54it/s][A
+100%|██████████| 30/30 [00:00<00:00, 50.46it/s][A100%|██████████| 30/30 [00:00<00:00, 50.53it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 72/141594 [03:23<110:52:19,  2.82s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.23 seconds
+Similarity: tensor([0.9636])
+GT WER: 1.0833333333333333, CER: 0.9166666666666666
+VC WER: 1.0, CER: 0.9404761904761905
+Average GT WER: 1.1007114798781465
+Average GT CER: 0.9894780319146251
+Average VC WER: 1.148143137726471
+Average VC CER: 0.9952004748148706
+Average similarity: tensor([0.9043])
+Average DNS MOS SIG: 3.135714613703151
+Average DNS MOS BAK: 3.810600804525104
+Average DNS MOS OVR: 2.7931274178831433
+Processing ../dataset/source_voice/common_voice_ru_30555060.mp3.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 56.16it/s][A
+ 43%|████▎     | 13/30 [00:00<00:00, 59.18it/s][A
+ 63%|██████▎   | 19/30 [00:00<00:00, 59.23it/s][A
+ 87%|████████▋ | 26/30 [00:00<00:00, 60.29it/s][A100%|██████████| 30/30 [00:00<00:00, 59.60it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 73/141594 [03:26<111:41:56,  2.84s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.05 seconds
+Similarity: tensor([0.8961])
+GT WER: 1.0, CER: 0.9629629629629629
+VC WER: 1.0, CER: 0.9629629629629629
+Average GT WER: 1.0993318705647472
+Average GT CER: 0.9891148117919996
+Average VC WER: 1.1461137796754235
+Average VC CER: 0.9947588650634747
+Average similarity: tensor([0.9041])
+Average DNS MOS SIG: 3.1404635876256886
+Average DNS MOS BAK: 3.8139714302832877
+Average DNS MOS OVR: 2.7990704493638754
+Processing ../dataset/source_voice/common_voice_ru_25111516.mp3.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 54.93it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 57.40it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 58.23it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 58.59it/s][A
+100%|██████████| 30/30 [00:00<00:00, 58.84it/s][A100%|██████████| 30/30 [00:00<00:00, 58.31it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 74/141594 [03:30<128:51:01,  3.28s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.04 seconds
+Similarity: tensor([0.9275])
+GT WER: 1.0, CER: 0.9230769230769231
+VC WER: 1.0, CER: 0.9743589743589743
+Average GT WER: 1.097989547989548
+Average GT CER: 0.9882224078904445
+Average VC WER: 1.144139269139269
+Average VC CER: 0.9944831908647652
+Average similarity: tensor([0.9045])
+Average DNS MOS SIG: 3.1428090705410856
+Average DNS MOS BAK: 3.8171697457900664
+Average DNS MOS OVR: 2.8023815764074995
+Processing ../dataset/source_voice/common_voice_ru_21930506.mp3.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 57.44it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 58.90it/s][A
+ 63%|██████▎   | 19/30 [00:00<00:00, 59.46it/s][A
+ 83%|████████▎ | 25/30 [00:00<00:00, 59.62it/s][A100%|██████████| 30/30 [00:00<00:00, 59.43it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 75/141594 [03:34<131:32:44,  3.35s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.14 seconds
+Similarity: tensor([0.9186])
+GT WER: 1.0, CER: 0.9310344827586207
+VC WER: 1.0, CER: 0.9310344827586207
+Average GT WER: 1.0966830206830207
+Average GT CER: 0.9874599022220201
+Average VC WER: 1.1422174122174122
+Average VC CER: 0.9936372080900165
+Average similarity: tensor([0.9047])
+Average DNS MOS SIG: 3.1444748215402516
+Average DNS MOS BAK: 3.820003541840104
+Average DNS MOS OVR: 2.8050194425596757
+Processing ../dataset/source_voice/audio_112819.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 56.47it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 57.82it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 58.49it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 58.69it/s][A
+100%|██████████| 30/30 [00:00<00:00, 58.88it/s][A100%|██████████| 30/30 [00:00<00:00, 58.53it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 76/141594 [03:36<121:30:31,  3.09s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.85 seconds
+Similarity: tensor([0.9516])
+GT WER: 1.0, CER: 0.8846153846153846
+VC WER: 1.2307692307692308, CER: 0.9358974358974359
+Average GT WER: 1.0954108756740335
+Average GT CER: 0.9861066848850907
+Average VC WER: 1.143382567724673
+Average VC CER: 0.9928774742453773
+Average similarity: tensor([0.9053])
+Average DNS MOS SIG: 3.1459424701277086
+Average DNS MOS BAK: 3.8208934022952157
+Average DNS MOS OVR: 2.8065343849036157
+Processing ../dataset/source_voice/audio_113073.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 59.09it/s][A
+ 43%|████▎     | 13/30 [00:00<00:00, 59.63it/s][A
+ 67%|██████▋   | 20/30 [00:00<00:00, 59.93it/s][A
+ 87%|████████▋ | 26/30 [00:00<00:00, 59.62it/s][A100%|██████████| 30/30 [00:00<00:00, 59.02it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 77/141594 [03:40<133:20:50,  3.39s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.10 seconds
+Similarity: tensor([0.9109])
+GT WER: 1.0, CER: 0.9615384615384616
+VC WER: 1.0, CER: 0.9230769230769231
+Average GT WER: 1.0941717733925527
+Average GT CER: 0.9857876170494203
+Average VC WER: 1.1415204564555212
+Average VC CER: 0.9919709735808518
+Average similarity: tensor([0.9053])
+Average DNS MOS SIG: 3.145654655777822
+Average DNS MOS BAK: 3.8206426878995794
+Average DNS MOS OVR: 2.8062652817239457
+Processing ../dataset/source_voice/audio_128307.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 56.25it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 57.76it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 58.33it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 58.25it/s][A100%|██████████| 30/30 [00:00<00:00, 58.65it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 78/141594 [03:45<141:49:31,  3.61s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 0.97 seconds
+Similarity: tensor([0.9768])
+GT WER: 1.1818181818181819, CER: 0.9420289855072463
+VC WER: 1.0, CER: 0.9565217391304348
+Average GT WER: 1.0952954452954453
+Average GT CER: 0.9852266089527256
+Average VC WER: 1.1397060916291686
+Average VC CER: 0.9915164962161029
+Average similarity: tensor([0.9063])
+Average DNS MOS SIG: 3.1474135067896247
+Average DNS MOS BAK: 3.824280935611218
+Average DNS MOS OVR: 2.809390612068518
+Processing ../dataset/source_voice/audio_129260.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 58.65it/s][A
+ 43%|████▎     | 13/30 [00:00<00:00, 60.26it/s][A
+ 67%|██████▋   | 20/30 [00:00<00:00, 60.18it/s][A
+ 90%|█████████ | 27/30 [00:00<00:00, 59.55it/s][A100%|██████████| 30/30 [00:00<00:00, 59.55it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 79/141594 [03:47<132:16:57,  3.37s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.04 seconds
+Similarity: tensor([0.9418])
+GT WER: 1.0, CER: 0.8888888888888888
+VC WER: 1.0, CER: 0.9629629629629629
+Average GT WER: 1.0940891738360095
+Average GT CER: 0.9840071441417911
+Average VC WER: 1.1379376600895588
+Average VC CER: 0.9911550590863164
+Average similarity: tensor([0.9067])
+Average DNS MOS SIG: 3.1483525263481194
+Average DNS MOS BAK: 3.827695824904522
+Average DNS MOS OVR: 2.811479620698955
+Processing ../dataset/source_voice/audio_116010.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 17%|█▋        | 5/30 [00:00<00:00, 49.33it/s][A
+ 37%|███▋      | 11/30 [00:00<00:00, 55.49it/s][A
+ 57%|█████▋    | 17/30 [00:00<00:00, 57.34it/s][A
+ 77%|███████▋  | 23/30 [00:00<00:00, 58.20it/s][A
+ 97%|█████████▋| 29/30 [00:00<00:00, 58.30it/s][A100%|██████████| 30/30 [00:00<00:00, 57.41it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 80/141594 [03:49<109:11:05,  2.78s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.01 seconds
+Similarity: tensor([0.9206])
+GT WER: 1.0, CER: 0.9705882352941176
+VC WER: 1.3333333333333333, CER: 1.0
+Average GT WER: 1.0929130591630591
+Average GT CER: 0.9838394077811952
+Average VC WER: 1.140380106005106
+Average VC CER: 0.9912656208477374
+Average similarity: tensor([0.9069])
+Average DNS MOS SIG: 3.1474206051648475
+Average DNS MOS BAK: 3.8295407981686473
+Average DNS MOS OVR: 2.8115983864426175
+Processing ../dataset/source_voice/audio_122525.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 53.73it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 54.10it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 54.26it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 54.29it/s][A
+100%|██████████| 30/30 [00:00<00:00, 54.31it/s][A100%|██████████| 30/30 [00:00<00:00, 54.23it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 81/141594 [03:50<95:08:31,  2.42s/it] It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.09 seconds
+Similarity: tensor([0.9241])
+GT WER: 1.0, CER: 0.8979591836734694
+VC WER: 1.0, CER: 0.9081632653061225
+Average GT WER: 1.091765984358577
+Average GT CER: 0.9827791581008528
+Average VC WER: 1.138647018276648
+Average VC CER: 0.9902396658410509
+Average similarity: tensor([0.9071])
+Average DNS MOS SIG: 3.1473715267519284
+Average DNS MOS BAK: 3.823126108196628
+Average DNS MOS OVR: 2.807989445937917
+Processing ../dataset/source_voice/audio_78327.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 56.55it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 57.95it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 56.23it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 56.27it/s][A100%|██████████| 30/30 [00:00<00:00, 57.29it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 82/141594 [03:54<110:22:54,  2.81s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.04 seconds
+Similarity: tensor([0.9189])
+GT WER: 1.0, CER: 0.9411764705882353
+VC WER: 1.0, CER: 0.9411764705882353
+Average GT WER: 1.0906468869883506
+Average GT CER: 0.9822718082531379
+Average VC WER: 1.1369562009805914
+Average VC CER: 0.9896413341916263
+Average similarity: tensor([0.9072])
+Average DNS MOS SIG: 3.140990983413858
+Average DNS MOS BAK: 3.8235589746476526
+Average DNS MOS OVR: 2.8027161378180154
+Processing ../dataset/source_voice/audio_66456.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 17%|█▋        | 5/30 [00:00<00:00, 47.91it/s][A
+ 37%|███▋      | 11/30 [00:00<00:00, 51.09it/s][A
+ 57%|█████▋    | 17/30 [00:00<00:00, 51.62it/s][A
+ 77%|███████▋  | 23/30 [00:00<00:00, 51.81it/s][A
+ 97%|█████████▋| 29/30 [00:00<00:00, 51.87it/s][A100%|██████████| 30/30 [00:00<00:00, 51.56it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 83/141594 [03:56<101:58:45,  2.59s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.17 seconds
+Similarity: tensor([0.9219])
+GT WER: 1.0, CER: 0.9166666666666666
+VC WER: 1.0, CER: 0.9047619047619048
+Average GT WER: 1.0895547558198162
+Average GT CER: 0.9814813848605299
+Average VC WER: 1.1353061262699817
+Average VC CER: 0.9886186904635574
+Average similarity: tensor([0.9074])
+Average DNS MOS SIG: 3.1393402269094195
+Average DNS MOS BAK: 3.8222685599616626
+Average DNS MOS OVR: 2.8014776076652153
+Processing ../dataset/source_voice/audio_137686.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+max value is  tensor(1.0087, device='cuda:0')
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 53.74it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 53.89it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 54.11it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 54.03it/s][A
+100%|██████████| 30/30 [00:00<00:00, 54.06it/s][A100%|██████████| 30/30 [00:00<00:00, 54.02it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 84/141594 [03:58<98:26:49,  2.50s/it] It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.10 seconds
+Similarity: tensor([0.9324])
+GT WER: 1.0, CER: 0.9230769230769231
+VC WER: 1.0, CER: 0.8974358974358975
+Average GT WER: 1.0884886277743422
+Average GT CER: 0.9807860936488202
+Average VC WER: 1.133695339052482
+Average VC CER: 0.987533181022752
+Average similarity: tensor([0.9077])
+Average DNS MOS SIG: 3.140334539088971
+Average DNS MOS BAK: 3.8253169047742
+Average DNS MOS OVR: 2.803352991984364
+Processing ../dataset/source_voice/audio_60774.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 57.17it/s][A
+ 43%|████▎     | 13/30 [00:00<00:00, 60.31it/s][A
+ 67%|██████▋   | 20/30 [00:00<00:00, 58.67it/s][A
+ 90%|█████████ | 27/30 [00:00<00:00, 59.39it/s][A100%|██████████| 30/30 [00:00<00:00, 59.34it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 85/141594 [04:00<90:14:19,  2.30s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.06 seconds
+Similarity: tensor([0.8681])
+GT WER: 1.0, CER: 0.9534883720930233
+VC WER: 1.0, CER: 0.9534883720930233
+Average GT WER: 1.087447585094644
+Average GT CER: 0.9804649439834581
+Average VC WER: 1.1321224527106881
+Average VC CER: 0.9871326538588727
+Average similarity: tensor([0.9072])
+Average DNS MOS SIG: 3.138179371526729
+Average DNS MOS BAK: 3.8273784838912737
+Average DNS MOS OVR: 2.8022240541951695
+Processing ../dataset/source_voice/audio_117485.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 17%|█▋        | 5/30 [00:00<00:00, 47.02it/s][A
+ 37%|███▋      | 11/30 [00:00<00:00, 53.04it/s][A
+ 57%|█████▋    | 17/30 [00:00<00:00, 55.94it/s][A
+ 77%|███████▋  | 23/30 [00:00<00:00, 57.42it/s][A
+ 97%|█████████▋| 29/30 [00:00<00:00, 58.26it/s][A100%|██████████| 30/30 [00:00<00:00, 56.65it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 86/141594 [04:05<119:42:03,  3.05s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.25 seconds
+Similarity: tensor([0.9233])
+GT WER: 1.0, CER: 0.9259259259259259
+VC WER: 1.1176470588235294, CER: 0.9506172839506173
+Average GT WER: 1.0864307527098225
+Average GT CER: 0.9798307693548821
+Average VC WER: 1.1319541341771164
+Average VC CER: 0.9867080565343582
+Average similarity: tensor([0.9074])
+Average DNS MOS SIG: 3.1381321253168846
+Average DNS MOS BAK: 3.8271930608306213
+Average DNS MOS OVR: 2.8023547735189362
+Processing ../dataset/source_voice/common_voice_ru_29379429.mp3.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 17%|█▋        | 5/30 [00:00<00:00, 49.26it/s][A
+ 37%|███▋      | 11/30 [00:00<00:00, 50.44it/s][A
+ 57%|█████▋    | 17/30 [00:00<00:00, 50.62it/s][A
+ 77%|███████▋  | 23/30 [00:00<00:00, 53.60it/s][A
+ 97%|█████████▋| 29/30 [00:00<00:00, 55.19it/s][A100%|██████████| 30/30 [00:00<00:00, 53.69it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 87/141594 [04:09<132:05:18,  3.36s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.22 seconds
+Similarity: tensor([0.9238])
+GT WER: 1.3333333333333333, CER: 0.9782608695652174
+VC WER: 1.0, CER: 1.0
+Average GT WER: 1.0892687134066446
+Average GT CER: 0.9798127245297136
+Average VC WER: 1.1304374199911724
+Average VC CER: 0.9868608374937334
+Average similarity: tensor([0.9076])
+Average DNS MOS SIG: 3.1398405752590546
+Average DNS MOS BAK: 3.8283729280323735
+Average DNS MOS OVR: 2.804571682776414
+Processing ../dataset/source_voice/common_voice_ru_18902187.mp3.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 17%|█▋        | 5/30 [00:00<00:00, 49.18it/s][A
+ 37%|███▋      | 11/30 [00:00<00:00, 54.37it/s][A
+ 57%|█████▋    | 17/30 [00:00<00:00, 53.42it/s][A
+ 77%|███████▋  | 23/30 [00:00<00:00, 55.34it/s][A
+ 97%|█████████▋| 29/30 [00:00<00:00, 56.75it/s][A100%|██████████| 30/30 [00:00<00:00, 55.59it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 88/141594 [04:14<145:32:16,  3.70s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.10 seconds
+Similarity: tensor([0.9123])
+GT WER: 1.0, CER: 1.0
+VC WER: 1.0, CER: 0.9767441860465116
+Average GT WER: 1.0882542962088417
+Average GT CER: 0.9800421253873304
+Average VC WER: 1.128955176582182
+Average VC CER: 0.9867458755454694
+Average similarity: tensor([0.9077])
+Average DNS MOS SIG: 3.1397190706769793
+Average DNS MOS BAK: 3.831751838676705
+Average DNS MOS OVR: 2.805761601215965
+Processing ../dataset/source_voice/audio_139102.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 17%|█▋        | 5/30 [00:00<00:00, 44.11it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 54.06it/s][A
+ 63%|██████▎   | 19/30 [00:00<00:00, 56.49it/s][A
+ 87%|████████▋ | 26/30 [00:00<00:00, 57.97it/s][A100%|██████████| 30/30 [00:00<00:00, 56.74it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 89/141594 [04:15<120:45:38,  3.07s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.09 seconds
+Similarity: tensor([0.9523])
+GT WER: 1.375, CER: 1.0333333333333334
+VC WER: 1.25, CER: 1.0
+Average GT WER: 1.0914761580491918
+Average GT CER: 0.9806409030047012
+Average VC WER: 1.1303152307778876
+Average VC CER: 0.9868947982921495
+Average similarity: tensor([0.9082])
+Average DNS MOS SIG: 3.140589244827974
+Average DNS MOS BAK: 3.8322778012299157
+Average DNS MOS OVR: 2.806893292316964
+Processing ../dataset/source_voice/audio_126102.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 57.45it/s][A
+ 43%|████▎     | 13/30 [00:00<00:00, 59.11it/s][A
+ 63%|██████▎   | 19/30 [00:00<00:00, 59.48it/s][A
+ 87%|████████▋ | 26/30 [00:00<00:00, 59.89it/s][A100%|██████████| 30/30 [00:00<00:00, 59.60it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 90/141594 [04:19<123:25:35,  3.14s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.03 seconds
+Similarity: tensor([0.8999])
+GT WER: 1.0, CER: 0.9166666666666666
+VC WER: 1.0, CER: 0.9166666666666666
+Average GT WER: 1.0904597562930896
+Average GT CER: 0.9799300781565007
+Average VC WER: 1.1288672837692446
+Average VC CER: 0.9861144857185331
+Average similarity: tensor([0.9081])
+Average DNS MOS SIG: 3.143016231770745
+Average DNS MOS BAK: 3.8303450258935747
+Average DNS MOS OVR: 2.8082106322623726
+Processing ../dataset/source_voice/audio_70565.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 55.72it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 57.57it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 58.54it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 58.85it/s][A
+100%|██████████| 30/30 [00:00<00:00, 59.19it/s][A100%|██████████| 30/30 [00:00<00:00, 58.65it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 91/141594 [04:20<102:53:37,  2.62s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.05 seconds
+Similarity: tensor([0.7255])
+GT WER: 1.0, CER: 0.8888888888888888
+VC WER: 1.5, CER: 1.0
+Average GT WER: 1.0894656930371216
+Average GT CER: 0.9789296255271864
+Average VC WER: 1.1329456652662857
+Average VC CER: 0.9862670737875602
+Average similarity: tensor([0.9061])
+Average DNS MOS SIG: 3.1315402023545884
+Average DNS MOS BAK: 3.8272992049914354
+Average DNS MOS OVR: 2.7982183768820006
+Processing ../dataset/source_voice/audio_76116.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 58.15it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 58.13it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 57.36it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 57.74it/s][A
+100%|██████████| 30/30 [00:00<00:00, 57.71it/s][A100%|██████████| 30/30 [00:00<00:00, 57.71it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 92/141594 [04:21<89:46:18,  2.28s/it] It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.01 seconds
+Similarity: tensor([0.9723])
+GT WER: 1.0, CER: 0.9333333333333333
+VC WER: 1.0, CER: 0.9333333333333333
+Average GT WER: 1.0884932398519356
+Average GT CER: 0.978434013655514
+Average VC WER: 1.1315006036873043
+Average VC CER: 0.9856917070434925
+Average similarity: tensor([0.9068])
+Average DNS MOS SIG: 3.1300086290504687
+Average DNS MOS BAK: 3.825492859514227
+Average DNS MOS OVR: 2.7960744890110623
+Processing ../dataset/source_voice/audio_102506.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 56.66it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 58.15it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 58.77it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 59.24it/s][A
+100%|██████████| 30/30 [00:00<00:00, 59.31it/s][A100%|██████████| 30/30 [00:00<00:00, 58.93it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 93/141594 [04:23<79:17:16,  2.02s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.05 seconds
+Similarity: tensor([0.5473])
+GT WER: 1.0, CER: 1.0
+VC WER: 1.0, CER: 0.9090909090909091
+Average GT WER: 1.087541699638474
+Average GT CER: 0.9786659059817988
+Average VC WER: 1.1300866187014194
+Average VC CER: 0.9848680425493788
+Average similarity: tensor([0.9029])
+Average DNS MOS SIG: 3.127253056099881
+Average DNS MOS BAK: 3.8245678048633014
+Average DNS MOS OVR: 2.792680886804205
+Processing ../dataset/source_voice/audio_128851.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 56.29it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 57.82it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 58.41it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 58.80it/s][A
+100%|██████████| 30/30 [00:00<00:00, 59.16it/s][A100%|██████████| 30/30 [00:00<00:00, 58.68it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 94/141594 [04:24<72:00:06,  1.83s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.06 seconds
+Similarity: tensor([0.9541])
+GT WER: 1.0, CER: 0.918918918918919
+VC WER: 1.0, CER: 0.9459459459459459
+Average GT WER: 1.0866104049614689
+Average GT CER: 0.9780302997364491
+Average VC WER: 1.128702718502468
+Average VC CER: 0.9844539776918954
+Average similarity: tensor([0.9035])
+Average DNS MOS SIG: 3.127914786172499
+Average DNS MOS BAK: 3.827555792919626
+Average DNS MOS OVR: 2.794456285294827
+Processing ../dataset/source_voice/audio_107784.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 57.33it/s][A
+ 43%|████▎     | 13/30 [00:00<00:00, 59.12it/s][A
+ 67%|██████▋   | 20/30 [00:00<00:00, 60.24it/s][A
+ 90%|█████████ | 27/30 [00:00<00:00, 59.97it/s][A100%|██████████| 30/30 [00:00<00:00, 59.79it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 95/141594 [04:28<92:57:07,  2.36s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.06 seconds
+Similarity: tensor([0.9026])
+GT WER: 1.0, CER: 0.9041095890410958
+VC WER: 1.0, CER: 0.9041095890410958
+Average GT WER: 1.0856987164881902
+Average GT CER: 0.9772521869922874
+Average VC WER: 1.1273479530445474
+Average VC CER: 0.9836082472850448
+Average similarity: tensor([0.9035])
+Average DNS MOS SIG: 3.127677473328576
+Average DNS MOS BAK: 3.815350755317926
+Average DNS MOS OVR: 2.7890403659037206
+Processing ../dataset/source_voice/audio_46506.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 57.85it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 58.67it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 58.79it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 59.00it/s][A
+100%|██████████| 30/30 [00:00<00:00, 59.07it/s][A100%|██████████| 30/30 [00:00<00:00, 58.89it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 96/141594 [04:33<125:07:38,  3.18s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 2.00 seconds
+Similarity: tensor([0.8912])
+GT WER: 2.3333333333333335, CER: 1.0384615384615385
+VC WER: 1.3333333333333333, CER: 0.9615384615384616
+Average GT WER: 1.0986949104136603
+Average GT CER: 0.9778897844034256
+Average VC WER: 1.1294936340892223
+Average VC CER: 0.983378353683518
+Average similarity: tensor([0.9033])
+Average DNS MOS SIG: 3.125670226537647
+Average DNS MOS BAK: 3.817512500639381
+Average DNS MOS OVR: 2.7880387516248253
+Processing ../dataset/source_voice/audio_48436.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 58.36it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 58.68it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 58.87it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 58.90it/s][A
+100%|██████████| 30/30 [00:00<00:00, 59.00it/s][A100%|██████████| 30/30 [00:00<00:00, 58.88it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 97/141594 [04:38<147:42:54,  3.76s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.70 seconds
+Similarity: tensor([0.9562])
+GT WER: 1.1, CER: 0.9818181818181818
+VC WER: 1.0, CER: 0.9090909090909091
+Average GT WER: 1.0987083649454783
+Average GT CER: 0.9779302833458456
+Average VC WER: 1.1281586481707768
+Average VC CER: 0.9826125037392642
+Average similarity: tensor([0.9039])
+Average DNS MOS SIG: 3.125691370756967
+Average DNS MOS BAK: 3.816445467717666
+Average DNS MOS OVR: 2.7877324699754107
+Processing ../dataset/source_voice/audio_136659.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 13%|█▎        | 4/30 [00:00<00:00, 39.88it/s][A
+ 27%|██▋       | 8/30 [00:00<00:00, 38.06it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 37.90it/s][A
+ 53%|█████▎    | 16/30 [00:00<00:00, 37.89it/s][A
+ 67%|██████▋   | 20/30 [00:00<00:00, 37.92it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 37.85it/s][A
+ 93%|█████████▎| 28/30 [00:00<00:00, 37.75it/s][A100%|██████████| 30/30 [00:00<00:00, 37.91it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 98/141594 [04:42<147:08:35,  3.74s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 2.06 seconds
+Similarity: tensor([0.9411])
+GT WER: 1.0, CER: 0.922077922077922
+VC WER: 1.0, CER: 0.922077922077922
+Average GT WER: 1.097701136731749
+Average GT CER: 0.9773603612920914
+Average VC WER: 1.1268509068629118
+Average VC CER: 0.9819948039263934
+Average similarity: tensor([0.9043])
+Average DNS MOS SIG: 3.126198477771235
+Average DNS MOS BAK: 3.818534732310514
+Average DNS MOS OVR: 2.789014384527386
+Processing ../dataset/source_voice/common_voice_ru_19027142.mp3.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 56.45it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 57.79it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 58.35it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 58.53it/s][A
+100%|██████████| 30/30 [00:00<00:00, 58.88it/s][A100%|██████████| 30/30 [00:00<00:00, 58.48it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 99/141594 [04:44<125:21:35,  3.19s/it]It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the `sampling_rate` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+Conversion time: 1.05 seconds
+Similarity: tensor([0.9438])
+GT WER: 1.0, CER: 1.0333333333333334
+VC WER: 1.25, CER: 1.0333333333333334
+Average GT WER: 1.0967142565627415
+Average GT CER: 0.9779257448480635
+Average VC WER: 1.1280948370966197
+Average VC CER: 0.982513374930504
+Average similarity: tensor([0.9047])
+Average DNS MOS SIG: 3.1277931168012443
+Average DNS MOS BAK: 3.8206554852248544
+Average DNS MOS OVR: 2.79131891805924
+Processing ../dataset/source_voice/audio_117180.wav -> ../dataset/target_voice/common_voice_ru_19190222.mp3.wav
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+ 20%|██        | 6/30 [00:00<00:00, 56.65it/s][A
+ 40%|████      | 12/30 [00:00<00:00, 57.81it/s][A
+ 60%|██████    | 18/30 [00:00<00:00, 58.13it/s][A
+ 80%|████████  | 24/30 [00:00<00:00, 58.45it/s][A
+100%|██████████| 30/30 [00:00<00:00, 58.74it/s][A100%|██████████| 30/30 [00:00<00:00, 58.37it/s]
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+It is strongly recommended to pass the ``sampling_rate`` argument to this function. Failing to do so can result in silent errors that might be hard to debug.
+  0%|          | 100/141594 [04:48<141:57:05,  3.61s/it]  0%|          | 100/141594 [04:48<113:29:14,  2.89s/it]
+Conversion time: 1.03 seconds
+Similarity: tensor([0.9476])
+GT WER: 1.0, CER: 0.9696969696969697
+VC WER: 1.1666666666666667, CER: 1.0
+Average GT WER: 1.095747113997114
+Average GT CER: 0.9778434570965525
+Average VC WER: 1.12848055539232
+Average VC CER: 0.9826882411811989
+Average similarity: tensor([0.9051])
+Average DNS MOS SIG: 3.128614124095587
+Average DNS MOS BAK: 3.820444659982742
+Average DNS MOS OVR: 2.7919520088704632
+Average WER: 1.095747113997114
+Average CER: 0.9778434570965525
+Average WER: 1.12848055539232
+Average CER: 0.9826882411811989
+Average similarity: tensor([0.9051])
+Average conversion time: 1.19 seconds
+Total evaluation time: 288.75 seconds
+Average DNS MOS SIG: 3.128614124095587
+Average DNS MOS BAK: 3.820444659982742
+Average DNS MOS OVR: 2.7919520088704632

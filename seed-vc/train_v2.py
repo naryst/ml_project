@@ -266,6 +266,10 @@ class Trainer:
                 # Log to console
                 print("Epoch %d, Iteration %d, Loss: %.4f, Loss AR: %.4f, Loss CFM: %.4f, Grad Norm: %.4f, LR: %.6f"
                       % (epoch, i, loss.item(), loss_ar.item(), loss_cfm.item(), grad_norm_g, cur_lr))
+                # save log to file
+                with open(os.path.join(self.log_dir, 'train.log'), 'a') as f:
+                    f.write("Epoch %d, Iteration %d, Loss: %.4f, Loss AR: %.4f, Loss CFM: %.4f, Grad Norm: %.4f, LR: %.6f\n"
+                            % (epoch, i, loss.item(), loss_ar.item(), loss_cfm.item(), grad_norm_g, cur_lr))
 
     def _save_checkpoint(self, epoch):
         """Save model checkpoint"""

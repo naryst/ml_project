@@ -292,6 +292,9 @@ def main(args):
         source_audio_list = [f for f in source_audio_list if f.endswith(".wav")]
     target_audio_list = os.listdir(target_dir)
 
+    # shuffle source_audio_list
+    random.shuffle(source_audio_list)
+
     conversion_result_dir = args.output
     if baseline:
         conversion_result_dir = os.path.join(conversion_result_dir, baseline)

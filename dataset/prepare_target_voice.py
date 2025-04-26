@@ -38,28 +38,7 @@ def save_audio_file(signal: np.ndarray, sampling_rate: int, save_path: str, file
         logger.error(f"Failed to save audio file {filename}: {str(e)}")
         return False
 
-def create_index_file(save_path: str, entries: list) -> bool:
-    """
-    Create index.tsv file with filename and transcript pairs.
-    
-    Args:
-        save_path: Directory where to save index.tsv
-        entries: List of (filename, transcript) tuples
         
-    Returns:
-        bool: True if save was successful, False otherwise
-    """
-    try:
-        index_path = os.path.join(save_path, "index.tsv")
-        with open(index_path, 'w', encoding='utf-8') as f:
-            for filename, transcript in entries:
-                f.write(f"{filename}\t{transcript}\n")
-        logger.info(f"Successfully created index file at {index_path}")
-        return True
-    except Exception as e:
-        logger.error(f"Failed to create index file: {str(e)}")
-        return False
-
 def main():
     # Load dataset
     logger.info("Loading dataset...")
@@ -107,12 +86,7 @@ def main():
     except Exception as e:
         logger.error(f"Error processing target voice: {str(e)}")
     
-    # Create index.tsv file
-    if index_entries:
-        create_index_file(str(target_path), index_entries)
-    
     logger.info(f"Successfully saved target voice to {target_path}")
-    logger.info(f"Created index.tsv with {len(index_entries)} entries")
 
 if __name__ == "__main__":
     main()

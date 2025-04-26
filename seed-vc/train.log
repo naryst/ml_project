@@ -1,0 +1,119 @@
+/opt/conda/envs/project/lib/python3.12/site-packages/torch/nn/utils/weight_norm.py:134: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/opt/conda/envs/project/lib/python3.12/site-packages/torch/nn/utils/weight_norm.py:134: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/root/ml_project/seed-vc/modules/bigvgan/bigvgan.py:481: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint_dict = torch.load(model_file, map_location=map_location)
+/root/ml_project/seed-vc/modules/v2/vc_wrapper.py:271: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  cfm_checkpoint = torch.load(cfm_checkpoint_path, map_location="cpu")
+/root/ml_project/seed-vc/modules/v2/vc_wrapper.py:278: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ar_checkpoint = torch.load(ar_checkpoint_path, map_location="cpu")
+/root/ml_project/seed-vc/modules/v2/vc_wrapper.py:289: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  content_extractor_narrow_checkpoint = torch.load(content_extractor_narrow_checkpoint_path, map_location="cpu")
+/root/ml_project/seed-vc/modules/v2/vc_wrapper.py:298: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  content_extractor_wide_checkpoint = torch.load(content_extractor_wide_checkpoint_path, map_location="cpu")
+/root/ml_project/seed-vc/modules/v2/vc_wrapper.py:305: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  style_encoder_checkpoint = torch.load(style_encoder_checkpoint_path, map_location="cpu")
+Loading weights from nvidia/bigvgan_v2_22khz_80band_256x
+  0%|          | 0/35399 [00:00<?, ?it/s]/opt/conda/envs/project/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:600: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+/opt/conda/envs/project/lib/python3.12/site-packages/torch/utils/checkpoint.py:92: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+  0%|          | 1/35399 [00:02<26:34:41,  2.70s/it]  0%|          | 2/35399 [00:03<13:18:08,  1.35s/it]  0%|          | 3/35399 [00:03<9:45:52,  1.01it/s]   0%|          | 4/35399 [00:04<9:38:58,  1.02it/s]  0%|          | 5/35399 [00:05<7:39:41,  1.28it/s]  0%|          | 6/35399 [00:05<6:35:46,  1.49it/s]  0%|          | 7/35399 [00:05<5:58:14,  1.65it/s]  0%|          | 8/35399 [00:06<4:56:24,  1.99it/s]  0%|          | 9/35399 [00:06<4:18:55,  2.28it/s]  0%|          | 10/35399 [00:07<6:15:43,  1.57it/s]  0%|          | 11/35399 [00:08<8:09:01,  1.21it/s]  0%|          | 12/35399 [00:09<7:23:27,  1.33it/s]  0%|          | 13/35399 [00:09<5:57:39,  1.65it/s]  0%|          | 14/35399 [00:10<4:53:29,  2.01it/s]  0%|          | 15/35399 [00:11<7:46:55,  1.26it/s]  0%|          | 16/35399 [00:11<6:27:45,  1.52it/s]  0%|          | 17/35399 [00:12<5:43:35,  1.72it/s]  0%|          | 18/35399 [00:12<4:54:51,  2.00it/s]  0%|          | 19/35399 [00:13<4:47:54,  2.05it/s]  0%|          | 20/35399 [00:13<4:47:41,  2.05it/s]  0%|          | 21/35399 [00:13<4:18:37,  2.28it/s]  0%|          | 22/35399 [00:14<4:31:29,  2.17it/s]  0%|          | 23/35399 [00:14<4:17:26,  2.29it/s]  0%|          | 24/35399 [00:15<4:00:43,  2.45it/s]  0%|          | 25/35399 [00:15<3:48:13,  2.58it/s]  0%|          | 26/35399 [00:15<3:30:18,  2.80it/s]  0%|          | 27/35399 [00:15<3:16:19,  3.00it/s]  0%|          | 28/35399 [00:16<3:39:14,  2.69it/s]  0%|          | 29/35399 [00:16<3:59:17,  2.46it/s]  0%|          | 30/35399 [00:17<4:01:01,  2.45it/s]  0%|          | 31/35399 [00:17<4:26:28,  2.21it/s]  0%|          | 32/35399 [00:18<4:16:55,  2.29it/s]  0%|          | 33/35399 [00:18<3:59:21,  2.46it/s]  0%|          | 34/35399 [00:19<4:06:08,  2.39it/s]  0%|          | 35/35399 [00:19<4:25:39,  2.22it/s]  0%|          | 36/35399 [00:19<4:01:42,  2.44it/s]  0%|          | 37/35399 [00:20<4:29:41,  2.19it/s]  0%|          | 38/35399 [00:20<3:58:58,  2.47it/s]  0%|          | 39/35399 [00:21<4:10:08,  2.36it/s]  0%|          | 40/35399 [00:21<4:16:09,  2.30it/s]  0%|          | 41/35399 [00:22<4:04:42,  2.41it/s]  0%|          | 42/35399 [00:22<3:47:09,  2.59it/s]  0%|          | 43/35399 [00:22<3:49:21,  2.57it/s]  0%|          | 44/35399 [00:23<4:25:05,  2.22it/s]  0%|          | 45/35399 [00:23<4:16:52,  2.29it/s]  0%|          | 46/35399 [00:24<4:50:53,  2.03it/s]  0%|          | 47/35399 [00:24<4:36:34,  2.13it/s]  0%|          | 48/35399 [00:25<4:01:30,  2.44it/s]  0%|          | 49/35399 [00:25<3:42:22,  2.65it/s]  0%|          | 50/35399 [00:25<3:25:56,  2.86it/s]  0%|          | 51/35399 [00:26<4:12:43,  2.33it/s]  0%|          | 52/35399 [00:26<4:17:56,  2.28it/s]  0%|          | 53/35399 [00:27<4:38:10,  2.12it/s]  0%|          | 54/35399 [00:27<4:20:06,  2.26it/s]  0%|          | 55/35399 [00:27<3:50:08,  2.56it/s]  0%|          | 56/35399 [00:28<5:02:03,  1.95it/s]  0%|          | 57/35399 [00:29<5:20:32,  1.84it/s]  0%|          | 58/35399 [00:29<5:13:04,  1.88it/s]  0%|          | 59/35399 [00:30<4:46:58,  2.05it/s]  0%|          | 60/35399 [00:30<5:03:38,  1.94it/s]  0%|          | 61/35399 [00:31<4:45:48,  2.06it/s]  0%|          | 62/35399 [00:31<4:19:14,  2.27it/s]  0%|          | 63/35399 [00:31<4:02:16,  2.43it/s]  0%|          | 64/35399 [00:32<4:00:24,  2.45it/s]  0%|          | 65/35399 [00:32<3:51:16,  2.55it/s]  0%|          | 66/35399 [00:33<3:49:00,  2.57it/s]  0%|          | 67/35399 [00:33<3:38:05,  2.70it/s]  0%|          | 68/35399 [00:33<3:41:41,  2.66it/s]  0%|          | 69/35399 [00:34<3:49:13,  2.57it/s]  0%|          | 70/35399 [00:34<4:07:01,  2.38it/s]  0%|          | 71/35399 [00:35<4:25:03,  2.22it/s]  0%|          | 72/35399 [00:35<5:23:59,  1.82it/s]  0%|          | 73/35399 [00:36<4:43:35,  2.08it/s]  0%|          | 74/35399 [00:37<6:03:18,  1.62it/s]  0%|          | 75/35399 [00:37<6:00:31,  1.63it/s]  0%|          | 76/35399 [00:38<5:09:25,  1.90it/s]  0%|          | 77/35399 [00:38<4:55:31,  1.99it/s]  0%|          | 78/35399 [00:39<6:43:00,  1.46it/s]  0%|          | 79/35399 [00:40<7:41:41,  1.28it/s]  0%|          | 80/35399 [00:41<6:57:05,  1.41it/s]  0%|          | 81/35399 [00:41<6:35:38,  1.49it/s]  0%|          | 82/35399 [00:42<6:20:28,  1.55it/s]  0%|          | 83/35399 [00:42<6:07:07,  1.60it/s]  0%|          | 84/35399 [00:43<5:04:55,  1.93it/s]  0%|          | 85/35399 [00:43<4:48:39,  2.04it/s]  0%|          | 86/35399 [00:44<4:22:25,  2.24it/s]  0%|          | 87/35399 [00:44<4:01:53,  2.43it/s]  0%|          | 88/35399 [00:44<4:32:55,  2.16it/s]  0%|          | 89/35399 [00:45<4:20:50,  2.26it/s]  0%|          | 90/35399 [00:45<4:14:33,  2.31it/s]  0%|          | 91/35399 [00:46<4:19:56,  2.26it/s]  0%|          | 91/35399 [00:46<5:02:11,  1.95it/s]
+Epoch 0, Iteration 0, Loss: 7.5188, Loss AR: 7.0945, Loss CFM: 0.4243, Grad Norm: 5.9599, LR: 0.000000
+min value is  tensor(-1.0099)
+max value is  tensor(1.0205)
+max value is  tensor(1.0097)
+Epoch 0, Iteration 10, Loss: 7.2030, Loss AR: 6.5786, Loss CFM: 0.6244, Grad Norm: 8.2483, LR: 0.000020
+Epoch 0, Iteration 20, Loss: 6.7103, Loss AR: 6.1870, Loss CFM: 0.5233, Grad Norm: 6.4196, LR: 0.000020
+max value is  tensor(1.0010)
+Epoch 0, Iteration 30, Loss: 6.4653, Loss AR: 5.9809, Loss CFM: 0.4844, Grad Norm: 8.1106, LR: 0.000020
+min value is  tensor(-1.0072)
+max value is  tensor(1.0362)
+min value is  tensor(-1.0328)
+max value is  tensor(1.0173)
+Epoch 0, Iteration 40, Loss: 6.3900, Loss AR: 5.8843, Loss CFM: 0.5057, Grad Norm: 3.0839, LR: 0.000020
+max value is  tensor(1.0034)
+max value is  tensor(1.0037)
+Epoch 0, Iteration 50, Loss: 6.3379, Loss AR: 5.7677, Loss CFM: 0.5702, Grad Norm: 7.8162, LR: 0.000020
+min value is  tensor(-1.0177)
+max value is  tensor(1.0142)
+min value is  tensor(-1.0037)
+max value is  tensor(1.0059)
+Epoch 0, Iteration 60, Loss: 6.1924, Loss AR: 5.5980, Loss CFM: 0.5944, Grad Norm: 4.4017, LR: 0.000020
+max value is  tensor(1.0038)
+min value is  tensor(-1.1021)
+max value is  tensor(1.0140)
+max value is  tensor(1.0047)
+Epoch 0, Iteration 70, Loss: 6.1699, Loss AR: 5.5745, Loss CFM: 0.5954, Grad Norm: 5.4305, LR: 0.000020
+max value is  tensor(1.0014)
+max value is  tensor(1.0189)
+max value is  tensor(1.0179)
+Epoch 0, Iteration 80, Loss: 5.9986, Loss AR: 5.5270, Loss CFM: 0.4716, Grad Norm: 6.3896, LR: 0.000020
+max value is  tensor(1.0254)
+Epoch 0, Iteration 90, Loss: 6.0595, Loss AR: 5.4953, Loss CFM: 0.5642, Grad Norm: 5.5228, LR: 0.000020
+Traceback (most recent call last):
+  File "/root/ml_project/seed-vc/train_v2.py", line 345, in <module>
+    main(args)
+  File "/root/ml_project/seed-vc/train_v2.py", line 328, in main
+    trainer.train()
+  File "/root/ml_project/seed-vc/train_v2.py", line 205, in train
+    self._process_batch(epoch, i, batch)
+  File "/root/ml_project/seed-vc/train_v2.py", line 230, in _process_batch
+    loss_ar, loss_cfm = self.model(
+                        ^^^^^^^^^^^
+  File "/opt/conda/envs/project/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/project/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/ml_project/seed-vc/modules/v2/vc_wrapper.py", line 95, in forward
+    loss_ar = self.forward_ar(content_indices_narrow.clone(), content_indices_wide.clone(), content_lens)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/ml_project/seed-vc/modules/v2/vc_wrapper.py", line 82, in forward_ar
+    loss = self.ar(cond, duration_reduced_narrow_lens, content_indices_wide, content_lens)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/project/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/project/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/ml_project/seed-vc/modules/v2/ar.py", line 361, in forward
+    out = self.model(emb_seq, cond_lens, x, x_lens, input_pos=input_pos)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/project/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/project/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/ml_project/seed-vc/modules/v2/ar.py", line 294, in forward
+    parent_result = super().forward(
+                    ^^^^^^^^^^^^^^^^
+  File "/root/ml_project/seed-vc/modules/v2/ar.py", line 224, in forward
+    x = layer(x, freqs_cis, mask)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/project/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/project/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/ml_project/seed-vc/modules/v2/ar.py", line 462, in forward
+    h = x + self.attention(self.attention_norm(x), freqs_cis, mask, input_pos)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/project/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/project/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/ml_project/seed-vc/modules/v2/ar.py", line 527, in forward
+    q = apply_rotary_emb(q, freqs_cis)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/ml_project/seed-vc/modules/v2/ar.py", line 638, in apply_rotary_emb
+    x_out2 = torch.stack(
+             ^^^^^^^^^^^^
+KeyboardInterrupt

@@ -8,6 +8,7 @@ from pathlib import Path
 import soundfile as sf
 import numpy as np
 import sys
+from tqdm import tqdm
 
 # Set up logging
 logging.basicConfig(
@@ -67,7 +68,7 @@ def main():
     complete_data = complete_data["train"]
 
     # FOR TESTING
-    complete_data = complete_data[:10]
+    # complete_data = complete_data[:10]
 
     audios = complete_data["audio"]
     transcripts = complete_data["text"]
@@ -85,7 +86,7 @@ def main():
     success_count = 0
     index_entries = []
 
-    for i, entry in enumerate(complete_data):
+    for i, entry in tqdm(enumerate(complete_data)):
         try:
             # Get audio data and transcript
             audio_data = entry[0]

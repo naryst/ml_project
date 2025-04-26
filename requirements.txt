@@ -26,6 +26,6 @@ hydra-core==1.3.2
 pyyaml
 python-dotenv
 datasets
-onnx
-onnxruntime
-onnx2torch
+#onnx
+#onnxruntime
+#onnx2torch

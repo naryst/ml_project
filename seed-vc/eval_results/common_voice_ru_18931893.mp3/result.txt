@@ -1,0 +1,6 @@
+GT WER: 1.0
+GT CER: 0.96875
+VC WER: 1.8
+VC CER: 1.09375
+Average similarity: tensor([0.9492])
+Average conversion time: 1.23 seconds
