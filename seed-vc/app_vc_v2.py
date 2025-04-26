@@ -84,7 +84,7 @@ def main(args):
         title="Seed Voice Conversion V2",
         examples=examples,
         cache_examples=False,
-    ).launch()
+    ).launch(server_name="0.0.0.0", server_port=7860)
 
 if __name__ == "__main__":
     import argparse
