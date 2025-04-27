@@ -505,7 +505,7 @@ class VoiceConversionWrapper(torch.nn.Module):
             repetition_penalty: float = 1.5,
             convert_style: bool = False,
             anonymization_only: bool = False,
-            device: torch.device = torch.device("cuda"),
+            device: torch.device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu"),
             dtype: torch.dtype = torch.float16,
             stream_output: bool = True,
     ):
@@ -641,7 +641,8 @@ class VoiceConversionWrapper(torch.nn.Module):
                 if self.dit_compiled:
                     cat_condition = torch.nn.functional.pad(cat_condition,
                                                             (0, 0, 0, self.compile_len - cat_condition.size(1),), value=0)
-                with torch.autocast(device_type=device.type, dtype=torch.float32):  # force CFM to use float32
+                with torch.autocast(device_type=device.type, 
+                                    dtype=(torch.float32 if device.type != 'cpu' else torch.float16)):  # force CFM to use float32
                     # Voice Conversion
                     vc_mel = self.cfm.inference(
                         cat_condition,

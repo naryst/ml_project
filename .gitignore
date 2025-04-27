@@ -5,7 +5,11 @@
 *.onnx.txt
 *.onnx.txt.gz
 *.onnx.txt.gz.part
-
+*.gradio
+output
+eval_results
+source_voices
+target_voice
 
 # general things to ignore
 .DS_Store

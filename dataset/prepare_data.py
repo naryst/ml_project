@@ -1,14 +1,10 @@
 from datasets import load_dataset
 import os
 from tqdm import tqdm
-import librosa
 import logging
-from typing import Tuple
 from pathlib import Path
 import soundfile as sf
 import numpy as np
-import sys
-from tqdm import tqdm
 
 # Set up logging
 logging.basicConfig(
@@ -68,7 +64,7 @@ def main():
     complete_data = complete_data["train"]
 
     # FOR TESTING
-    # complete_data = complete_data[:10]
+    complete_data = complete_data[:10]
 
     audios = complete_data["audio"]
     transcripts = complete_data["text"]
@@ -78,7 +74,7 @@ def main():
 
     
     # Set up save directory
-    save_path = Path("dataset/data")
+    save_path = Path("dataset/source_voices")
     save_path.mkdir(parents=True, exist_ok=True)
     logger.info(f"Files will be saved to {save_path.absolute()}")
     
