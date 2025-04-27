@@ -64,7 +64,7 @@ def main():
     complete_data = complete_data["train"]
 
     # FOR TESTING
-    complete_data = complete_data[:10]
+    #complete_data = complete_data[:10]
 
     audios = complete_data["audio"]
     transcripts = complete_data["text"]
