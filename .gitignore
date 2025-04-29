@@ -10,6 +10,9 @@ output
 eval_results
 source_voices
 target_voice
+eval_res
+*.zip
+ru_checkpoints
 
 # general things to ignore
 .DS_Store
