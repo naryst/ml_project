@@ -40,27 +40,25 @@ def main(args):
     # Set up Gradio interface
     description = ("Zero-shot voice conversion with in-context learning. For local deployment please check [GitHub repository](https://github.com/Plachtaa/seed-vc) "
                    "for details and updates.<br>Note that any reference audio will be forcefully clipped to 25s if beyond this length.<br> "
-                   "If total duration of source and reference audio exceeds 30s, source audio will be processed in chunks.<br> "
-                   "无需训练的 zero-shot 语音/歌声转换模型，若需本地部署查看[GitHub页面](https://github.com/Plachtaa/seed-vc)<br>"
-                   "请注意，参考音频若超过 25 秒，则会被自动裁剪至此长度。<br>若源音频和参考音频的总时长超过 30 秒，源音频将被分段处理。")
+                   "If total duration of source and reference audio exceeds 30s, source audio will be processed in chunks.<br> ")
     
     inputs = [
-        gr.Audio(type="filepath", label="Source Audio / 源音频"),
-        gr.Audio(type="filepath", label="Reference Audio / 参考音频"),
-        gr.Slider(minimum=1, maximum=200, value=30, step=1, label="Diffusion Steps / 扩散步数", 
-                 info="30 by default, 50~100 for best quality / 默认为 30，50~100 为最佳质量"),
-        gr.Slider(minimum=0.5, maximum=2.0, step=0.1, value=1.0, label="Length Adjust / 长度调整", 
-                 info="<1.0 for speed-up speech, >1.0 for slow-down speech / <1.0 加速语速，>1.0 减慢语速"),
+        gr.Audio(type="filepath", label="Source Audio"),
+        gr.Audio(type="filepath", label="Reference Audio"),
+        gr.Slider(minimum=1, maximum=200, value=30, step=1, label="Diffusion Steps", 
+                 info="30 by default, 50~100 for best quality"),
+        gr.Slider(minimum=0.5, maximum=2.0, step=0.1, value=1.0, label="Length Adjust", 
+                 info="<1.0 for speed-up speech, >1.0 for slow-down speech"),
         gr.Slider(minimum=0.0, maximum=1.0, step=0.1, value=0.5, label="Intelligibility CFG Rate",
-                 info="has subtle influence / 有微小影响"),
+                 info="has subtle influence"),
         gr.Slider(minimum=0.0, maximum=1.0, step=0.1, value=0.5, label="Similarity CFG Rate",
-                  info="has subtle influence / 有微小影响"),
+                  info="has subtle influence"),
         gr.Slider(minimum=0.1, maximum=1.0, step=0.1, value=0.9, label="Top-p",
-                 info="Controls diversity of generated audio / 控制生成音频的多样性"),
+                 info="Controls diversity of generated audio"),
         gr.Slider(minimum=0.1, maximum=2.0, step=0.1, value=1.0, label="Temperature",
-                 info="Controls randomness of generated audio / 控制生成音频的随机性"),
+                 info="Controls randomness of generated audio"),
         gr.Slider(minimum=1.0, maximum=3.0, step=0.1, value=1.0, label="Repetition Penalty",
-                 info="Penalizes repetition in generated audio / 惩罚生成音频中的重复"),
+                 info="Penalizes repetition in generated audio"),
         gr.Checkbox(label="convert style", value=False),
         gr.Checkbox(label="anonymization only", value=False),
     ]
@@ -71,13 +69,33 @@ def main(args):
     ]
     
     outputs = [
-        gr.Audio(label="Stream Output Audio / 流式输出", streaming=True, format='mp3'),
-        gr.Audio(label="Full Output Audio / 完整输出", streaming=False, format='wav')
+        gr.Audio(label="Stream Output Audio", streaming=True, format='mp3'),
+        gr.Audio(label="Full Output Audio", streaming=False, format='wav')
     ]
+    
+    # Define a wrapper function to pass device and dtype
+    def convert_voice_wrapper(*args):
+        # Create a generator from the model's function
+        generator = vc_wrapper.convert_voice_with_streaming(
+            *args, 
+            device=device,
+            dtype=torch.float32  # Use float32 instead of float16
+        )
+        
+        # For streaming output, we need to yield each chunk and return the final full audio
+        stream_output = None
+        full_output = None
+        
+        # Process the generator and get the last output
+        for output in generator:
+            stream_output, full_output = output
+        
+        # Return both the streaming and full outputs
+        return stream_output, full_output
     
     # Launch the Gradio interface
     gr.Interface(
-        fn=vc_wrapper.convert_voice_with_streaming,
+        fn=convert_voice_wrapper if device != "cuda" else vc_wrapper.convert_voice_with_streaming,
         description=description,
         inputs=inputs,
         outputs=outputs,

@@ -13,6 +13,7 @@ target_voice
 eval_res
 *.zip
 ru_checkpoints
+*.m4a
 
 # general things to ignore
 .DS_Store
