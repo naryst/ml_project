@@ -487,7 +487,6 @@ class VoiceConversionWrapper(torch.nn.Module):
                 buffer = chunk[:, -16000 * overlapping_time:]
                 traversed_time += 30 * 16000 if traversed_time == 0 else chunk.size(-1) - 16000 * overlapping_time
             content_indices = torch.cat(features_list, dim=1)
-
         return content_indices
 
     @torch.no_grad()
