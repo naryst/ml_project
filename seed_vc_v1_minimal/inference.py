@@ -132,8 +132,8 @@ def main(args):
         F0_ori = f0_fn(ori_waves_16k[0], thred=0.03)
         F0_alt = f0_fn(converted_waves_16k[0], thred=0.03)
 
-        F0_ori = torch.from_numpy(F0_ori).to(device)[None]
-        F0_alt = torch.from_numpy(F0_alt).to(device)[None]
+        F0_ori = torch.from_numpy(F0_ori.astype(np.float32)).to(device)[None]
+        F0_alt = torch.from_numpy(F0_alt.astype(np.float32)).to(device)[None]
 
         voiced_F0_ori = F0_ori[F0_ori > 1]
         voiced_F0_alt = F0_alt[F0_alt > 1]

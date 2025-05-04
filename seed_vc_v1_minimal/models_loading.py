@@ -45,7 +45,7 @@ def load_models(fp16, f0_condition, checkpoint, config, **kwargs):
         f0_extractor = RMVPE(model_path, is_half=False, device=device)
         f0_fn = f0_extractor.infer_from_audio
 
-    config = yaml.safe_load(open(dit_config_path, "r"))
+    config = yaml.safe_load(open(config, "r"))
     model_params = recursive_munch(config["model_params"])
     model_params.dit_type = "DiT"
     model = build_model(model_params, stage="DiT")
@@ -163,6 +163,29 @@ def load_models(fp16, f0_condition, checkpoint, config, **kwargs):
             S_ori = ori_outputs.last_hidden_state.to(torch.float32)
             S_ori = S_ori[:, : waves_16k.size(-1) // 320 + 1]
             return S_ori
+    elif speech_tokenizer_type == "gigaam":
+        from transformers import AutoModel, AutoProcessor
+
+        model_name = model_params.speech_tokenizer.name
+
+        gigaam_model = AutoModel.from_pretrained(model_name, trust_remote_code=True).to(device)
+        gigaam_processor = AutoProcessor.from_pretrained(model_name, trust_remote_code=True)
+
+        gigaam_model = gigaam_model.model.encoder
+        gigaam_model.eval()
+
+        def semantic_fn(waves_16k):
+            ori_features = gigaam_processor(
+                waves_16k.squeeze(0).cpu().numpy(), return_tensors="pt", padding=True, sampling_rate=16000
+            )
+            ori_features = ori_features.to(device)
+            with torch.no_grad():
+                ori_outputs = gigaam_model(ori_features['input_features'], length=ori_features['input_lengths'])
+            S_ori = ori_outputs[0].to(torch.float32) # bs x hidden_dim x seq_len
+            S_ori = S_ori.transpose(1, 2) # bs x seq_len x hidden_dim
+            return S_ori
+
+    
     elif speech_tokenizer_type == "cnhubert":
         from transformers import (
             Wav2Vec2FeatureExtractor,
@@ -233,7 +256,7 @@ def load_models(fp16, f0_condition, checkpoint, config, **kwargs):
     mel_fn_args = {
         "n_fft": config["preprocess_params"]["spect_params"]["n_fft"],
         "win_size": config["preprocess_params"]["spect_params"]["win_length"],
-        "hop_size": config["preprocess_params"]["spect_params"]["hop_length"],
+        "hop_size": hop_length,
         "num_mels": config["preprocess_params"]["spect_params"]["n_mels"],
         "sampling_rate": sr,
         "fmin": config["preprocess_params"]["spect_params"].get("fmin", 0),

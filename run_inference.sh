@@ -1,6 +1,6 @@
 #! /bin/bash
 
-cd seed-vc_minimal
+cd seed_vc_minimal
 
 python inference_v2.py \
 --source ../dataset/test_wavs/bronya.wav \
