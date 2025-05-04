@@ -12,6 +12,8 @@ import torchaudio.compliance.kaldi as kaldi
 import glob
 from tqdm import tqdm
 import shutil
+import logging
+from datetime import datetime
 
 from modules.commons import recursive_munch, build_model, load_checkpoint
 from optimizers import build_optimizer
@@ -35,6 +37,13 @@ class Trainer:
         config = yaml.safe_load(open(config_path))
         self.log_dir = os.path.join(config['log_dir'], run_name)
         os.makedirs(self.log_dir, exist_ok=True)
+        
+        # Setup logging
+        self.setup_logging()
+        self.logger.info(f"Starting training session: {run_name}")
+        self.logger.info(f"Config: {config_path}")
+        self.logger.info(f"Device: {device}")
+        
         # copy config file to log dir
         shutil.copyfile(config_path, os.path.join(self.log_dir, os.path.basename(config_path)))
         batch_size = config.get('batch_size', 10) if batch_size == 0 else batch_size
@@ -117,6 +126,31 @@ class Trainer:
             self.epoch, self.iters = 0, 0
             print("Failed to load any checkpoint, training from scratch.")
 
+    def setup_logging(self):
+        """Setup logging to file and console"""
+        self.logger = logging.getLogger('seed_vc_trainer')
+        self.logger.setLevel(logging.INFO)
+        
+        # Create a file handler for logging to a file
+        log_file = os.path.join(self.log_dir, f'training_{datetime.now().strftime("%Y%m%d_%H%M%S")}.log')
+        file_handler = logging.FileHandler(log_file)
+        file_handler.setLevel(logging.INFO)
+        
+        # Create a console handler for logging to the console
+        console_handler = logging.StreamHandler()
+        console_handler.setLevel(logging.INFO)
+        
+        # Create a formatter and add it to the handlers
+        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+        file_handler.setFormatter(formatter)
+        console_handler.setFormatter(formatter)
+        
+        # Add the handlers to the logger
+        self.logger.addHandler(file_handler)
+        self.logger.addHandler(console_handler)
+        
+        self.logger.info(f"Logging to {log_file}")
+
     def build_sv_model(self, device, config):
         from modules.campplus.DTDNN import CAMPPlus
         self.campplus_model = CAMPPlus(feat_dim=80, embedding_size=192)
@@ -196,6 +230,28 @@ class Trainer:
                     )
                 S_ori = ori_outputs.last_hidden_state.to(torch.float32)
                 S_ori = S_ori[:, :waves_16k.size(-1) // 320 + 1]
+                return S_ori
+
+        elif speech_tokenizer_type == "gigaam":
+            from transformers import AutoModel, AutoProcessor
+
+            model_name = config['model_params']['speech_tokenizer']['name']
+
+            gigaam_model = AutoModel.from_pretrained(model_name, trust_remote_code=True).to(device)
+            gigaam_processor = AutoProcessor.from_pretrained(model_name, trust_remote_code=True)
+
+            gigaam_model = gigaam_model.model.encoder
+            gigaam_model.eval()
+
+            def semantic_fn(waves_16k):
+                ori_features = gigaam_processor(
+                    waves_16k.squeeze(0).cpu().numpy(), return_tensors="pt", padding=True, sampling_rate=16000
+                )
+                ori_features = ori_features.to(device)
+                with torch.no_grad():
+                    ori_outputs = gigaam_model(ori_features['input_features'], length=ori_features['input_lengths'])
+                S_ori = ori_outputs[0].to(torch.float32) # bs x hidden_dim x seq_len
+                S_ori = S_ori.transpose(1, 2) # bs x seq_len x hidden_dim
                 return S_ori
 
         elif speech_tokenizer_type == 'xlsr':
@@ -351,7 +407,9 @@ class Trainer:
                 if self.iters > 0 else loss
             )
             if self.iters % self.log_interval == 0:
-                print(f"epoch {self.epoch}, step {self.iters}, loss: {self.ema_loss}")
+                log_message = f"epoch {self.epoch}, step {self.iters}, loss: {self.ema_loss:.6f}"
+                print(log_message)
+                self.logger.info(log_message)
             self.iters += 1
 
             if self.iters >= self.max_steps:
@@ -359,6 +417,7 @@ class Trainer:
 
             if self.iters % self.save_interval == 0:
                 print('Saving..')
+                self.logger.info(f"Saving checkpoint at epoch {self.epoch}, step {self.iters}")
                 state = {
                     'net': {key: self.model[key].state_dict() for key in self.model},
                     'optimizer': self.optimizer.state_dict(),
@@ -371,6 +430,7 @@ class Trainer:
                     f'DiT_epoch_{self.epoch:05d}_step_{self.iters:05d}.pth'
                 )
                 torch.save(state, save_path)
+                self.logger.info(f"Checkpoint saved to {save_path}")
 
                 # find all checkpoints and remove old ones
                 checkpoints = glob.glob(os.path.join(self.log_dir, 'DiT_epoch_*.pth'))
@@ -378,24 +438,29 @@ class Trainer:
                     checkpoints.sort(key=lambda x: int(x.split('_')[-1].split('.')[0]))
                     for cp in checkpoints[:-2]:
                         os.remove(cp)
+                        self.logger.info(f"Removed old checkpoint: {cp}")
 
     def train(self):
         self.ema_loss = 0
         self.loss_smoothing_rate = 0.99
+        self.logger.info(f"Starting training for {self.n_epochs} epochs or {self.max_steps} steps")
         for epoch in range(self.n_epochs):
             self.epoch = epoch
+            self.logger.info(f"Starting epoch {epoch}")
             self.train_one_epoch()
+            self.logger.info(f"Completed epoch {epoch}")
             if self.iters >= self.max_steps:
+                self.logger.info(f"Reached max steps {self.max_steps}, stopping training")
                 break
 
-        print('Saving final model..')
+        self.logger.info('Saving final model..')
         state = {
             'net': {key: self.model[key].state_dict() for key in self.model},
         }
         os.makedirs(self.log_dir, exist_ok=True)
         save_path = os.path.join(self.log_dir, 'ft_model.pth')
         torch.save(state, save_path)
-        print(f"Final model saved at {save_path}")
+        self.logger.info(f"Final model saved at {save_path}")
 
 
 def main(args):
