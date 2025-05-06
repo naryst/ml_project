@@ -58,21 +58,14 @@ def create_index_file(save_path: str, entries: list) -> bool:
         return False
 
 def main():
-    # Load dataset
-    logger.info("Loading dataset...")
-    complete_data = load_dataset("iashchak/ru_common_voice_sova_rudevices_golos_fleurs")
-    complete_data = complete_data["train"]
+    # Load dataset with streaming enabled
+    logger.info("Loading dataset in streaming mode...")
+    streaming_dataset = load_dataset("iashchak/ru_common_voice_sova_rudevices_golos_fleurs", streaming=True)
+    streaming_dataset = streaming_dataset["train"]
 
     # FOR TESTING
-    #complete_data = complete_data[:10]
+    #streaming_dataset = streaming_dataset.take(10)
 
-    audios = complete_data["audio"]
-    transcripts = complete_data["text"]
-
-    # workaround for hf datasets library
-    complete_data = list(zip(audios, transcripts))
-
-    
     # Set up save directory
     save_path = Path("dataset/source_voices")
     save_path.mkdir(parents=True, exist_ok=True)
@@ -81,32 +74,36 @@ def main():
     # Process and save files
     success_count = 0
     index_entries = []
+    
+    # Using a context manager to create index file incrementally
+    index_path = os.path.join(str(save_path), "index.tsv")
+    with open(index_path, 'w', encoding='utf-8') as index_file:
+        # Process streaming dataset
+        for i, entry in enumerate(tqdm(streaming_dataset)):
+            try:
+                # Get audio data and transcript
+                audio_data = entry["audio"]
+                name = audio_data.get("path", "")
+                signal = audio_data["array"]
+                sampling_rate = audio_data["sampling_rate"]
+                transcript = entry["text"]
 
-    for i, entry in tqdm(enumerate(complete_data)):
-        try:
-            # Get audio data and transcript
-            audio_data = entry[0]
-            name, signal, sampling_rate = audio_data.values()
-            transcript = entry[1]
-
-            # Generate filename
-            filename = name if name else f"audio_{i}"
-            filename = filename.replace(".wav", "")  # Remove .wav extension if present
-            
-            # Save audio file
-            if save_audio_file(signal, sampling_rate, str(save_path), filename):
-                success_count += 1
-                # Add to index entries only if audio save was successful
-                index_entries.append((filename, transcript))
+                # Generate filename
+                filename = name if name else f"audio_{i}"
+                filename = os.path.basename(filename)
+                filename = filename.replace(".wav", "")  # Remove .wav extension if present
                 
-        except Exception as e:
-            logger.error(f"Error processing file {i}: {str(e)}")
+                # Save audio file
+                if save_audio_file(signal, sampling_rate, str(save_path), filename):
+                    success_count += 1
+                    # Write directly to index file
+                    index_file.write(f"{filename}\t{transcript}\n")
+                    index_entries.append((filename, transcript))  # Keep for count only
+                    
+            except Exception as e:
+                logger.error(f"Error processing file {i}: {str(e)}")
     
-    # Create index.tsv file
-    if index_entries:
-        create_index_file(str(save_path), index_entries)
-    
-    logger.info(f"Successfully saved {success_count} out of {len(complete_data)} files")
+    logger.info(f"Successfully saved {success_count} files")
     logger.info(f"Created index.tsv with {len(index_entries)} entries")
 
 if __name__ == "__main__":

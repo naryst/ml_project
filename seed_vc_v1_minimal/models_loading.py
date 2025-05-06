@@ -183,6 +183,7 @@ def load_models(fp16, f0_condition, checkpoint, config, **kwargs):
                 ori_outputs = gigaam_model(ori_features['input_features'], length=ori_features['input_lengths'])
             S_ori = ori_outputs[0].to(torch.float32) # bs x hidden_dim x seq_len
             S_ori = S_ori.transpose(1, 2) # bs x seq_len x hidden_dim
+            print(S_ori.shape)
             return S_ori
 
     

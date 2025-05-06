@@ -4,7 +4,7 @@ log_interval: 10
 save_interval: 5000
 device: "cuda"
 epochs: 1 # number of epochs for first stage training (pre-training)
-batch_size: 10
+batch_size: 4
 batch_length: 100 # maximum duration of audio in a batch (in seconds)
 max_len: 80 # maximum number of frames
 pretrained_model: ""
@@ -32,6 +32,10 @@ model_params:
   speech_tokenizer:
     type: 'gigaam'
     name: "waveletdeboshir/gigaam-ctc"
+
+  # speech_tokenizer:
+  #   type: "whisper"
+  #   name: "openai/whisper-small"
 
   style_encoder:
     dim: 192
