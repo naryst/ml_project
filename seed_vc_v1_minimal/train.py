@@ -13,7 +13,9 @@ import glob
 from tqdm import tqdm
 import shutil
 import logging
+import time
 from datetime import datetime
+import numpy as np
 
 from modules.commons import recursive_munch, build_model, load_checkpoint
 from optimizers import build_optimizer
@@ -125,6 +127,22 @@ class Trainer:
         else:
             self.epoch, self.iters = 0, 0
             print("Failed to load any checkpoint, training from scratch.")
+
+        from modules.audio import mel_spectrogram
+        self.mel_fn_args = {
+            "n_fft": config["preprocess_params"]["spect_params"]["n_fft"],
+            "win_size": config["preprocess_params"]["spect_params"]["win_length"],
+            "hop_size": self.hop_length,
+            "num_mels": config["preprocess_params"]["spect_params"]["n_mels"],
+            "sampling_rate": self.sr,
+            "fmin": config["preprocess_params"]["spect_params"].get("fmin", 0),
+            "fmax": None
+            if config["preprocess_params"]["spect_params"].get("fmax", "None") == "None"
+            else 8000,
+            "center": False,
+        }
+        self.mel_function = lambda x: mel_spectrogram(x, **self.mel_fn_args)  # noqa: E731
+        self.eval_interval = 1
 
     def setup_logging(self):
         """Setup logging to file and console"""
@@ -396,6 +414,247 @@ class Trainer:
         self.optimizer.scheduler(key='length_regulator')
 
         return loss.detach().item()
+    
+
+    @torch.no_grad()
+    def inference(self, source_path, target_path, output_dir):
+        """Run voice conversion inference.
+        
+        Args:
+            source_path (str): Path to source audio file
+            target_path (str): Path to target audio file
+            output_dir (str): Directory to save output files
+        """
+        if not os.path.exists(source_path):
+            raise FileNotFoundError(f"Source file not found: {source_path}")
+        if not os.path.exists(target_path):
+            raise FileNotFoundError(f"Target file not found: {target_path}")
+            
+        fp16 = True
+        def crossfade(chunk1, chunk2, overlap):
+            fade_out = np.cos(np.linspace(0, np.pi / 2, overlap)) ** 2
+            fade_in = np.cos(np.linspace(np.pi / 2, 0, overlap)) ** 2
+            if len(chunk2) < overlap:
+                chunk2[:overlap] = (
+                    chunk2[:overlap] * fade_in[: len(chunk2)]
+                    + (chunk1[-overlap:] * fade_out)[: len(chunk2)]
+                )
+            else:
+                chunk2[:overlap] = chunk2[:overlap] * fade_in + chunk1[-overlap:] * fade_out
+            return chunk2
+
+        # Load and validate audio files
+        try:
+            source_audio, source_sr = librosa.load(source_path, sr=self.sr)
+            if source_sr != self.sr:
+                self.logger.warning(f"Source audio sample rate {source_sr}Hz resampled to {self.sr}Hz")
+        except Exception as e:
+            raise RuntimeError(f"Error loading source audio: {str(e)}")
+
+        try:
+            ref_audio, ref_sr = librosa.load(target_path, sr=self.sr)
+            if ref_sr != self.sr:
+                self.logger.warning(f"Reference audio sample rate {ref_sr}Hz resampled to {self.sr}Hz")
+        except Exception as e:
+            raise RuntimeError(f"Error loading reference audio: {str(e)}")
+
+        # Check audio lengths
+        max_duration = 30  # 30 seconds
+        if len(source_audio) > max_duration * self.sr:
+            self.logger.warning(f"Source audio truncated from {len(source_audio)/self.sr:.1f}s to {max_duration}s")
+            source_audio = source_audio[:max_duration * self.sr]
+        if len(ref_audio) > max_duration * self.sr:
+            self.logger.warning(f"Reference audio truncated from {len(ref_audio)/self.sr:.1f}s to {max_duration}s")
+            ref_audio = ref_audio[:max_duration * self.sr]
+
+        diffusion_steps = 30
+        length_adjust = 1.0
+        inference_cfg_rate = 0.7
+
+        max_context_window = self.sr // self.hop_length * 30
+        overlap_frame_len = 16
+        overlap_wave_len = overlap_frame_len * self.hop_length
+
+        # Process audio
+        source_audio = torch.tensor(source_audio).unsqueeze(0).float().to(self.device)
+        ref_audio = torch.tensor(ref_audio[: self.sr * 25]).unsqueeze(0).float().to(self.device)
+
+        time_vc_start = time.time()
+        try:
+            # Resample
+            converted_waves_16k = torchaudio.functional.resample(source_audio, self.sr, 16000)
+            # if source audio less than 30 seconds, whisper can handle in one forward
+            if converted_waves_16k.size(-1) <= 16000 * 30:
+                S_alt = self.semantic_fn(converted_waves_16k)
+            else:
+                overlapping_time = 5  # 5 seconds
+                S_alt_list = []
+                buffer = None
+                traversed_time = 0
+                while traversed_time < converted_waves_16k.size(-1):
+                    if buffer is None:  # first chunk
+                        chunk = converted_waves_16k[
+                            :, traversed_time : traversed_time + 16000 * 30
+                        ]
+                    else:
+                        chunk = torch.cat(
+                            [
+                                buffer,
+                                converted_waves_16k[
+                                    :,
+                                    traversed_time : traversed_time
+                                    + 16000 * (30 - overlapping_time),
+                                ],
+                            ],
+                            dim=-1,
+                        )
+                    S_alt = self.semantic_fn(chunk)
+                    if traversed_time == 0:
+                        S_alt_list.append(S_alt)
+                    else:
+                        S_alt_list.append(S_alt[:, 50 * overlapping_time :])
+                    buffer = chunk[:, -16000 * overlapping_time :]
+                    traversed_time += (
+                        30 * 16000
+                        if traversed_time == 0
+                        else chunk.size(-1) - 16000 * overlapping_time
+                    )
+                S_alt = torch.cat(S_alt_list, dim=1)
+
+            ori_waves_16k = torchaudio.functional.resample(ref_audio, self.sr, 16000)
+            S_ori = self.semantic_fn(ori_waves_16k)
+
+            mel = self.mel_function(source_audio.to(self.device).float())
+            mel2 = self.mel_function(ref_audio.to(self.device).float())
+
+            target_lengths = torch.LongTensor([int(mel.size(2) * length_adjust)]).to(mel.device)
+            target2_lengths = torch.LongTensor([mel2.size(2)]).to(mel2.device)
+
+            feat2 = torchaudio.compliance.kaldi.fbank(
+                ori_waves_16k, num_mel_bins=80, dither=0, sample_frequency=16000
+            )
+            feat2 = feat2 - feat2.mean(dim=0, keepdim=True)
+            style2 = self.campplus_model(feat2.unsqueeze(0))
+
+            F0_ori = None
+            F0_alt = None
+            shifted_f0_alt = None
+
+            # Length regulation
+            cond, _, codes, commitment_loss, codebook_loss = self.model.length_regulator(
+                S_alt, ylens=target_lengths, n_quantizers=3, f0=shifted_f0_alt
+            )
+            prompt_condition, _, codes, commitment_loss, codebook_loss = self.model.length_regulator(
+                S_ori, ylens=target2_lengths, n_quantizers=3, f0=F0_ori
+            )
+
+            max_source_window = max_context_window - mel2.size(2)
+            # split source condition (cond) into chunks
+            processed_frames = 0
+            generated_wave_chunks = []
+            # generate chunk by chunk and stream the output
+            while processed_frames < cond.size(1):
+                chunk_cond = cond[:, processed_frames : processed_frames + max_source_window]
+                is_last_chunk = processed_frames + max_source_window >= cond.size(1)
+                cat_condition = torch.cat([prompt_condition, chunk_cond], dim=1)
+                with torch.autocast(
+                    device_type=torch.device(self.device).type, dtype=torch.float16 if fp16 else torch.float32
+                ):
+                    # Voice Conversion
+                    vc_target = self.model.cfm.inference(
+                        cat_condition,
+                        torch.LongTensor([cat_condition.size(1)]).to(mel2.device),
+                        mel2,
+                        style2,
+                        None,
+                        diffusion_steps,
+                        inference_cfg_rate=inference_cfg_rate,
+                    )
+                    vc_target = vc_target[:, :, mel2.size(-1):].clone()
+                vc_wave = self.vocoder_fn(vc_target.float()).squeeze()
+                vc_wave = vc_wave[None, :]
+                if processed_frames == 0:
+                    if is_last_chunk:
+                        output_wave = vc_wave[0].cpu().numpy()
+                        generated_wave_chunks.append(output_wave)
+                        break
+                    output_wave = vc_wave[0, :-overlap_wave_len].cpu().numpy()
+                    generated_wave_chunks.append(output_wave)
+                    previous_chunk = vc_wave[0, -overlap_wave_len:]
+                    processed_frames += vc_target.size(2) - overlap_frame_len
+                elif is_last_chunk:
+                    output_wave = crossfade(
+                        previous_chunk.cpu().numpy(), vc_wave[0].cpu().numpy(), overlap_wave_len
+                    )
+                    generated_wave_chunks.append(output_wave)
+                    processed_frames += vc_target.size(2) - overlap_frame_len
+                    break
+                else:
+                    output_wave = crossfade(
+                        previous_chunk.cpu().numpy(),
+                        vc_wave[0, :-overlap_wave_len].cpu().numpy(),
+                        overlap_wave_len,
+                    )
+                    generated_wave_chunks.append(output_wave)
+                    previous_chunk = vc_wave[0, -overlap_wave_len:]
+                    processed_frames += vc_target.size(2) - overlap_frame_len
+            vc_wave = torch.tensor(np.concatenate(generated_wave_chunks))[None, :].float()
+            time_vc_end = time.time()
+            rtf = (time_vc_end - time_vc_start) / vc_wave.size(-1) * self.sr
+            self.logger.info(f"RTF: {rtf:.2f}")
+
+            source_name = os.path.basename(source_path).split(".")[0]
+            target_name = os.path.basename(target_path).split(".")[0]
+            os.makedirs(output_dir, exist_ok=True)
+            output_path = os.path.join(
+                output_dir,
+                f"vc_{source_name}_{target_name}_{length_adjust}_{diffusion_steps}_{inference_cfg_rate}.wav",
+            )
+            torchaudio.save(output_path, vc_wave.cpu(), self.sr)
+            self.logger.info(f"Saved output to {output_path}")
+            
+        except Exception as e:
+            self.logger.error(f"Error during inference: {str(e)}")
+            raise
+
+    def eval_one_loop(self, step):
+        # eval model on several example to check the model progress
+        save_path = os.path.join(self.log_dir, f'eval_step_{step}')
+        os.makedirs(save_path, exist_ok=True)
+        
+        # Check if evaluation directory exists
+        files_path = '../dataset/evaluation_samples'
+        if not os.path.exists(files_path):
+            self.logger.error(f"Evaluation directory {files_path} does not exist")
+            return
+            
+        files = glob.glob(os.path.join(files_path, '*.wav'))
+        if not files:
+            self.logger.error(f"No wav files found in {files_path}")
+            return
+            
+        reference_files = [f for f in files if 'ref' in f]
+        if not reference_files:
+            self.logger.error("No reference files found")
+            return
+            
+        samples = [f for f in files if 'ref' not in f]
+        if not samples:
+            self.logger.error("No sample files found")
+            return
+            
+        self.logger.info(f"Starting evaluation at step {step}")
+        for sample in samples:
+            try:
+                self.inference(
+                    source_path=sample,
+                    target_path=reference_files[0],
+                    output_dir=save_path
+                )
+            except Exception as e:
+                self.logger.error(f"Error processing {sample}: {str(e)}")
+                continue
+        self.logger.info(f"Completed evaluation at step {step}")
 
     def train_one_epoch(self):
         _ = [self.model[key].train() for key in self.model]
@@ -410,6 +669,11 @@ class Trainer:
                 log_message = f"epoch {self.epoch}, step {self.iters}, loss: {self.ema_loss:.6f}"
                 print(log_message)
                 self.logger.info(log_message)
+
+            if self.iters % self.eval_interval == 0:
+                print('Evaluating..')
+                self.eval_one_loop(self.iters)
+
             self.iters += 1
 
             if self.iters >= self.max_steps:

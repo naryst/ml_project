@@ -1,4 +1,5 @@
-*.wav
+
+
 *.pt
 *.pth
 *.onnx
@@ -7,7 +8,7 @@
 *.onnx.txt.gz.part
 *.gradio
 output
-eval_results
+eval_res
 source_voices
 target_voice
 eval_res
