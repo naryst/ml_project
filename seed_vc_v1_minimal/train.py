@@ -142,7 +142,9 @@ class Trainer:
             "center": False,
         }
         self.mel_function = lambda x: mel_spectrogram(x, **self.mel_fn_args)  # noqa: E731
-        self.eval_interval = 1
+
+
+        self.eval_interval = 1000
 
     def setup_logging(self):
         """Setup logging to file and console"""
