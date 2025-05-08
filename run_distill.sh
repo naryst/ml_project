@@ -8,8 +8,8 @@ python distillation.py \
     --student_config configs/conf_gigaam.yaml \
     --data_dir ../dataset/source_voices \
     --output_dir ../distillation_results \
-    --initial_teacher_steps 32 \
-    --final_steps 8 \
+    --initial_teacher_steps 16 \
+    --final_steps 4 \
     --steps_reduction_factor 2 \
     --epochs_per_iteration 1 \
     --batch_size 1 \
@@ -17,4 +17,5 @@ python distillation.py \
     --save_interval 1000 \
     --use_trajectory_loss \
     --trajectory_weight_type exponential \
-    --device mps
+    --device mps \
+    --iterations_per_epoch 1000

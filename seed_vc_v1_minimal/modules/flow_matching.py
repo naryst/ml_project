@@ -52,7 +52,7 @@ class BASECFM(torch.nn.Module, ABC):
         # t_span = t_span + (-1) * (torch.cos(torch.pi / 2 * t_span) - 1 + t_span)
         return self.solve_euler(z, x_lens, prompt, mu, style, f0, t_span, inference_cfg_rate)
 
-    def _solve_euler_loop(self, x, x_lens, prompt, mu, style, f0, t_span, inference_cfg_rate, store_trajectory_clones=False):
+    def _solve_euler_loop(self, x, x_lens, prompt, mu, style, f0, t_span, inference_cfg_rate, store_trajectory_clones=False, use_tqdm=True):
         """
         Core Euler solver loop. Conditionally stores cloned states for trajectory.
         """
@@ -70,7 +70,11 @@ class BASECFM(torch.nn.Module, ABC):
         if self.zero_prompt_speech_token:
             mu[..., :prompt_len] = 0
 
-        for step_idx in tqdm(range(1, len(t_span)), desc="Euler ODE Solve"):
+        if use_tqdm:
+            loop = tqdm(range(1, len(t_span)), desc="Euler ODE Solve")
+        else:
+            loop = range(1, len(t_span))
+        for step_idx in loop:
             dt = t_span[step_idx] - t_span[step_idx - 1]
             # Use the time at the beginning of the interval for the estimator
             time_for_estimator = t_span[step_idx - 1].expand(x.size(0)) if x.ndim > 0 else t_span[step_idx - 1]
@@ -105,11 +109,11 @@ class BASECFM(torch.nn.Module, ABC):
         else:
             return x
 
-    def solve_euler_with_trajectory(self, x, x_lens, prompt, mu, style, f0, t_span, inference_cfg_rate=0.5):
+    def solve_euler_with_trajectory(self, x, x_lens, prompt, mu, style, f0, t_span, inference_cfg_rate=0.5, use_tqdm=True):
         """
         Fixed Euler solver for ODEs that returns the entire trajectory of cloned states.
         """
-        return self._solve_euler_loop(x, x_lens, prompt, mu, style, f0, t_span, inference_cfg_rate, store_trajectory_clones=True)
+        return self._solve_euler_loop(x, x_lens, prompt, mu, style, f0, t_span, inference_cfg_rate, store_trajectory_clones=True, use_tqdm=use_tqdm)
 
     def solve_euler(self, x, x_lens, prompt, mu, style, f0, t_span, inference_cfg_rate=0.5):
         """

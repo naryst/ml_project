@@ -413,7 +413,8 @@ class Distiller:
                 style=y,
                 f0=F0_ori,
                 t_span=teacher_t_span,
-                inference_cfg_rate=0.7
+                inference_cfg_rate=0.7,
+                use_tqdm=False
             )
         
         # Generate student trajectory
@@ -426,7 +427,8 @@ class Distiller:
             style=y,
             f0=F0_ori,
             t_span=student_t_span,
-            inference_cfg_rate=0.7
+            inference_cfg_rate=0.7,
+            use_tqdm=False
         )
         
         # Calculate trajectory weights based on specified type
@@ -571,7 +573,10 @@ class Distiller:
                             'trajectory_weight_type': self.trajectory_weight_type,
                         }, checkpoint_path)
                         self.logger.info(f"Saved checkpoint to {checkpoint_path}")
-                
+                    
+                    if self.iterations_per_epoch > 0 and total_steps >= self.iterations_per_epoch:
+                        logging.info(f"Reached {self.iterations_per_epoch} iterations per epoch, stopping epoch")
+                        break
                 # Save at end of each epoch
                 checkpoint_path = os.path.join(
                     self.output_dir, 
@@ -632,6 +637,7 @@ def main():
     parser.add_argument("--trajectory_weight_type", type=str, default="linear", 
                       choices=["linear", "exponential", "uniform"],
                       help="Type of weighting for trajectory timesteps")
+    parser.add_argument("--iterations_per_epoch", type=int, default=-1)
     args = parser.parse_args()
     
     # Create the distiller and run distillation

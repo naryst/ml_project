@@ -1,5 +1,4 @@
-
-
+*distillation_results
 *.pt
 *.pth
 *.onnx
