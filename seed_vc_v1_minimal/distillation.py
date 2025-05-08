@@ -8,6 +8,7 @@ import torchaudio.compliance.kaldi as kaldi
 import logging
 from datetime import datetime
 import numpy as np
+import gc
 
 from modules.commons import recursive_munch, build_model, load_checkpoint, sequence_mask
 from optimizers import build_optimizer
@@ -58,6 +59,21 @@ class Distiller:
                  use_trajectory_loss=True,
                  trajectory_weight_type="linear"
                  ):
+        self.wav2vec_feature_extractor = None
+        self.semantic_fn = None
+        self.whisper_feature_extractor = None
+        self.vocoder_fn = None
+        self.whisper_model = None
+        self.se_db = None
+        self.f0_fn = None
+        self.rmvpe = None
+        self.tone_color_converter = None
+        self.bigvgan_model = None
+        self.wav2vec_model = None
+        self.hift_gen = None
+        self.campplus_model = None
+        self.logger = None
+        self.sv_fn = None
         self.device = device
         self.initial_teacher_steps = initial_teacher_steps
         self.final_steps = final_steps
@@ -445,6 +461,15 @@ class Distiller:
             
         return loss_total
         
+    def clean_cache(self):
+        """Clean CUDA/MPS cache after each iteration."""
+        if self.device == "cuda":
+            torch.cuda.empty_cache()
+        elif self.device == "mps":
+            torch.mps.empty_cache()
+        # Clear any cached memory
+        gc.collect()
+
     def run_distillation(self):
         """Run the progressive distillation process."""
         # Progressive distillation loop
@@ -584,6 +609,9 @@ class Distiller:
                 'trajectory_weight_type': self.trajectory_weight_type,
             }, final_path)
             self.logger.info(f"Saved final model of iteration {iteration} to {final_path}")
+            
+            # Clean cache after each iteration
+            self.clean_cache()
 
 def main():
     parser = argparse.ArgumentParser()
