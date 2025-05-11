@@ -16,7 +16,7 @@ from data.ft_dataset import build_ft_dataloader
 from models_loading import load_models
 from hf_utils import load_custom_model_from_hf
 
-def trajectory_distillation_loss(student_trajectory, teacher_trajectory, mask, trajectory_weights=None):
+def trajectory_distillation_loss(student_trajectory, teacher_trajectory, mask, trajectory_weights=None, weight_type="linear"):
     """Calculate loss between student and teacher trajectories.
     
     Args:
@@ -24,22 +24,50 @@ def trajectory_distillation_loss(student_trajectory, teacher_trajectory, mask, t
         teacher_trajectory: List of teacher states
         mask: Sequence mask for variable lengths
         trajectory_weights: Optional weights for different timesteps
+        weight_type: Type of weighting to use if trajectory_weights is None ("linear", "exponential", "uniform")
     """
+    student_len = len(student_trajectory)
+    teacher_len = len(teacher_trajectory)
+    
     if trajectory_weights is None:
-        # Default: linear weighting that puts more emphasis on later timesteps
-        trajectory_weights = torch.linspace(0.1, 1.0, len(student_trajectory), device=student_trajectory[0].device)
+        # Create weights based on specified type
+        if weight_type == "linear":
+            trajectory_weights = torch.linspace(0.1, 1.0, student_len, device=student_trajectory[0].device)
+        elif weight_type == "exponential":
+            trajectory_weights = torch.exp(torch.linspace(-2, 0, student_len, device=student_trajectory[0].device))
+        else:  # uniform
+            trajectory_weights = torch.ones(student_len, device=student_trajectory[0].device)
     
+    # If trajectories have different lengths, we need to interpolate teacher states
     total_loss = 0
-    for i, (student_state, teacher_state) in enumerate(zip(student_trajectory, teacher_trajectory)):
-        # Calculate MSE loss for this timestep
-        step_loss = torch.nn.functional.mse_loss(
-            student_state * mask,
-            teacher_state * mask
-        )
-        # Apply weight for this timestep
-        total_loss += trajectory_weights[i] * step_loss
+    if student_len != teacher_len:
+        # Map student timesteps to corresponding teacher timesteps
+        teacher_indices = torch.linspace(0, teacher_len-1, student_len).long().tolist()
+        for i, (student_state, teacher_idx) in enumerate(zip(student_trajectory, teacher_indices)):
+            # Use the closest teacher state
+            teacher_state = teacher_trajectory[teacher_idx]
+            
+            # Calculate MSE loss
+            step_loss = torch.nn.functional.mse_loss(
+                student_state * mask,
+                teacher_state * mask,
+                reduction="mean"
+            )
+            
+            # Apply weight for this timestep
+            total_loss += trajectory_weights[i] * step_loss
+    else:
+        # Same length trajectories - direct comparison
+        for i, (student_state, teacher_state) in enumerate(zip(student_trajectory, teacher_trajectory)):
+            step_loss = torch.nn.functional.mse_loss(
+                student_state * mask,
+                teacher_state * mask,
+                reduction="mean"
+            )
+            total_loss += trajectory_weights[i] * step_loss
     
-    return total_loss / len(student_trajectory)
+    # Normalize by sum of weights to maintain scale regardless of number of steps
+    return total_loss / trajectory_weights.sum()
 
 class Distiller:
     def __init__(self,
@@ -57,7 +85,13 @@ class Distiller:
                  save_interval=1000,
                  device="cuda",
                  use_trajectory_loss=True,
-                 trajectory_weight_type="linear"
+                 trajectory_weight_type="linear",
+                 iterations_per_epoch=1000,
+                 commitment_loss_weight=0.05,
+                 codebook_loss_weight=0.15,
+                 grad_clip_threshold=10.0,
+                 checkpoint_cleanup=False,
+                 cleanup_keep_last=3,
                  ):
         self.wav2vec_feature_extractor = None
         self.semantic_fn = None
@@ -84,18 +118,30 @@ class Distiller:
         self.output_dir = output_dir
         self.use_trajectory_loss = use_trajectory_loss
         self.trajectory_weight_type = trajectory_weight_type
+        self.eval_steps = 1
+        self.iterations_per_epoch = iterations_per_epoch
+        self.commitment_loss_weight = commitment_loss_weight
+        self.codebook_loss_weight = codebook_loss_weight
+        self.grad_clip_threshold = grad_clip_threshold
+        self.checkpoint_cleanup = checkpoint_cleanup
+        self.cleanup_keep_last = cleanup_keep_last
         
         # Create output directory
         os.makedirs(self.output_dir, exist_ok=True)
         
         # Setup logging
         self.setup_logging()
-        self.logger.info(f"Starting distillation process")
-        self.logger.info(f"Teacher config: {teacher_config_path}")
-        self.logger.info(f"Student config: {student_config_path}")
-        self.logger.info(f"Device: {device}")
+        if not self.logger is None:
+            self.logger.info(f"Starting distillation process")
+            self.logger.info(f"Teacher config: {teacher_config_path}")
+            self.logger.info(f"Student config: {student_config_path}")
+            self.logger.info(f"Device: {device}")
+        else:
+            raise NotImplementedError('logger not initialized')
         
         # Load configs
+        self.teacher_config_path = teacher_config_path
+        self.student_config_path = student_config_path
         self.teacher_config = yaml.safe_load(open(teacher_config_path, "r"))
         self.student_config = yaml.safe_load(open(student_config_path, "r"))
         
@@ -431,21 +477,14 @@ class Distiller:
             use_tqdm=False
         )
         
-        # Calculate trajectory weights based on specified type
-        if self.trajectory_weight_type == "linear":
-            trajectory_weights = torch.linspace(0.1, 1.0, len(student_trajectory), device=self.device)
-        elif self.trajectory_weight_type == "exponential":
-            trajectory_weights = torch.exp(torch.linspace(-2, 0, len(student_trajectory), device=self.device))
-        else:  # uniform
-            trajectory_weights = torch.ones(len(student_trajectory), device=self.device)
-        
         # Calculate loss
         if self.use_trajectory_loss:
             loss = trajectory_distillation_loss(
                 student_trajectory,
                 teacher_trajectory,
                 mask,
-                trajectory_weights
+                trajectory_weights=None,
+                weight_type=self.trajectory_weight_type
             )
         else:
             # Just match final outputs
@@ -457,8 +496,8 @@ class Distiller:
         # Add vector quantization losses for consistency with train.py
         loss_total = (
             loss +
-            (alt_commitment_loss + ori_commitment_loss) * 0.05 +
-            (ori_codebook_loss + alt_codebook_loss) * 0.15
+            (alt_commitment_loss + ori_commitment_loss) * self.commitment_loss_weight +
+            (ori_codebook_loss + alt_codebook_loss) * self.codebook_loss_weight
         )
             
         return loss_total
@@ -472,9 +511,245 @@ class Distiller:
         # Clear any cached memory
         gc.collect()
 
+    @torch.no_grad()
+    def inference_student(self, source_path, target_path, output_dir, diffusion_steps):
+        import librosa
+        import time
+        if not os.path.exists(source_path):
+            raise FileNotFoundError(f"Source file not found: {source_path}")
+        if not os.path.exists(target_path):
+            raise FileNotFoundError(f"Target file not found: {target_path}")
+
+        fp16 = True
+
+        def crossfade(chunk1, chunk2, overlap):
+            fade_out = np.cos(np.linspace(0, np.pi / 2, overlap)) ** 2
+            fade_in = np.cos(np.linspace(np.pi / 2, 0, overlap)) ** 2
+            if len(chunk2) < overlap:
+                chunk2[:overlap] = (
+                        chunk2[:overlap] * fade_in[: len(chunk2)]
+                        + (chunk1[-overlap:] * fade_out)[: len(chunk2)]
+                )
+            else:
+                chunk2[:overlap] = chunk2[:overlap] * fade_in + chunk1[-overlap:] * fade_out
+            return chunk2
+
+        # Load and validate audio files
+        try:
+            source_audio, source_sr = librosa.load(source_path, sr=self.sr)
+            if source_sr != self.sr:
+                self.logger.warning(f"Source audio sample rate {source_sr}Hz resampled to {self.sr}Hz")
+        except Exception as e:
+            raise RuntimeError(f"Error loading source audio: {str(e)}")
+
+        try:
+            ref_audio, ref_sr = librosa.load(target_path, sr=self.sr)
+            if ref_sr != self.sr:
+                self.logger.warning(f"Reference audio sample rate {ref_sr}Hz resampled to {self.sr}Hz")
+        except Exception as e:
+            raise RuntimeError(f"Error loading reference audio: {str(e)}")
+
+        # Check audio lengths
+        max_duration = 30  # 30 seconds
+        if len(source_audio) > max_duration * self.sr:
+            self.logger.warning(f"Source audio truncated from {len(source_audio) / self.sr:.1f}s to {max_duration}s")
+            source_audio = source_audio[:max_duration * self.sr]
+        if len(ref_audio) > max_duration * self.sr:
+            self.logger.warning(f"Reference audio truncated from {len(ref_audio) / self.sr:.1f}s to {max_duration}s")
+            ref_audio = ref_audio[:max_duration * self.sr]
+
+        length_adjust = 1.0
+        inference_cfg_rate = 0.7
+
+        max_context_window = self.sr // self.hop_length * 30
+        overlap_frame_len = 16
+        overlap_wave_len = overlap_frame_len * self.hop_length
+
+        # Process audio
+        source_audio = torch.tensor(source_audio).unsqueeze(0).float().to(self.device)
+        ref_audio = torch.tensor(ref_audio[: self.sr * 25]).unsqueeze(0).float().to(self.device)
+
+        time_vc_start = time.time()
+        try:
+            # Resample
+            converted_waves_16k = torchaudio.functional.resample(source_audio, self.sr, 16000)
+            # if source audio less than 30 seconds, whisper can handle in one forward
+            if converted_waves_16k.size(-1) <= 16000 * 30:
+                S_alt = self.semantic_fn(converted_waves_16k)
+            else:
+                overlapping_time = 5  # 5 seconds
+                S_alt_list = []
+                buffer = None
+                traversed_time = 0
+                while traversed_time < converted_waves_16k.size(-1):
+                    if buffer is None:  # first chunk
+                        chunk = converted_waves_16k[
+                                :, traversed_time: traversed_time + 16000 * 30
+                                ]
+                    else:
+                        chunk = torch.cat(
+                            [
+                                buffer,
+                                converted_waves_16k[
+                                :,
+                                traversed_time: traversed_time
+                                                + 16000 * (30 - overlapping_time),
+                                ],
+                            ],
+                            dim=-1,
+                        )
+                    S_alt = self.semantic_fn(chunk)
+                    if traversed_time == 0:
+                        S_alt_list.append(S_alt)
+                    else:
+                        S_alt_list.append(S_alt[:, 50 * overlapping_time:])
+                    buffer = chunk[:, -16000 * overlapping_time:]
+                    traversed_time += (
+                        30 * 16000
+                        if traversed_time == 0
+                        else chunk.size(-1) - 16000 * overlapping_time
+                    )
+                S_alt = torch.cat(S_alt_list, dim=1)
+
+            ori_waves_16k = torchaudio.functional.resample(ref_audio, self.sr, 16000)
+            S_ori = self.semantic_fn(ori_waves_16k)
+
+            mel = self.mel_function(source_audio.to(self.device).float())
+            mel2 = self.mel_function(ref_audio.to(self.device).float())
+
+            target_lengths = torch.LongTensor([int(mel.size(2) * length_adjust)]).to(mel.device)
+            target2_lengths = torch.LongTensor([mel2.size(2)]).to(mel2.device)
+
+            feat2 = torchaudio.compliance.kaldi.fbank(
+                ori_waves_16k, num_mel_bins=80, dither=0, sample_frequency=16000
+            )
+            feat2 = feat2 - feat2.mean(dim=0, keepdim=True)
+            style2 = self.campplus_model(feat2.unsqueeze(0))
+
+            F0_ori = None
+            F0_alt = None
+            shifted_f0_alt = None
+
+            # Length regulation
+            cond, _, codes, commitment_loss, codebook_loss = self.student_model.length_regulator(
+                S_alt, ylens=target_lengths, n_quantizers=3, f0=shifted_f0_alt
+            )
+            prompt_condition, _, codes, commitment_loss, codebook_loss = self.student_model.length_regulator(
+                S_ori, ylens=target2_lengths, n_quantizers=3, f0=F0_ori
+            )
+
+            max_source_window = max_context_window - mel2.size(2)
+            # split source condition (cond) into chunks
+            processed_frames = 0
+            generated_wave_chunks = []
+            # generate chunk by chunk and stream the output
+            while processed_frames < cond.size(1):
+                chunk_cond = cond[:, processed_frames: processed_frames + max_source_window]
+                is_last_chunk = processed_frames + max_source_window >= cond.size(1)
+                cat_condition = torch.cat([prompt_condition, chunk_cond], dim=1)
+                with torch.autocast(
+                        device_type=torch.device(self.device).type, dtype=torch.float16 if fp16 else torch.float32
+                ):
+                    # Voice Conversion
+                    vc_target = self.student_model.cfm.inference(
+                        cat_condition,
+                        torch.LongTensor([cat_condition.size(1)]).to(mel2.device),
+                        mel2,
+                        style2,
+                        None,
+                        diffusion_steps,
+                        inference_cfg_rate=inference_cfg_rate,
+                    )
+                    vc_target = vc_target[:, :, mel2.size(-1):].clone()
+                vc_wave = self.vocoder_fn(vc_target.float()).squeeze()
+                vc_wave = vc_wave[None, :]
+                if processed_frames == 0:
+                    if is_last_chunk:
+                        output_wave = vc_wave[0].cpu().numpy()
+                        generated_wave_chunks.append(output_wave)
+                        break
+                    output_wave = vc_wave[0, :-overlap_wave_len].cpu().numpy()
+                    generated_wave_chunks.append(output_wave)
+                    previous_chunk = vc_wave[0, -overlap_wave_len:]
+                    processed_frames += vc_target.size(2) - overlap_frame_len
+                elif is_last_chunk:
+                    output_wave = crossfade(
+                        previous_chunk.cpu().numpy(), vc_wave[0].cpu().numpy(), overlap_wave_len
+                    )
+                    generated_wave_chunks.append(output_wave)
+                    processed_frames += vc_target.size(2) - overlap_frame_len
+                    break
+                else:
+                    output_wave = crossfade(
+                        previous_chunk.cpu().numpy(),
+                        vc_wave[0, :-overlap_wave_len].cpu().numpy(),
+                        overlap_wave_len,
+                    )
+                    generated_wave_chunks.append(output_wave)
+                    previous_chunk = vc_wave[0, -overlap_wave_len:]
+                    processed_frames += vc_target.size(2) - overlap_frame_len
+            vc_wave = torch.tensor(np.concatenate(generated_wave_chunks))[None, :].float()
+            time_vc_end = time.time()
+            rtf = (time_vc_end - time_vc_start) / vc_wave.size(-1) * self.sr
+            self.logger.info(f"RTF: {rtf:.2f}")
+
+            source_name = os.path.basename(source_path).split(".")[0]
+            target_name = os.path.basename(target_path).split(".")[0]
+            os.makedirs(output_dir, exist_ok=True)
+            output_path = os.path.join(
+                output_dir,
+                f"vc_{source_name}_{target_name}_{length_adjust}_{diffusion_steps}_{inference_cfg_rate}.wav",
+            )
+            torchaudio.save(output_path, vc_wave.cpu(), self.sr)
+            self.logger.info(f"Saved output to {output_path}")
+
+        except Exception as e:
+            self.logger.error(f"Error during inference: {str(e)}")
+            raise
+
+    def eval_one_loop(self, step, diffusion_steps):
+        import glob
+        save_path = os.path.join(self.output_dir, f'eval_step_{step}')
+        os.makedirs(save_path, exist_ok=True)
+
+        # Check if evaluation directory exists
+        files_path = '../dataset/evaluation_samples'
+        if not os.path.exists(files_path):
+            self.logger.error(f"Evaluation directory {files_path} does not exist")
+            return
+
+        files = glob.glob(os.path.join(files_path, '*.wav'))
+        if not files:
+            self.logger.error(f"No wav files found in {files_path}")
+            return
+
+        reference_files = [f for f in files if 'ref' in f]
+        if not reference_files:
+            self.logger.error("No reference files found")
+            return
+
+        samples = [f for f in files if 'ref' not in f]
+        if not samples:
+            self.logger.error("No sample files found")
+            return
+
+        self.logger.info(f"Starting evaluation at step {step}")
+        for sample in samples:
+            try:
+                self.inference_student(
+                    source_path=sample,
+                    target_path=reference_files[0],
+                    output_dir=save_path,
+                    diffusion_steps=diffusion_steps,
+                )
+            except Exception as e:
+                self.logger.error(f"Error processing {sample}: {str(e)}")
+                continue
+        self.logger.info(f"Completed evaluation at step {step}")
+
+
     def run_distillation(self):
         """Run the progressive distillation process."""
-        # Progressive distillation loop
         current_teacher_steps = self.initial_teacher_steps
         iteration = 0
         
@@ -482,25 +757,38 @@ class Distiller:
             self.logger.info(f"\nStarting iteration {iteration + 1}")
             self.logger.info(f"Current teacher steps: {current_teacher_steps}")
             
-            # Load or initialize teacher model
             if iteration == 0:
                 # Load initial teacher model
                 teacher_model, semantic_fn, f0_fn, vocoder_fn, campplus_model, mel_fn, mel_fn_args = load_models(
                     fp16=False,
                     f0_condition=self.teacher_config["model_params"]["DiT"].get("f0_condition", False),
                     checkpoint=self.teacher_checkpoint_path,
-                    config=os.path.join(self.output_dir, "student_config.yaml"),
+                    config=self.teacher_config_path,
                 )
+                
+                # Initialize student model with teacher's weights
+                self.student_model, _, _, _, _, _, _ = load_models(
+                    fp16=False,
+                    f0_condition=self.student_config["model_params"]["DiT"].get("f0_condition", False),
+                    checkpoint=self.teacher_checkpoint_path,  # Use teacher's checkpoint
+                    config=self.student_config_path,
+                )
+                
+                # Move models to device (do this only once)
+                _ = [teacher_model[key].to(self.device) for key in teacher_model]
+                _ = [self.student_model[key].to(self.device) for key in self.student_model]
+                
             else:
-                # Use previous student as new teacher
-                teacher_model = self.student_model
-                # Reinitialize student model
-                self.student_model = build_model(self.student_params, stage="DiT")
-                self.student_model = {k: v.to(self.device) for k, v in self.student_model.items()}
-                self.student_model.cfm.estimator.setup_caches(max_batch_size=self.batch_size, max_seq_length=8192)
+                # Create directory for this iteration
+                path = os.path.join(self.output_dir, f"distillation_iter_{iteration}")
+                os.makedirs(path, exist_ok=True)
+                
+                # Use current student model as teacher directly without saving/loading
+                teacher_model = {key: self.student_model[key].clone() for key in self.student_model}
             
-            _ = [teacher_model[key].to(self.device) for key in teacher_model]
+            # Setup caches for models
             teacher_model.cfm.estimator.setup_caches(max_batch_size=self.batch_size, max_seq_length=8192)
+            self.student_model.cfm.estimator.setup_caches(max_batch_size=self.batch_size, max_seq_length=8192)
             
             # Calculate student steps for this iteration
             current_student_steps = current_teacher_steps // self.steps_reduction_factor
@@ -536,8 +824,8 @@ class Distiller:
                     # Update student
                     optimizer.zero_grad()
                     loss.backward()
-                    torch.nn.utils.clip_grad_norm_(self.student_model.cfm.parameters(), 10.0)
-                    torch.nn.utils.clip_grad_norm_(self.student_model.length_regulator.parameters(), 10.0)
+                    torch.nn.utils.clip_grad_norm_(self.student_model.cfm.parameters(), self.grad_clip_threshold)
+                    torch.nn.utils.clip_grad_norm_(self.student_model.length_regulator.parameters(), self.grad_clip_threshold)
                     optimizer.step('cfm')
                     optimizer.step('length_regulator')
                     optimizer.scheduler(key='cfm')
@@ -554,6 +842,15 @@ class Distiller:
                     
                     total_steps += 1
                     
+                    # Clear CUDA cache periodically to prevent memory buildup
+                    if total_steps % 100 == 0:
+                        self.clean_cache()
+
+                    # Evaluate if needed
+                    if self.eval_steps > 0 and total_steps % self.eval_steps == 0:
+                        self.logger.info(f"Evaluating at step {total_steps}")
+                        self.eval_one_loop(total_steps, current_student_steps)
+
                     # Save checkpoint
                     if total_steps % self.save_interval == 0:
                         checkpoint_path = os.path.join(
@@ -573,8 +870,10 @@ class Distiller:
                             'trajectory_weight_type': self.trajectory_weight_type,
                         }, checkpoint_path)
                         self.logger.info(f"Saved checkpoint to {checkpoint_path}")
+                        # Clean up old checkpoints to save disk space
+                        self.clean_checkpoint_files(iteration, epoch, self.cleanup_keep_last)
                     
-                    if self.iterations_per_epoch > 0 and total_steps >= self.iterations_per_epoch:
+                    if 0 < self.iterations_per_epoch <= total_steps:
                         logging.info(f"Reached {self.iterations_per_epoch} iterations per epoch, stopping epoch")
                         break
                 # Save at end of each epoch
@@ -595,6 +894,8 @@ class Distiller:
                     'trajectory_weight_type': self.trajectory_weight_type,
                 }, checkpoint_path)
                 self.logger.info(f"Saved checkpoint to {checkpoint_path}")
+                # Clean up old checkpoints after epoch end
+                self.clean_checkpoint_files(iteration, epoch+1, self.cleanup_keep_last)
             
             # Update steps for next iteration
             current_teacher_steps = current_student_steps
@@ -618,11 +919,62 @@ class Distiller:
             # Clean cache after each iteration
             self.clean_cache()
 
+    def clean_checkpoint_files(self, iteration, epoch, keep_last=3):
+        """Clean up old checkpoint files to save disk space.
+        
+        Args:
+            iteration: Current iteration
+            epoch: Current epoch
+            keep_last: Number of most recent checkpoints to keep
+        """
+        if not hasattr(self, 'checkpoint_cleanup') or not self.checkpoint_cleanup:
+            return
+            
+        self.logger.info(f"Cleaning up old checkpoint files, keeping last {keep_last}")
+        
+        # Get all checkpoint files for the current iteration
+        import glob
+        import os
+        
+        # Regular step checkpoints
+        pattern = os.path.join(self.output_dir, f"distilled_model_iter_{iteration}_epoch_{epoch}_step_*.pth")
+        checkpoint_files = glob.glob(pattern)
+        
+        # Sort by step number (extract from filename)
+        checkpoint_files.sort(key=lambda x: int(x.split('_step_')[1].split('.pth')[0]))
+        
+        # Keep only the last N checkpoints
+        if len(checkpoint_files) > keep_last:
+            files_to_delete = checkpoint_files[:-keep_last]
+            for file_path in files_to_delete:
+                try:
+                    os.remove(file_path)
+                    self.logger.info(f"Deleted old checkpoint: {file_path}")
+                except Exception as e:
+                    self.logger.warning(f"Error deleting {file_path}: {e}")
+                    
+        # Also clean up epoch checkpoints from previous epochs in this iteration
+        if epoch > 0:
+            pattern = os.path.join(self.output_dir, f"distilled_model_iter_{iteration}_epoch_*.pth")
+            epoch_files = glob.glob(pattern)
+            epoch_files = [f for f in epoch_files if f"_epoch_{epoch}" not in f]
+            
+            # Keep only the last N epoch checkpoints
+            epoch_files.sort(key=lambda x: int(x.split('_epoch_')[1].split('.pth')[0]))
+            if len(epoch_files) > keep_last:
+                epoch_files_to_delete = epoch_files[:-keep_last]
+                for file_path in epoch_files_to_delete:
+                    try:
+                        os.remove(file_path)
+                        self.logger.info(f"Deleted old epoch checkpoint: {file_path}")
+                    except Exception as e:
+                        self.logger.warning(f"Error deleting {file_path}: {e}")
+                        
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--teacher_config", type=str, required=True)
     parser.add_argument("--student_config", type=str, required=True)
-    parser.add_argument("--initial_teacher_checkpoint", type=str, required=True)
+    parser.add_argument("--initial_teacher_checkpoint", type=str, default=None)
     parser.add_argument("--data_dir", type=str, required=True)
     parser.add_argument("--output_dir", type=str, required=True)
     parser.add_argument("--initial_teacher_steps", type=int, default=30)
@@ -638,6 +990,17 @@ def main():
                       choices=["linear", "exponential", "uniform"],
                       help="Type of weighting for trajectory timesteps")
     parser.add_argument("--iterations_per_epoch", type=int, default=-1)
+    parser.add_argument("--eval_steps", type=int, default=-1, help="Steps between evaluation runs")
+    parser.add_argument("--commitment_loss_weight", type=float, default=0.05,
+                        help="Weight for commitment loss")
+    parser.add_argument("--codebook_loss_weight", type=float, default=0.15,
+                        help="Weight for codebook loss")
+    parser.add_argument("--grad_clip_threshold", type=float, default=10.0,
+                        help="Threshold for gradient clipping")
+    parser.add_argument("--checkpoint_cleanup", action="store_true",
+                        help="Delete older checkpoints to save disk space")
+    parser.add_argument("--cleanup_keep_last", type=int, default=3,
+                        help="Number of recent checkpoints to keep when cleaning up")
     args = parser.parse_args()
     
     # Create the distiller and run distillation
@@ -656,8 +1019,16 @@ def main():
         save_interval=args.save_interval,
         device=args.device,
         use_trajectory_loss=args.use_trajectory_loss,
-        trajectory_weight_type=args.trajectory_weight_type
+        trajectory_weight_type=args.trajectory_weight_type,
+        iterations_per_epoch=args.iterations_per_epoch,
+        commitment_loss_weight=args.commitment_loss_weight,
+        codebook_loss_weight=args.codebook_loss_weight,
+        grad_clip_threshold=args.grad_clip_threshold,
+        checkpoint_cleanup=args.checkpoint_cleanup,
+        cleanup_keep_last=args.cleanup_keep_last,
     )
+    
+    distiller.eval_steps = args.eval_steps
     
     distiller.run_distillation()
 

@@ -3,13 +3,12 @@
 cd seed_vc_v1_minimal
 
 python distillation.py \
-    --initial_teacher_checkpoint ../ru_checkpoints/russian_train_7/russian_train_7/ft_model.pth \
-    --teacher_config configs/conf_gigaam.yaml \
-    --student_config configs/conf_gigaam.yaml \
+    --teacher_config configs/conf_wisper.yaml \
+    --student_config configs/conf_wisper.yaml \
     --data_dir ../dataset/source_voices \
     --output_dir ../distillation_results \
     --initial_teacher_steps 16 \
-    --final_steps 4 \
+    --final_steps 2 \
     --steps_reduction_factor 2 \
     --epochs_per_iteration 1 \
     --batch_size 1 \
@@ -18,4 +17,5 @@ python distillation.py \
     --use_trajectory_loss \
     --trajectory_weight_type exponential \
     --device mps \
-    --iterations_per_epoch 1000
+    --iterations_per_epoch 1000 \
+    --eval_steps 1
