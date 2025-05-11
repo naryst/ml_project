@@ -10,6 +10,7 @@ from datetime import datetime
 import numpy as np
 import gc
 from torch.amp import autocast, GradScaler
+import copy
 
 from modules.commons import recursive_munch, build_model, load_checkpoint, sequence_mask
 from optimizers import build_optimizer
@@ -127,7 +128,7 @@ class Distiller:
         self.grad_clip_threshold = grad_clip_threshold
         self.checkpoint_cleanup = checkpoint_cleanup
         self.cleanup_keep_last = cleanup_keep_last
-        self.scaler = GradScaler(device_type='cuda') if device == "cuda" and use_amp else None
+        self.scaler = GradScaler() if device == "cuda" and use_amp else None
         self.use_amp = device == "cuda" and use_amp
         
         # Create output directory
@@ -780,13 +781,15 @@ class Distiller:
                 _ = [teacher_model[key].to(self.device) for key in teacher_model]
                 _ = [self.student_model[key].to(self.device) for key in self.student_model]
                 
-            else:
-                # Create directory for this iteration
-                path = os.path.join(self.output_dir, f"distillation_iter_{iteration}")
-                os.makedirs(path, exist_ok=True)
+            else:                
+                # Create new teacher model with same architecture as student
+                teacher_params = recursive_munch(self.teacher_config["model_params"])
+                teacher_model = build_model(teacher_params, stage="DiT")
+                _ = [teacher_model[key].to(self.device) for key in teacher_model]
                 
-                # Use current student model as teacher directly without saving/loading
-                teacher_model = {key: self.student_model[key].clone() for key in self.student_model}
+                # Transfer weights from student to teacher via state dicts
+                for key in self.student_model:
+                    teacher_model[key].load_state_dict(self.student_model[key].state_dict())
             
             # Setup caches for models
             teacher_model.cfm.estimator.setup_caches(max_batch_size=self.batch_size, max_seq_length=8192)
