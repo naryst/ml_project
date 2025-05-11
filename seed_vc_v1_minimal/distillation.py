@@ -9,6 +9,7 @@ import logging
 from datetime import datetime
 import numpy as np
 import gc
+from torch.amp import autocast, GradScaler
 
 from modules.commons import recursive_munch, build_model, load_checkpoint, sequence_mask
 from optimizers import build_optimizer
@@ -92,6 +93,7 @@ class Distiller:
                  grad_clip_threshold=10.0,
                  checkpoint_cleanup=False,
                  cleanup_keep_last=3,
+                 use_amp=True,
                  ):
         self.wav2vec_feature_extractor = None
         self.semantic_fn = None
@@ -125,6 +127,8 @@ class Distiller:
         self.grad_clip_threshold = grad_clip_threshold
         self.checkpoint_cleanup = checkpoint_cleanup
         self.cleanup_keep_last = cleanup_keep_last
+        self.scaler = GradScaler(device_type='cuda') if device == "cuda" and use_amp else None
+        self.use_amp = device == "cuda" and use_amp
         
         # Create output directory
         os.makedirs(self.output_dir, exist_ok=True)
@@ -647,9 +651,7 @@ class Distiller:
                 chunk_cond = cond[:, processed_frames: processed_frames + max_source_window]
                 is_last_chunk = processed_frames + max_source_window >= cond.size(1)
                 cat_condition = torch.cat([prompt_condition, chunk_cond], dim=1)
-                with torch.autocast(
-                        device_type=torch.device(self.device).type, dtype=torch.float16 if fp16 else torch.float32
-                ):
+                with autocast(device_type='cuda', enabled=self.use_amp):
                     # Voice Conversion
                     vc_target = self.student_model.cfm.inference(
                         cat_condition,
@@ -813,13 +815,14 @@ class Distiller:
                     batch = [b.to(self.device) for b in batch]
                     
                     # Forward pass and loss calculation
-                    loss = self.distill_one_step(
-                        batch, 
-                        teacher_model, 
-                        self.student_model, 
-                        current_teacher_steps, 
-                        current_student_steps
-                    )
+                    with autocast(device_type='cuda', enabled=self.use_amp):
+                        loss = self.distill_one_step(
+                            batch, 
+                            teacher_model, 
+                            self.student_model, 
+                            current_teacher_steps, 
+                            current_student_steps
+                        )
                     
                     # Update student
                     optimizer.zero_grad()
