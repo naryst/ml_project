@@ -47,7 +47,7 @@ def crossfade(chunk1, chunk2, overlap):
 @torch.no_grad()
 def main(args):
     model, semantic_fn, f0_fn, vocoder_fn, campplus_model, mel_fn, mel_fn_args = (
-        load_models(args.fp16, args.f0_condition, args.checkpoint, args.config)
+        load_models(args.fp16, args.f0_condition, args.checkpoint, args.config, distilled=args.distilled)
     )
     sr = mel_fn_args["sampling_rate"]
     f0_condition = args.f0_condition
@@ -253,5 +253,6 @@ if __name__ == "__main__":
         "--config", type=str, help="Path to the config file", default=None
     )
     parser.add_argument("--fp16", type=str2bool, default=True)
+    parser.add_argument("--distilled", type=str2bool, default=False)
     args = parser.parse_args()
     main(args)

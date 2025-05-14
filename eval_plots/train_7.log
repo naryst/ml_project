@@ -1,0 +1,1337 @@
+2025-05-06 18:35:22,666 - seed_vc_trainer - INFO - Logging to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/training_20250506_183522.log
+2025-05-06 18:35:22,666 - seed_vc_trainer - INFO - Starting training session: russian_train_7
+2025-05-06 18:35:22,666 - seed_vc_trainer - INFO - Config: configs/sv_v1_small.yaml
+2025-05-06 18:35:22,666 - seed_vc_trainer - INFO - Device: cuda:0
+2025-05-06 18:35:36,337 - seed_vc_trainer - INFO - Starting training for 1 epochs or 99999999 steps
+2025-05-06 18:35:36,337 - seed_vc_trainer - INFO - Starting epoch 0
+2025-05-06 18:35:39,045 - seed_vc_trainer - INFO - epoch 0, step 0, loss: 0.662973
+2025-05-06 18:35:39,046 - seed_vc_trainer - INFO - Starting evaluation at step 0
+2025-05-06 18:35:39,806 - seed_vc_trainer - INFO - RTF: 0.09
+2025-05-06 18:35:39,811 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_0/vc_s1_ref_1.0_30_0.7.wav
+2025-05-06 18:35:40,429 - seed_vc_trainer - INFO - RTF: 0.09
+2025-05-06 18:35:40,432 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_0/vc_s2_ref_1.0_30_0.7.wav
+2025-05-06 18:35:41,272 - seed_vc_trainer - INFO - RTF: 0.10
+2025-05-06 18:35:41,277 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_0/vc_s3_ref_1.0_30_0.7.wav
+2025-05-06 18:35:41,831 - seed_vc_trainer - INFO - RTF: 0.08
+2025-05-06 18:35:41,836 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_0/vc_s4_ref_1.0_30_0.7.wav
+2025-05-06 18:35:42,309 - seed_vc_trainer - INFO - RTF: 0.07
+2025-05-06 18:35:42,313 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_0/vc_s5_ref_1.0_30_0.7.wav
+2025-05-06 18:35:42,313 - seed_vc_trainer - INFO - Completed evaluation at step 0
+2025-05-06 18:35:56,462 - seed_vc_trainer - INFO - epoch 0, step 10, loss: 0.657547
+2025-05-06 18:36:08,245 - seed_vc_trainer - INFO - epoch 0, step 20, loss: 0.654345
+2025-05-06 18:36:20,623 - seed_vc_trainer - INFO - epoch 0, step 30, loss: 0.648977
+2025-05-06 18:36:32,464 - seed_vc_trainer - INFO - epoch 0, step 40, loss: 0.641961
+2025-05-06 18:36:44,312 - seed_vc_trainer - INFO - epoch 0, step 50, loss: 0.636076
+2025-05-06 18:36:55,875 - seed_vc_trainer - INFO - epoch 0, step 60, loss: 0.632466
+2025-05-06 18:37:07,440 - seed_vc_trainer - INFO - epoch 0, step 70, loss: 0.627790
+2025-05-06 18:37:19,403 - seed_vc_trainer - INFO - epoch 0, step 80, loss: 0.622632
+2025-05-06 18:37:31,789 - seed_vc_trainer - INFO - epoch 0, step 90, loss: 0.619354
+2025-05-06 18:37:43,446 - seed_vc_trainer - INFO - epoch 0, step 100, loss: 0.613378
+2025-05-06 18:37:55,266 - seed_vc_trainer - INFO - epoch 0, step 110, loss: 0.610455
+2025-05-06 18:38:06,888 - seed_vc_trainer - INFO - epoch 0, step 120, loss: 0.611202
+2025-05-06 18:38:18,353 - seed_vc_trainer - INFO - epoch 0, step 130, loss: 0.608038
+2025-05-06 18:38:30,054 - seed_vc_trainer - INFO - epoch 0, step 140, loss: 0.605565
+2025-05-06 18:38:41,402 - seed_vc_trainer - INFO - epoch 0, step 150, loss: 0.601403
+2025-05-06 18:38:52,616 - seed_vc_trainer - INFO - epoch 0, step 160, loss: 0.598616
+2025-05-06 18:39:04,801 - seed_vc_trainer - INFO - epoch 0, step 170, loss: 0.596958
+2025-05-06 18:39:16,249 - seed_vc_trainer - INFO - epoch 0, step 180, loss: 0.596732
+2025-05-06 18:39:28,641 - seed_vc_trainer - INFO - epoch 0, step 190, loss: 0.595396
+2025-05-06 18:39:40,293 - seed_vc_trainer - INFO - epoch 0, step 200, loss: 0.593808
+2025-05-06 18:39:51,906 - seed_vc_trainer - INFO - epoch 0, step 210, loss: 0.592235
+2025-05-06 18:40:02,677 - seed_vc_trainer - INFO - epoch 0, step 220, loss: 0.589720
+2025-05-06 18:40:15,219 - seed_vc_trainer - INFO - epoch 0, step 230, loss: 0.588335
+2025-05-06 18:40:26,276 - seed_vc_trainer - INFO - epoch 0, step 240, loss: 0.587479
+2025-05-06 18:40:39,811 - seed_vc_trainer - INFO - epoch 0, step 250, loss: 0.585843
+2025-05-06 18:40:51,278 - seed_vc_trainer - INFO - epoch 0, step 260, loss: 0.583775
+2025-05-06 18:41:02,813 - seed_vc_trainer - INFO - epoch 0, step 270, loss: 0.582232
+2025-05-06 18:41:16,249 - seed_vc_trainer - INFO - epoch 0, step 280, loss: 0.579912
+2025-05-06 18:41:27,662 - seed_vc_trainer - INFO - epoch 0, step 290, loss: 0.579771
+2025-05-06 18:41:38,633 - seed_vc_trainer - INFO - epoch 0, step 300, loss: 0.579261
+2025-05-06 18:41:50,958 - seed_vc_trainer - INFO - epoch 0, step 310, loss: 0.578042
+2025-05-06 18:42:04,088 - seed_vc_trainer - INFO - epoch 0, step 320, loss: 0.577384
+2025-05-06 18:42:15,148 - seed_vc_trainer - INFO - epoch 0, step 330, loss: 0.578861
+2025-05-06 18:42:27,291 - seed_vc_trainer - INFO - epoch 0, step 340, loss: 0.578965
+2025-05-06 18:42:38,193 - seed_vc_trainer - INFO - epoch 0, step 350, loss: 0.578755
+2025-05-06 18:42:49,149 - seed_vc_trainer - INFO - epoch 0, step 360, loss: 0.581322
+2025-05-06 18:43:00,578 - seed_vc_trainer - INFO - epoch 0, step 370, loss: 0.579558
+2025-05-06 18:43:11,117 - seed_vc_trainer - INFO - epoch 0, step 380, loss: 0.578599
+2025-05-06 18:43:23,707 - seed_vc_trainer - INFO - epoch 0, step 390, loss: 0.578832
+2025-05-06 18:43:35,489 - seed_vc_trainer - INFO - epoch 0, step 400, loss: 0.579378
+2025-05-06 18:43:47,593 - seed_vc_trainer - INFO - epoch 0, step 410, loss: 0.577875
+2025-05-06 18:43:59,754 - seed_vc_trainer - INFO - epoch 0, step 420, loss: 0.579688
+2025-05-06 18:44:11,525 - seed_vc_trainer - INFO - epoch 0, step 430, loss: 0.579278
+2025-05-06 18:44:22,844 - seed_vc_trainer - INFO - epoch 0, step 440, loss: 0.579815
+2025-05-06 18:44:35,359 - seed_vc_trainer - INFO - epoch 0, step 450, loss: 0.580085
+2025-05-06 18:44:46,936 - seed_vc_trainer - INFO - epoch 0, step 460, loss: 0.578512
+2025-05-06 18:44:58,589 - seed_vc_trainer - INFO - epoch 0, step 470, loss: 0.577132
+2025-05-06 18:45:11,257 - seed_vc_trainer - INFO - epoch 0, step 480, loss: 0.575400
+2025-05-06 18:45:22,530 - seed_vc_trainer - INFO - epoch 0, step 490, loss: 0.578076
+2025-05-06 18:45:33,945 - seed_vc_trainer - INFO - epoch 0, step 500, loss: 0.576718
+2025-05-06 18:45:46,709 - seed_vc_trainer - INFO - epoch 0, step 510, loss: 0.575550
+2025-05-06 18:45:59,187 - seed_vc_trainer - INFO - epoch 0, step 520, loss: 0.574732
+2025-05-06 18:46:09,345 - seed_vc_trainer - INFO - epoch 0, step 530, loss: 0.574680
+2025-05-06 18:46:20,225 - seed_vc_trainer - INFO - epoch 0, step 540, loss: 0.574860
+2025-05-06 18:46:31,448 - seed_vc_trainer - INFO - epoch 0, step 550, loss: 0.575880
+2025-05-06 18:46:42,842 - seed_vc_trainer - INFO - epoch 0, step 560, loss: 0.578081
+2025-05-06 18:46:54,086 - seed_vc_trainer - INFO - epoch 0, step 570, loss: 0.577611
+2025-05-06 18:47:05,759 - seed_vc_trainer - INFO - epoch 0, step 580, loss: 0.576575
+2025-05-06 18:47:17,605 - seed_vc_trainer - INFO - epoch 0, step 590, loss: 0.577669
+2025-05-06 18:47:28,711 - seed_vc_trainer - INFO - epoch 0, step 600, loss: 0.577175
+2025-05-06 18:47:40,675 - seed_vc_trainer - INFO - epoch 0, step 610, loss: 0.580034
+2025-05-06 18:47:52,343 - seed_vc_trainer - INFO - epoch 0, step 620, loss: 0.579135
+2025-05-06 18:48:03,736 - seed_vc_trainer - INFO - epoch 0, step 630, loss: 0.580688
+2025-05-06 18:48:16,230 - seed_vc_trainer - INFO - epoch 0, step 640, loss: 0.581234
+2025-05-06 18:48:27,603 - seed_vc_trainer - INFO - epoch 0, step 650, loss: 0.582714
+2025-05-06 18:48:40,484 - seed_vc_trainer - INFO - epoch 0, step 660, loss: 0.581871
+2025-05-06 18:48:51,749 - seed_vc_trainer - INFO - epoch 0, step 670, loss: 0.582390
+2025-05-06 18:49:03,324 - seed_vc_trainer - INFO - epoch 0, step 680, loss: 0.580533
+2025-05-06 18:49:15,279 - seed_vc_trainer - INFO - epoch 0, step 690, loss: 0.580644
+2025-05-06 18:49:26,164 - seed_vc_trainer - INFO - epoch 0, step 700, loss: 0.581595
+2025-05-06 18:49:37,487 - seed_vc_trainer - INFO - epoch 0, step 710, loss: 0.581365
+2025-05-06 18:49:47,946 - seed_vc_trainer - INFO - epoch 0, step 720, loss: 0.581125
+2025-05-06 18:49:59,480 - seed_vc_trainer - INFO - epoch 0, step 730, loss: 0.581458
+2025-05-06 18:50:10,915 - seed_vc_trainer - INFO - epoch 0, step 740, loss: 0.579707
+2025-05-06 18:50:22,242 - seed_vc_trainer - INFO - epoch 0, step 750, loss: 0.579347
+2025-05-06 18:50:34,183 - seed_vc_trainer - INFO - epoch 0, step 760, loss: 0.577976
+2025-05-06 18:50:46,411 - seed_vc_trainer - INFO - epoch 0, step 770, loss: 0.576744
+2025-05-06 18:50:58,308 - seed_vc_trainer - INFO - epoch 0, step 780, loss: 0.577767
+2025-05-06 18:51:09,733 - seed_vc_trainer - INFO - epoch 0, step 790, loss: 0.577589
+2025-05-06 18:51:20,879 - seed_vc_trainer - INFO - epoch 0, step 800, loss: 0.577565
+2025-05-06 18:51:32,872 - seed_vc_trainer - INFO - epoch 0, step 810, loss: 0.576135
+2025-05-06 18:51:44,462 - seed_vc_trainer - INFO - epoch 0, step 820, loss: 0.578439
+2025-05-06 18:51:55,776 - seed_vc_trainer - INFO - epoch 0, step 830, loss: 0.575589
+2025-05-06 18:52:06,828 - seed_vc_trainer - INFO - epoch 0, step 840, loss: 0.573930
+2025-05-06 18:52:18,152 - seed_vc_trainer - INFO - epoch 0, step 850, loss: 0.573395
+2025-05-06 18:52:30,527 - seed_vc_trainer - INFO - epoch 0, step 860, loss: 0.574857
+2025-05-06 18:52:42,932 - seed_vc_trainer - INFO - epoch 0, step 870, loss: 0.574325
+2025-05-06 18:52:54,537 - seed_vc_trainer - INFO - epoch 0, step 880, loss: 0.575056
+2025-05-06 18:53:06,439 - seed_vc_trainer - INFO - epoch 0, step 890, loss: 0.574396
+2025-05-06 18:53:18,964 - seed_vc_trainer - INFO - epoch 0, step 900, loss: 0.573225
+2025-05-06 18:53:30,316 - seed_vc_trainer - INFO - epoch 0, step 910, loss: 0.570784
+2025-05-06 18:53:42,972 - seed_vc_trainer - INFO - epoch 0, step 920, loss: 0.572113
+2025-05-06 18:53:54,895 - seed_vc_trainer - INFO - epoch 0, step 930, loss: 0.569711
+2025-05-06 18:54:06,754 - seed_vc_trainer - INFO - epoch 0, step 940, loss: 0.572070
+2025-05-06 18:54:19,135 - seed_vc_trainer - INFO - epoch 0, step 950, loss: 0.574159
+2025-05-06 18:54:31,385 - seed_vc_trainer - INFO - epoch 0, step 960, loss: 0.575514
+2025-05-06 18:54:42,958 - seed_vc_trainer - INFO - epoch 0, step 970, loss: 0.573831
+2025-05-06 18:54:56,794 - seed_vc_trainer - INFO - epoch 0, step 980, loss: 0.575084
+2025-05-06 18:55:08,700 - seed_vc_trainer - INFO - epoch 0, step 990, loss: 0.574911
+2025-05-06 18:55:19,948 - seed_vc_trainer - INFO - epoch 0, step 1000, loss: 0.574833
+2025-05-06 18:55:19,950 - seed_vc_trainer - INFO - Starting evaluation at step 1000
+2025-05-06 18:55:20,455 - seed_vc_trainer - INFO - RTF: 0.06
+2025-05-06 18:55:20,461 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_1000/vc_s1_ref_1.0_30_0.7.wav
+2025-05-06 18:55:20,954 - seed_vc_trainer - INFO - RTF: 0.07
+2025-05-06 18:55:20,960 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_1000/vc_s2_ref_1.0_30_0.7.wav
+2025-05-06 18:55:21,479 - seed_vc_trainer - INFO - RTF: 0.06
+2025-05-06 18:55:21,485 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_1000/vc_s3_ref_1.0_30_0.7.wav
+2025-05-06 18:55:21,957 - seed_vc_trainer - INFO - RTF: 0.07
+2025-05-06 18:55:21,962 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_1000/vc_s4_ref_1.0_30_0.7.wav
+2025-05-06 18:55:22,442 - seed_vc_trainer - INFO - RTF: 0.07
+2025-05-06 18:55:22,445 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_1000/vc_s5_ref_1.0_30_0.7.wav
+2025-05-06 18:55:22,445 - seed_vc_trainer - INFO - Completed evaluation at step 1000
+2025-05-06 18:55:33,801 - seed_vc_trainer - INFO - epoch 0, step 1010, loss: 0.574522
+2025-05-06 18:55:44,853 - seed_vc_trainer - INFO - epoch 0, step 1020, loss: 0.573502
+2025-05-06 18:55:55,282 - seed_vc_trainer - INFO - epoch 0, step 1030, loss: 0.574825
+2025-05-06 18:56:06,377 - seed_vc_trainer - INFO - epoch 0, step 1040, loss: 0.574977
+2025-05-06 18:56:17,424 - seed_vc_trainer - INFO - epoch 0, step 1050, loss: 0.575316
+2025-05-06 18:56:28,516 - seed_vc_trainer - INFO - epoch 0, step 1060, loss: 0.575089
+2025-05-06 18:56:39,357 - seed_vc_trainer - INFO - epoch 0, step 1070, loss: 0.573227
+2025-05-06 18:56:50,630 - seed_vc_trainer - INFO - epoch 0, step 1080, loss: 0.572152
+2025-05-06 18:57:01,048 - seed_vc_trainer - INFO - epoch 0, step 1090, loss: 0.572012
+2025-05-06 18:57:12,538 - seed_vc_trainer - INFO - epoch 0, step 1100, loss: 0.573946
+2025-05-06 18:57:22,967 - seed_vc_trainer - INFO - epoch 0, step 1110, loss: 0.573288
+2025-05-06 18:57:34,612 - seed_vc_trainer - INFO - epoch 0, step 1120, loss: 0.572844
+2025-05-06 18:57:46,295 - seed_vc_trainer - INFO - epoch 0, step 1130, loss: 0.571965
+2025-05-06 18:57:57,557 - seed_vc_trainer - INFO - epoch 0, step 1140, loss: 0.571987
+2025-05-06 18:58:09,139 - seed_vc_trainer - INFO - epoch 0, step 1150, loss: 0.571615
+2025-05-06 18:58:20,790 - seed_vc_trainer - INFO - epoch 0, step 1160, loss: 0.571285
+2025-05-06 18:58:31,758 - seed_vc_trainer - INFO - epoch 0, step 1170, loss: 0.571325
+2025-05-06 18:58:43,396 - seed_vc_trainer - INFO - epoch 0, step 1180, loss: 0.571665
+2025-05-06 18:58:57,300 - seed_vc_trainer - INFO - epoch 0, step 1190, loss: 0.570788
+2025-05-06 18:59:09,150 - seed_vc_trainer - INFO - epoch 0, step 1200, loss: 0.570171
+2025-05-06 18:59:20,863 - seed_vc_trainer - INFO - epoch 0, step 1210, loss: 0.568428
+2025-05-06 18:59:32,362 - seed_vc_trainer - INFO - epoch 0, step 1220, loss: 0.569373
+2025-05-06 18:59:44,596 - seed_vc_trainer - INFO - epoch 0, step 1230, loss: 0.567954
+2025-05-06 18:59:57,446 - seed_vc_trainer - INFO - epoch 0, step 1240, loss: 0.568281
+2025-05-06 19:00:08,337 - seed_vc_trainer - INFO - epoch 0, step 1250, loss: 0.568033
+2025-05-06 19:00:19,270 - seed_vc_trainer - INFO - epoch 0, step 1260, loss: 0.567642
+2025-05-06 19:00:31,086 - seed_vc_trainer - INFO - epoch 0, step 1270, loss: 0.567555
+2025-05-06 19:00:41,658 - seed_vc_trainer - INFO - epoch 0, step 1280, loss: 0.566242
+2025-05-06 19:00:53,681 - seed_vc_trainer - INFO - epoch 0, step 1290, loss: 0.567195
+2025-05-06 19:01:05,150 - seed_vc_trainer - INFO - epoch 0, step 1300, loss: 0.567274
+2025-05-06 19:01:17,026 - seed_vc_trainer - INFO - epoch 0, step 1310, loss: 0.569438
+2025-05-06 19:01:30,470 - seed_vc_trainer - INFO - epoch 0, step 1320, loss: 0.569983
+2025-05-06 19:01:42,556 - seed_vc_trainer - INFO - epoch 0, step 1330, loss: 0.569519
+2025-05-06 19:01:54,020 - seed_vc_trainer - INFO - epoch 0, step 1340, loss: 0.568921
+2025-05-06 19:02:06,601 - seed_vc_trainer - INFO - epoch 0, step 1350, loss: 0.569860
+2025-05-06 19:02:17,995 - seed_vc_trainer - INFO - epoch 0, step 1360, loss: 0.570229
+2025-05-06 19:02:30,593 - seed_vc_trainer - INFO - epoch 0, step 1370, loss: 0.569705
+2025-05-06 19:02:41,834 - seed_vc_trainer - INFO - epoch 0, step 1380, loss: 0.568648
+2025-05-06 19:02:52,720 - seed_vc_trainer - INFO - epoch 0, step 1390, loss: 0.569013
+2025-05-06 19:03:05,229 - seed_vc_trainer - INFO - epoch 0, step 1400, loss: 0.570075
+2025-05-06 19:03:17,173 - seed_vc_trainer - INFO - epoch 0, step 1410, loss: 0.570277
+2025-05-06 19:03:30,420 - seed_vc_trainer - INFO - epoch 0, step 1420, loss: 0.570674
+2025-05-06 19:03:41,889 - seed_vc_trainer - INFO - epoch 0, step 1430, loss: 0.570476
+2025-05-06 19:03:52,414 - seed_vc_trainer - INFO - epoch 0, step 1440, loss: 0.570710
+2025-05-06 19:04:03,316 - seed_vc_trainer - INFO - epoch 0, step 1450, loss: 0.570980
+2025-05-06 19:04:16,303 - seed_vc_trainer - INFO - epoch 0, step 1460, loss: 0.571871
+2025-05-06 19:04:28,039 - seed_vc_trainer - INFO - epoch 0, step 1470, loss: 0.572481
+2025-05-06 19:04:39,881 - seed_vc_trainer - INFO - epoch 0, step 1480, loss: 0.572743
+2025-05-06 19:04:51,004 - seed_vc_trainer - INFO - epoch 0, step 1490, loss: 0.573471
+2025-05-06 19:05:02,341 - seed_vc_trainer - INFO - epoch 0, step 1500, loss: 0.572579
+2025-05-06 19:05:13,989 - seed_vc_trainer - INFO - epoch 0, step 1510, loss: 0.573659
+2025-05-06 19:05:25,712 - seed_vc_trainer - INFO - epoch 0, step 1520, loss: 0.572785
+2025-05-06 19:05:36,128 - seed_vc_trainer - INFO - epoch 0, step 1530, loss: 0.572159
+2025-05-06 19:05:48,071 - seed_vc_trainer - INFO - epoch 0, step 1540, loss: 0.573134
+2025-05-06 19:05:59,910 - seed_vc_trainer - INFO - epoch 0, step 1550, loss: 0.572624
+2025-05-06 19:06:11,914 - seed_vc_trainer - INFO - epoch 0, step 1560, loss: 0.572168
+2025-05-06 19:06:23,556 - seed_vc_trainer - INFO - epoch 0, step 1570, loss: 0.571061
+2025-05-06 19:06:34,072 - seed_vc_trainer - INFO - epoch 0, step 1580, loss: 0.568752
+2025-05-06 19:06:44,944 - seed_vc_trainer - INFO - epoch 0, step 1590, loss: 0.568894
+2025-05-06 19:06:55,686 - seed_vc_trainer - INFO - epoch 0, step 1600, loss: 0.569137
+2025-05-06 19:07:06,978 - seed_vc_trainer - INFO - epoch 0, step 1610, loss: 0.570479
+2025-05-06 19:07:18,467 - seed_vc_trainer - INFO - epoch 0, step 1620, loss: 0.569598
+2025-05-06 19:07:30,947 - seed_vc_trainer - INFO - epoch 0, step 1630, loss: 0.568351
+2025-05-06 19:07:42,427 - seed_vc_trainer - INFO - epoch 0, step 1640, loss: 0.568908
+2025-05-06 19:07:55,289 - seed_vc_trainer - INFO - epoch 0, step 1650, loss: 0.567256
+2025-05-06 19:08:06,434 - seed_vc_trainer - INFO - epoch 0, step 1660, loss: 0.565418
+2025-05-06 19:08:18,973 - seed_vc_trainer - INFO - epoch 0, step 1670, loss: 0.564122
+2025-05-06 19:08:29,795 - seed_vc_trainer - INFO - epoch 0, step 1680, loss: 0.565117
+2025-05-06 19:08:41,013 - seed_vc_trainer - INFO - epoch 0, step 1690, loss: 0.564789
+2025-05-06 19:08:54,388 - seed_vc_trainer - INFO - epoch 0, step 1700, loss: 0.565549
+2025-05-06 19:09:06,611 - seed_vc_trainer - INFO - epoch 0, step 1710, loss: 0.566380
+2025-05-06 19:09:18,459 - seed_vc_trainer - INFO - epoch 0, step 1720, loss: 0.564568
+2025-05-06 19:09:29,806 - seed_vc_trainer - INFO - epoch 0, step 1730, loss: 0.564954
+2025-05-06 19:09:41,230 - seed_vc_trainer - INFO - epoch 0, step 1740, loss: 0.565170
+2025-05-06 19:09:52,670 - seed_vc_trainer - INFO - epoch 0, step 1750, loss: 0.564262
+2025-05-06 19:10:04,780 - seed_vc_trainer - INFO - epoch 0, step 1760, loss: 0.563057
+2025-05-06 19:10:16,711 - seed_vc_trainer - INFO - epoch 0, step 1770, loss: 0.563522
+2025-05-06 19:10:27,817 - seed_vc_trainer - INFO - epoch 0, step 1780, loss: 0.563996
+2025-05-06 19:10:39,599 - seed_vc_trainer - INFO - epoch 0, step 1790, loss: 0.563648
+2025-05-06 19:10:51,552 - seed_vc_trainer - INFO - epoch 0, step 1800, loss: 0.565291
+2025-05-06 19:11:03,158 - seed_vc_trainer - INFO - epoch 0, step 1810, loss: 0.565383
+2025-05-06 19:11:16,299 - seed_vc_trainer - INFO - epoch 0, step 1820, loss: 0.563804
+2025-05-06 19:11:26,549 - seed_vc_trainer - INFO - epoch 0, step 1830, loss: 0.563783
+2025-05-06 19:11:38,245 - seed_vc_trainer - INFO - epoch 0, step 1840, loss: 0.563295
+2025-05-06 19:11:49,801 - seed_vc_trainer - INFO - epoch 0, step 1850, loss: 0.561344
+2025-05-06 19:12:01,414 - seed_vc_trainer - INFO - epoch 0, step 1860, loss: 0.562208
+2025-05-06 19:12:11,585 - seed_vc_trainer - INFO - epoch 0, step 1870, loss: 0.564064
+2025-05-06 19:12:22,400 - seed_vc_trainer - INFO - epoch 0, step 1880, loss: 0.566122
+2025-05-06 19:12:34,709 - seed_vc_trainer - INFO - epoch 0, step 1890, loss: 0.566549
+2025-05-06 19:12:45,886 - seed_vc_trainer - INFO - epoch 0, step 1900, loss: 0.565533
+2025-05-06 19:12:56,876 - seed_vc_trainer - INFO - epoch 0, step 1910, loss: 0.567097
+2025-05-06 19:13:07,789 - seed_vc_trainer - INFO - epoch 0, step 1920, loss: 0.567809
+2025-05-06 19:13:18,815 - seed_vc_trainer - INFO - epoch 0, step 1930, loss: 0.567468
+2025-05-06 19:13:30,914 - seed_vc_trainer - INFO - epoch 0, step 1940, loss: 0.565646
+2025-05-06 19:13:41,597 - seed_vc_trainer - INFO - epoch 0, step 1950, loss: 0.566333
+2025-05-06 19:13:53,111 - seed_vc_trainer - INFO - epoch 0, step 1960, loss: 0.565489
+2025-05-06 19:14:04,947 - seed_vc_trainer - INFO - epoch 0, step 1970, loss: 0.565912
+2025-05-06 19:14:16,859 - seed_vc_trainer - INFO - epoch 0, step 1980, loss: 0.566810
+2025-05-06 19:14:28,342 - seed_vc_trainer - INFO - epoch 0, step 1990, loss: 0.564719
+2025-05-06 19:14:41,707 - seed_vc_trainer - INFO - epoch 0, step 2000, loss: 0.564657
+2025-05-06 19:14:41,709 - seed_vc_trainer - INFO - Starting evaluation at step 2000
+2025-05-06 19:14:42,220 - seed_vc_trainer - INFO - RTF: 0.06
+2025-05-06 19:14:42,225 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_2000/vc_s1_ref_1.0_30_0.7.wav
+2025-05-06 19:14:42,735 - seed_vc_trainer - INFO - RTF: 0.07
+2025-05-06 19:14:42,740 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_2000/vc_s2_ref_1.0_30_0.7.wav
+2025-05-06 19:14:43,261 - seed_vc_trainer - INFO - RTF: 0.06
+2025-05-06 19:14:43,267 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_2000/vc_s3_ref_1.0_30_0.7.wav
+2025-05-06 19:14:43,743 - seed_vc_trainer - INFO - RTF: 0.07
+2025-05-06 19:14:43,748 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_2000/vc_s4_ref_1.0_30_0.7.wav
+2025-05-06 19:14:44,246 - seed_vc_trainer - INFO - RTF: 0.08
+2025-05-06 19:14:44,251 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_2000/vc_s5_ref_1.0_30_0.7.wav
+2025-05-06 19:14:44,251 - seed_vc_trainer - INFO - Completed evaluation at step 2000
+2025-05-06 19:14:55,480 - seed_vc_trainer - INFO - epoch 0, step 2010, loss: 0.563648
+2025-05-06 19:15:06,749 - seed_vc_trainer - INFO - epoch 0, step 2020, loss: 0.562568
+2025-05-06 19:15:18,150 - seed_vc_trainer - INFO - epoch 0, step 2030, loss: 0.563279
+2025-05-06 19:15:29,771 - seed_vc_trainer - INFO - epoch 0, step 2040, loss: 0.564162
+2025-05-06 19:15:40,136 - seed_vc_trainer - INFO - epoch 0, step 2050, loss: 0.565367
+2025-05-06 19:15:51,277 - seed_vc_trainer - INFO - epoch 0, step 2060, loss: 0.565960
+2025-05-06 19:16:02,396 - seed_vc_trainer - INFO - epoch 0, step 2070, loss: 0.568059
+2025-05-06 19:16:13,877 - seed_vc_trainer - INFO - epoch 0, step 2080, loss: 0.570313
+2025-05-06 19:16:24,261 - seed_vc_trainer - INFO - epoch 0, step 2090, loss: 0.568843
+2025-05-06 19:16:35,520 - seed_vc_trainer - INFO - epoch 0, step 2100, loss: 0.569341
+2025-05-06 19:16:47,900 - seed_vc_trainer - INFO - epoch 0, step 2110, loss: 0.569528
+2025-05-06 19:17:01,106 - seed_vc_trainer - INFO - epoch 0, step 2120, loss: 0.569710
+2025-05-06 19:17:13,651 - seed_vc_trainer - INFO - epoch 0, step 2130, loss: 0.569135
+2025-05-06 19:17:25,723 - seed_vc_trainer - INFO - epoch 0, step 2140, loss: 0.569843
+2025-05-06 19:17:37,422 - seed_vc_trainer - INFO - epoch 0, step 2150, loss: 0.568351
+2025-05-06 19:17:47,805 - seed_vc_trainer - INFO - epoch 0, step 2160, loss: 0.567065
+2025-05-06 19:17:59,039 - seed_vc_trainer - INFO - epoch 0, step 2170, loss: 0.567946
+2025-05-06 19:18:10,325 - seed_vc_trainer - INFO - epoch 0, step 2180, loss: 0.568544
+2025-05-06 19:18:22,190 - seed_vc_trainer - INFO - epoch 0, step 2190, loss: 0.569333
+2025-05-06 19:18:33,353 - seed_vc_trainer - INFO - epoch 0, step 2200, loss: 0.569187
+2025-05-06 19:18:44,248 - seed_vc_trainer - INFO - epoch 0, step 2210, loss: 0.568495
+2025-05-06 19:18:55,826 - seed_vc_trainer - INFO - epoch 0, step 2220, loss: 0.567421
+2025-05-06 19:19:07,399 - seed_vc_trainer - INFO - epoch 0, step 2230, loss: 0.567276
+2025-05-06 19:19:19,154 - seed_vc_trainer - INFO - epoch 0, step 2240, loss: 0.566719
+2025-05-06 19:19:29,904 - seed_vc_trainer - INFO - epoch 0, step 2250, loss: 0.567914
+2025-05-06 19:19:40,410 - seed_vc_trainer - INFO - epoch 0, step 2260, loss: 0.568993
+2025-05-06 19:19:50,975 - seed_vc_trainer - INFO - epoch 0, step 2270, loss: 0.568924
+2025-05-06 19:20:01,053 - seed_vc_trainer - INFO - epoch 0, step 2280, loss: 0.570380
+2025-05-06 19:20:11,307 - seed_vc_trainer - INFO - epoch 0, step 2290, loss: 0.569103
+2025-05-06 19:20:21,184 - seed_vc_trainer - INFO - epoch 0, step 2300, loss: 0.569922
+2025-05-06 19:20:31,923 - seed_vc_trainer - INFO - epoch 0, step 2310, loss: 0.570351
+2025-05-06 19:20:42,760 - seed_vc_trainer - INFO - epoch 0, step 2320, loss: 0.569256
+2025-05-06 19:20:52,993 - seed_vc_trainer - INFO - epoch 0, step 2330, loss: 0.570475
+2025-05-06 19:21:05,133 - seed_vc_trainer - INFO - epoch 0, step 2340, loss: 0.568911
+2025-05-06 19:21:16,217 - seed_vc_trainer - INFO - epoch 0, step 2350, loss: 0.570067
+2025-05-06 19:21:27,442 - seed_vc_trainer - INFO - epoch 0, step 2360, loss: 0.569705
+2025-05-06 19:21:39,161 - seed_vc_trainer - INFO - epoch 0, step 2370, loss: 0.569337
+2025-05-06 19:21:50,085 - seed_vc_trainer - INFO - epoch 0, step 2380, loss: 0.568809
+2025-05-06 19:22:00,286 - seed_vc_trainer - INFO - epoch 0, step 2390, loss: 0.567694
+2025-05-06 19:22:10,824 - seed_vc_trainer - INFO - epoch 0, step 2400, loss: 0.567664
+2025-05-06 19:22:22,302 - seed_vc_trainer - INFO - epoch 0, step 2410, loss: 0.567941
+2025-05-06 19:22:33,379 - seed_vc_trainer - INFO - epoch 0, step 2420, loss: 0.566574
+2025-05-06 19:22:46,101 - seed_vc_trainer - INFO - epoch 0, step 2430, loss: 0.566568
+2025-05-06 19:22:57,044 - seed_vc_trainer - INFO - epoch 0, step 2440, loss: 0.564973
+2025-05-06 19:23:08,029 - seed_vc_trainer - INFO - epoch 0, step 2450, loss: 0.565873
+2025-05-06 19:23:19,926 - seed_vc_trainer - INFO - epoch 0, step 2460, loss: 0.563865
+2025-05-06 19:23:31,406 - seed_vc_trainer - INFO - epoch 0, step 2470, loss: 0.563057
+2025-05-06 19:23:41,982 - seed_vc_trainer - INFO - epoch 0, step 2480, loss: 0.564213
+2025-05-06 19:23:53,767 - seed_vc_trainer - INFO - epoch 0, step 2490, loss: 0.562677
+2025-05-06 19:24:05,235 - seed_vc_trainer - INFO - epoch 0, step 2500, loss: 0.562213
+2025-05-06 19:24:16,094 - seed_vc_trainer - INFO - epoch 0, step 2510, loss: 0.561597
+2025-05-06 19:24:26,938 - seed_vc_trainer - INFO - epoch 0, step 2520, loss: 0.564161
+2025-05-06 19:24:38,922 - seed_vc_trainer - INFO - epoch 0, step 2530, loss: 0.563506
+2025-05-06 19:24:50,866 - seed_vc_trainer - INFO - epoch 0, step 2540, loss: 0.564203
+2025-05-06 19:25:02,775 - seed_vc_trainer - INFO - epoch 0, step 2550, loss: 0.566746
+2025-05-06 19:25:13,056 - seed_vc_trainer - INFO - epoch 0, step 2560, loss: 0.569093
+2025-05-06 19:25:23,874 - seed_vc_trainer - INFO - epoch 0, step 2570, loss: 0.569175
+2025-05-06 19:25:35,110 - seed_vc_trainer - INFO - epoch 0, step 2580, loss: 0.569586
+2025-05-06 19:25:47,445 - seed_vc_trainer - INFO - epoch 0, step 2590, loss: 0.568886
+2025-05-06 19:25:58,836 - seed_vc_trainer - INFO - epoch 0, step 2600, loss: 0.568486
+2025-05-06 19:26:10,254 - seed_vc_trainer - INFO - epoch 0, step 2610, loss: 0.566069
+2025-05-06 19:26:21,558 - seed_vc_trainer - INFO - epoch 0, step 2620, loss: 0.565142
+2025-05-06 19:26:32,790 - seed_vc_trainer - INFO - epoch 0, step 2630, loss: 0.566203
+2025-05-06 19:26:43,976 - seed_vc_trainer - INFO - epoch 0, step 2640, loss: 0.566507
+2025-05-06 19:26:55,423 - seed_vc_trainer - INFO - epoch 0, step 2650, loss: 0.566248
+2025-05-06 19:27:06,559 - seed_vc_trainer - INFO - epoch 0, step 2660, loss: 0.567059
+2025-05-06 19:27:18,484 - seed_vc_trainer - INFO - epoch 0, step 2670, loss: 0.565337
+2025-05-06 19:27:29,408 - seed_vc_trainer - INFO - epoch 0, step 2680, loss: 0.565281
+2025-05-06 19:27:40,847 - seed_vc_trainer - INFO - epoch 0, step 2690, loss: 0.565826
+2025-05-06 19:27:53,008 - seed_vc_trainer - INFO - epoch 0, step 2700, loss: 0.565285
+2025-05-06 19:28:04,193 - seed_vc_trainer - INFO - epoch 0, step 2710, loss: 0.566787
+2025-05-06 19:28:15,821 - seed_vc_trainer - INFO - epoch 0, step 2720, loss: 0.564659
+2025-05-06 19:28:28,479 - seed_vc_trainer - INFO - epoch 0, step 2730, loss: 0.564413
+2025-05-06 19:28:42,054 - seed_vc_trainer - INFO - epoch 0, step 2740, loss: 0.563707
+2025-05-06 19:28:53,647 - seed_vc_trainer - INFO - epoch 0, step 2750, loss: 0.565019
+2025-05-06 19:29:04,696 - seed_vc_trainer - INFO - epoch 0, step 2760, loss: 0.563481
+2025-05-06 19:29:16,387 - seed_vc_trainer - INFO - epoch 0, step 2770, loss: 0.565909
+2025-05-06 19:29:27,770 - seed_vc_trainer - INFO - epoch 0, step 2780, loss: 0.565737
+2025-05-06 19:29:38,669 - seed_vc_trainer - INFO - epoch 0, step 2790, loss: 0.566313
+2025-05-06 19:29:50,731 - seed_vc_trainer - INFO - epoch 0, step 2800, loss: 0.567597
+2025-05-06 19:30:01,913 - seed_vc_trainer - INFO - epoch 0, step 2810, loss: 0.570379
+2025-05-06 19:30:13,224 - seed_vc_trainer - INFO - epoch 0, step 2820, loss: 0.569064
+2025-05-06 19:30:24,336 - seed_vc_trainer - INFO - epoch 0, step 2830, loss: 0.567338
+2025-05-06 19:30:35,658 - seed_vc_trainer - INFO - epoch 0, step 2840, loss: 0.568481
+2025-05-06 19:30:46,470 - seed_vc_trainer - INFO - epoch 0, step 2850, loss: 0.568461
+2025-05-06 19:30:58,590 - seed_vc_trainer - INFO - epoch 0, step 2860, loss: 0.569699
+2025-05-06 19:31:10,439 - seed_vc_trainer - INFO - epoch 0, step 2870, loss: 0.568984
+2025-05-06 19:31:22,649 - seed_vc_trainer - INFO - epoch 0, step 2880, loss: 0.568410
+2025-05-06 19:31:34,251 - seed_vc_trainer - INFO - epoch 0, step 2890, loss: 0.567708
+2025-05-06 19:31:46,289 - seed_vc_trainer - INFO - epoch 0, step 2900, loss: 0.566793
+2025-05-06 19:31:57,983 - seed_vc_trainer - INFO - epoch 0, step 2910, loss: 0.567084
+2025-05-06 19:32:09,438 - seed_vc_trainer - INFO - epoch 0, step 2920, loss: 0.566053
+2025-05-06 19:32:20,521 - seed_vc_trainer - INFO - epoch 0, step 2930, loss: 0.565163
+2025-05-06 19:32:31,492 - seed_vc_trainer - INFO - epoch 0, step 2940, loss: 0.562899
+2025-05-06 19:32:42,198 - seed_vc_trainer - INFO - epoch 0, step 2950, loss: 0.562915
+2025-05-06 19:32:53,112 - seed_vc_trainer - INFO - epoch 0, step 2960, loss: 0.562397
+2025-05-06 19:33:03,790 - seed_vc_trainer - INFO - epoch 0, step 2970, loss: 0.560791
+2025-05-06 19:33:15,693 - seed_vc_trainer - INFO - epoch 0, step 2980, loss: 0.563231
+2025-05-06 19:33:27,092 - seed_vc_trainer - INFO - epoch 0, step 2990, loss: 0.562769
+2025-05-06 19:33:38,225 - seed_vc_trainer - INFO - epoch 0, step 3000, loss: 0.565341
+2025-05-06 19:33:38,226 - seed_vc_trainer - INFO - Starting evaluation at step 3000
+2025-05-06 19:33:38,794 - seed_vc_trainer - INFO - RTF: 0.07
+2025-05-06 19:33:38,799 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_3000/vc_s1_ref_1.0_30_0.7.wav
+2025-05-06 19:33:39,326 - seed_vc_trainer - INFO - RTF: 0.07
+2025-05-06 19:33:39,331 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_3000/vc_s2_ref_1.0_30_0.7.wav
+2025-05-06 19:33:39,901 - seed_vc_trainer - INFO - RTF: 0.07
+2025-05-06 19:33:39,906 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_3000/vc_s3_ref_1.0_30_0.7.wav
+2025-05-06 19:33:40,502 - seed_vc_trainer - INFO - RTF: 0.08
+2025-05-06 19:33:40,506 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_3000/vc_s4_ref_1.0_30_0.7.wav
+2025-05-06 19:33:41,086 - seed_vc_trainer - INFO - RTF: 0.09
+2025-05-06 19:33:41,091 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_3000/vc_s5_ref_1.0_30_0.7.wav
+2025-05-06 19:33:41,091 - seed_vc_trainer - INFO - Completed evaluation at step 3000
+2025-05-06 19:33:52,391 - seed_vc_trainer - INFO - epoch 0, step 3010, loss: 0.564466
+2025-05-06 19:34:04,421 - seed_vc_trainer - INFO - epoch 0, step 3020, loss: 0.563953
+2025-05-06 19:34:16,148 - seed_vc_trainer - INFO - epoch 0, step 3030, loss: 0.564418
+2025-05-06 19:34:27,721 - seed_vc_trainer - INFO - epoch 0, step 3040, loss: 0.566088
+2025-05-06 19:34:38,996 - seed_vc_trainer - INFO - epoch 0, step 3050, loss: 0.566657
+2025-05-06 19:34:49,555 - seed_vc_trainer - INFO - epoch 0, step 3060, loss: 0.566616
+2025-05-06 19:35:00,449 - seed_vc_trainer - INFO - epoch 0, step 3070, loss: 0.568295
+2025-05-06 19:35:11,429 - seed_vc_trainer - INFO - epoch 0, step 3080, loss: 0.568717
+2025-05-06 19:35:23,634 - seed_vc_trainer - INFO - epoch 0, step 3090, loss: 0.567846
+2025-05-06 19:35:34,306 - seed_vc_trainer - INFO - epoch 0, step 3100, loss: 0.568008
+2025-05-06 19:35:47,225 - seed_vc_trainer - INFO - epoch 0, step 3110, loss: 0.567291
+2025-05-06 19:35:58,725 - seed_vc_trainer - INFO - epoch 0, step 3120, loss: 0.566400
+2025-05-06 19:36:09,981 - seed_vc_trainer - INFO - epoch 0, step 3130, loss: 0.568165
+2025-05-06 19:36:21,416 - seed_vc_trainer - INFO - epoch 0, step 3140, loss: 0.568365
+2025-05-06 19:36:33,079 - seed_vc_trainer - INFO - epoch 0, step 3150, loss: 0.568590
+2025-05-06 19:36:44,770 - seed_vc_trainer - INFO - epoch 0, step 3160, loss: 0.566899
+2025-05-06 19:36:55,448 - seed_vc_trainer - INFO - epoch 0, step 3170, loss: 0.568039
+2025-05-06 19:37:07,445 - seed_vc_trainer - INFO - epoch 0, step 3180, loss: 0.567764
+2025-05-06 19:37:19,229 - seed_vc_trainer - INFO - epoch 0, step 3190, loss: 0.567751
+2025-05-06 19:37:30,485 - seed_vc_trainer - INFO - epoch 0, step 3200, loss: 0.566557
+2025-05-06 19:37:42,104 - seed_vc_trainer - INFO - epoch 0, step 3210, loss: 0.567703
+2025-05-06 19:37:56,351 - seed_vc_trainer - INFO - epoch 0, step 3220, loss: 0.566611
+2025-05-06 19:38:06,795 - seed_vc_trainer - INFO - epoch 0, step 3230, loss: 0.565267
+2025-05-06 19:38:17,782 - seed_vc_trainer - INFO - epoch 0, step 3240, loss: 0.564390
+2025-05-06 19:38:28,604 - seed_vc_trainer - INFO - epoch 0, step 3250, loss: 0.563935
+2025-05-06 19:38:39,033 - seed_vc_trainer - INFO - epoch 0, step 3260, loss: 0.565799
+2025-05-06 19:38:51,274 - seed_vc_trainer - INFO - epoch 0, step 3270, loss: 0.563818
+2025-05-06 19:39:02,490 - seed_vc_trainer - INFO - epoch 0, step 3280, loss: 0.565021
+2025-05-06 19:39:13,961 - seed_vc_trainer - INFO - epoch 0, step 3290, loss: 0.566373
+2025-05-06 19:39:25,547 - seed_vc_trainer - INFO - epoch 0, step 3300, loss: 0.566222
+2025-05-06 19:39:35,958 - seed_vc_trainer - INFO - epoch 0, step 3310, loss: 0.566011
+2025-05-06 19:39:46,263 - seed_vc_trainer - INFO - epoch 0, step 3320, loss: 0.566070
+2025-05-06 19:39:58,243 - seed_vc_trainer - INFO - epoch 0, step 3330, loss: 0.566166
+2025-05-06 19:40:10,482 - seed_vc_trainer - INFO - epoch 0, step 3340, loss: 0.565147
+2025-05-06 19:40:21,464 - seed_vc_trainer - INFO - epoch 0, step 3350, loss: 0.566113
+2025-05-06 19:40:32,325 - seed_vc_trainer - INFO - epoch 0, step 3360, loss: 0.566228
+2025-05-06 19:40:43,811 - seed_vc_trainer - INFO - epoch 0, step 3370, loss: 0.565211
+2025-05-06 19:40:54,786 - seed_vc_trainer - INFO - epoch 0, step 3380, loss: 0.565198
+2025-05-06 19:41:05,850 - seed_vc_trainer - INFO - epoch 0, step 3390, loss: 0.566991
+2025-05-06 19:41:18,425 - seed_vc_trainer - INFO - epoch 0, step 3400, loss: 0.567995
+2025-05-06 19:41:31,457 - seed_vc_trainer - INFO - epoch 0, step 3410, loss: 0.567849
+2025-05-06 19:41:42,758 - seed_vc_trainer - INFO - epoch 0, step 3420, loss: 0.567734
+2025-05-06 19:41:53,887 - seed_vc_trainer - INFO - epoch 0, step 3430, loss: 0.567185
+2025-05-06 19:42:04,993 - seed_vc_trainer - INFO - epoch 0, step 3440, loss: 0.566070
+2025-05-06 19:42:17,009 - seed_vc_trainer - INFO - epoch 0, step 3450, loss: 0.565887
+2025-05-06 19:42:28,812 - seed_vc_trainer - INFO - epoch 0, step 3460, loss: 0.564543
+2025-05-06 19:42:40,311 - seed_vc_trainer - INFO - epoch 0, step 3470, loss: 0.565267
+2025-05-06 19:42:51,889 - seed_vc_trainer - INFO - epoch 0, step 3480, loss: 0.563542
+2025-05-06 19:43:03,183 - seed_vc_trainer - INFO - epoch 0, step 3490, loss: 0.563470
+2025-05-06 19:43:14,994 - seed_vc_trainer - INFO - epoch 0, step 3500, loss: 0.562828
+2025-05-06 19:43:25,970 - seed_vc_trainer - INFO - epoch 0, step 3510, loss: 0.564972
+2025-05-06 19:43:37,950 - seed_vc_trainer - INFO - epoch 0, step 3520, loss: 0.565390
+2025-05-06 19:43:49,945 - seed_vc_trainer - INFO - epoch 0, step 3530, loss: 0.564534
+2025-05-06 19:44:01,190 - seed_vc_trainer - INFO - epoch 0, step 3540, loss: 0.564559
+2025-05-06 19:44:13,175 - seed_vc_trainer - INFO - epoch 0, step 3550, loss: 0.565061
+2025-05-06 19:44:23,344 - seed_vc_trainer - INFO - epoch 0, step 3560, loss: 0.565383
+2025-05-06 19:44:34,211 - seed_vc_trainer - INFO - epoch 0, step 3570, loss: 0.563997
+2025-05-06 19:44:46,360 - seed_vc_trainer - INFO - epoch 0, step 3580, loss: 0.562697
+2025-05-06 19:44:57,759 - seed_vc_trainer - INFO - epoch 0, step 3590, loss: 0.562128
+2025-05-06 19:45:09,518 - seed_vc_trainer - INFO - epoch 0, step 3600, loss: 0.563231
+2025-05-06 19:45:21,016 - seed_vc_trainer - INFO - epoch 0, step 3610, loss: 0.563903
+2025-05-06 19:45:31,917 - seed_vc_trainer - INFO - epoch 0, step 3620, loss: 0.564075
+2025-05-06 19:45:43,836 - seed_vc_trainer - INFO - epoch 0, step 3630, loss: 0.566386
+2025-05-06 19:45:55,413 - seed_vc_trainer - INFO - epoch 0, step 3640, loss: 0.566468
+2025-05-06 19:46:06,772 - seed_vc_trainer - INFO - epoch 0, step 3650, loss: 0.567706
+2025-05-06 19:46:17,901 - seed_vc_trainer - INFO - epoch 0, step 3660, loss: 0.566962
+2025-05-06 19:46:28,875 - seed_vc_trainer - INFO - epoch 0, step 3670, loss: 0.566395
+2025-05-06 19:46:39,094 - seed_vc_trainer - INFO - epoch 0, step 3680, loss: 0.566186
+2025-05-06 19:46:50,616 - seed_vc_trainer - INFO - epoch 0, step 3690, loss: 0.565316
+2025-05-06 19:47:02,069 - seed_vc_trainer - INFO - epoch 0, step 3700, loss: 0.564742
+2025-05-06 19:47:12,773 - seed_vc_trainer - INFO - epoch 0, step 3710, loss: 0.564683
+2025-05-06 19:47:24,847 - seed_vc_trainer - INFO - epoch 0, step 3720, loss: 0.563293
+2025-05-06 19:47:35,358 - seed_vc_trainer - INFO - epoch 0, step 3730, loss: 0.563201
+2025-05-06 19:47:46,915 - seed_vc_trainer - INFO - epoch 0, step 3740, loss: 0.563716
+2025-05-06 19:47:58,173 - seed_vc_trainer - INFO - epoch 0, step 3750, loss: 0.563623
+2025-05-06 19:48:10,107 - seed_vc_trainer - INFO - epoch 0, step 3760, loss: 0.565050
+2025-05-06 19:48:22,446 - seed_vc_trainer - INFO - epoch 0, step 3770, loss: 0.565832
+2025-05-06 19:48:35,525 - seed_vc_trainer - INFO - epoch 0, step 3780, loss: 0.566399
+2025-05-06 19:48:46,369 - seed_vc_trainer - INFO - epoch 0, step 3790, loss: 0.565278
+2025-05-06 19:48:58,142 - seed_vc_trainer - INFO - epoch 0, step 3800, loss: 0.565218
+2025-05-06 19:49:09,539 - seed_vc_trainer - INFO - epoch 0, step 3810, loss: 0.564082
+2025-05-06 19:49:20,808 - seed_vc_trainer - INFO - epoch 0, step 3820, loss: 0.564666
+2025-05-06 19:49:32,358 - seed_vc_trainer - INFO - epoch 0, step 3830, loss: 0.562961
+2025-05-06 19:49:44,860 - seed_vc_trainer - INFO - epoch 0, step 3840, loss: 0.562665
+2025-05-06 19:49:57,238 - seed_vc_trainer - INFO - epoch 0, step 3850, loss: 0.561428
+2025-05-06 19:50:09,430 - seed_vc_trainer - INFO - epoch 0, step 3860, loss: 0.560568
+2025-05-06 19:50:21,903 - seed_vc_trainer - INFO - epoch 0, step 3870, loss: 0.559408
+2025-05-06 19:50:32,539 - seed_vc_trainer - INFO - epoch 0, step 3880, loss: 0.560036
+2025-05-06 19:50:43,105 - seed_vc_trainer - INFO - epoch 0, step 3890, loss: 0.560156
+2025-05-06 19:50:54,477 - seed_vc_trainer - INFO - epoch 0, step 3900, loss: 0.559719
+2025-05-06 19:51:05,071 - seed_vc_trainer - INFO - epoch 0, step 3910, loss: 0.560917
+2025-05-06 19:51:16,459 - seed_vc_trainer - INFO - epoch 0, step 3920, loss: 0.560896
+2025-05-06 19:51:28,162 - seed_vc_trainer - INFO - epoch 0, step 3930, loss: 0.558423
+2025-05-06 19:51:40,878 - seed_vc_trainer - INFO - epoch 0, step 3940, loss: 0.558249
+2025-05-06 19:51:52,312 - seed_vc_trainer - INFO - epoch 0, step 3950, loss: 0.557708
+2025-05-06 19:52:02,958 - seed_vc_trainer - INFO - epoch 0, step 3960, loss: 0.556286
+2025-05-06 19:52:15,147 - seed_vc_trainer - INFO - epoch 0, step 3970, loss: 0.559650
+2025-05-06 19:52:26,231 - seed_vc_trainer - INFO - epoch 0, step 3980, loss: 0.560361
+2025-05-06 19:52:38,365 - seed_vc_trainer - INFO - epoch 0, step 3990, loss: 0.559259
+2025-05-06 19:52:50,342 - seed_vc_trainer - INFO - epoch 0, step 4000, loss: 0.559374
+2025-05-06 19:52:50,344 - seed_vc_trainer - INFO - Starting evaluation at step 4000
+2025-05-06 19:52:50,842 - seed_vc_trainer - INFO - RTF: 0.06
+2025-05-06 19:52:50,848 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_4000/vc_s1_ref_1.0_30_0.7.wav
+2025-05-06 19:52:51,336 - seed_vc_trainer - INFO - RTF: 0.07
+2025-05-06 19:52:51,341 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_4000/vc_s2_ref_1.0_30_0.7.wav
+2025-05-06 19:52:51,856 - seed_vc_trainer - INFO - RTF: 0.06
+2025-05-06 19:52:51,862 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_4000/vc_s3_ref_1.0_30_0.7.wav
+2025-05-06 19:52:52,352 - seed_vc_trainer - INFO - RTF: 0.07
+2025-05-06 19:52:52,357 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_4000/vc_s4_ref_1.0_30_0.7.wav
+2025-05-06 19:52:52,948 - seed_vc_trainer - INFO - RTF: 0.09
+2025-05-06 19:52:52,953 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_4000/vc_s5_ref_1.0_30_0.7.wav
+2025-05-06 19:52:52,953 - seed_vc_trainer - INFO - Completed evaluation at step 4000
+2025-05-06 19:53:04,388 - seed_vc_trainer - INFO - epoch 0, step 4010, loss: 0.558101
+2025-05-06 19:53:17,375 - seed_vc_trainer - INFO - epoch 0, step 4020, loss: 0.558720
+2025-05-06 19:53:28,467 - seed_vc_trainer - INFO - epoch 0, step 4030, loss: 0.559815
+2025-05-06 19:53:41,228 - seed_vc_trainer - INFO - epoch 0, step 4040, loss: 0.559761
+2025-05-06 19:53:52,817 - seed_vc_trainer - INFO - epoch 0, step 4050, loss: 0.559522
+2025-05-06 19:54:03,489 - seed_vc_trainer - INFO - epoch 0, step 4060, loss: 0.559427
+2025-05-06 19:54:15,051 - seed_vc_trainer - INFO - epoch 0, step 4070, loss: 0.557815
+2025-05-06 19:54:25,106 - seed_vc_trainer - INFO - epoch 0, step 4080, loss: 0.560683
+2025-05-06 19:54:36,164 - seed_vc_trainer - INFO - epoch 0, step 4090, loss: 0.563170
+2025-05-06 19:54:47,177 - seed_vc_trainer - INFO - epoch 0, step 4100, loss: 0.563692
+2025-05-06 19:54:57,700 - seed_vc_trainer - INFO - epoch 0, step 4110, loss: 0.563130
+2025-05-06 19:55:08,406 - seed_vc_trainer - INFO - epoch 0, step 4120, loss: 0.563974
+2025-05-06 19:55:19,374 - seed_vc_trainer - INFO - epoch 0, step 4130, loss: 0.565013
+2025-05-06 19:55:30,708 - seed_vc_trainer - INFO - epoch 0, step 4140, loss: 0.565151
+2025-05-06 19:55:42,723 - seed_vc_trainer - INFO - epoch 0, step 4150, loss: 0.565738
+2025-05-06 19:55:53,390 - seed_vc_trainer - INFO - epoch 0, step 4160, loss: 0.565041
+2025-05-06 19:56:04,714 - seed_vc_trainer - INFO - epoch 0, step 4170, loss: 0.566183
+2025-05-06 19:56:15,875 - seed_vc_trainer - INFO - epoch 0, step 4180, loss: 0.565151
+2025-05-06 19:56:26,845 - seed_vc_trainer - INFO - epoch 0, step 4190, loss: 0.563317
+2025-05-06 19:56:38,267 - seed_vc_trainer - INFO - epoch 0, step 4200, loss: 0.562290
+2025-05-06 19:56:48,929 - seed_vc_trainer - INFO - epoch 0, step 4210, loss: 0.562206
+2025-05-06 19:57:00,885 - seed_vc_trainer - INFO - epoch 0, step 4220, loss: 0.562038
+2025-05-06 19:57:12,236 - seed_vc_trainer - INFO - epoch 0, step 4230, loss: 0.561459
+2025-05-06 19:57:23,830 - seed_vc_trainer - INFO - epoch 0, step 4240, loss: 0.562878
+2025-05-06 19:57:36,473 - seed_vc_trainer - INFO - epoch 0, step 4250, loss: 0.562487
+2025-05-06 19:57:48,609 - seed_vc_trainer - INFO - epoch 0, step 4260, loss: 0.561884
+2025-05-06 19:57:59,935 - seed_vc_trainer - INFO - epoch 0, step 4270, loss: 0.561862
+2025-05-06 19:58:11,322 - seed_vc_trainer - INFO - epoch 0, step 4280, loss: 0.562104
+2025-05-06 19:58:23,286 - seed_vc_trainer - INFO - epoch 0, step 4290, loss: 0.560695
+2025-05-06 19:58:34,462 - seed_vc_trainer - INFO - epoch 0, step 4300, loss: 0.559783
+2025-05-06 19:58:46,291 - seed_vc_trainer - INFO - epoch 0, step 4310, loss: 0.560590
+2025-05-06 19:58:57,674 - seed_vc_trainer - INFO - epoch 0, step 4320, loss: 0.560959
+2025-05-06 19:59:09,127 - seed_vc_trainer - INFO - epoch 0, step 4330, loss: 0.560180
+2025-05-06 19:59:20,630 - seed_vc_trainer - INFO - epoch 0, step 4340, loss: 0.558477
+2025-05-06 19:59:32,171 - seed_vc_trainer - INFO - epoch 0, step 4350, loss: 0.556432
+2025-05-06 19:59:43,133 - seed_vc_trainer - INFO - epoch 0, step 4360, loss: 0.557340
+2025-05-06 19:59:54,084 - seed_vc_trainer - INFO - epoch 0, step 4370, loss: 0.557575
+2025-05-06 20:00:05,204 - seed_vc_trainer - INFO - epoch 0, step 4380, loss: 0.559907
+2025-05-06 20:00:17,821 - seed_vc_trainer - INFO - epoch 0, step 4390, loss: 0.560169
+2025-05-06 20:00:28,697 - seed_vc_trainer - INFO - epoch 0, step 4400, loss: 0.561140
+2025-05-06 20:00:39,521 - seed_vc_trainer - INFO - epoch 0, step 4410, loss: 0.561111
+2025-05-06 20:00:51,617 - seed_vc_trainer - INFO - epoch 0, step 4420, loss: 0.559702
+2025-05-06 20:01:03,120 - seed_vc_trainer - INFO - epoch 0, step 4430, loss: 0.559346
+2025-05-06 20:01:14,906 - seed_vc_trainer - INFO - epoch 0, step 4440, loss: 0.557959
+2025-05-06 20:01:26,932 - seed_vc_trainer - INFO - epoch 0, step 4450, loss: 0.558623
+2025-05-06 20:01:38,518 - seed_vc_trainer - INFO - epoch 0, step 4460, loss: 0.560235
+2025-05-06 20:01:50,021 - seed_vc_trainer - INFO - epoch 0, step 4470, loss: 0.560332
+2025-05-06 20:02:02,768 - seed_vc_trainer - INFO - epoch 0, step 4480, loss: 0.559139
+2025-05-06 20:02:16,011 - seed_vc_trainer - INFO - epoch 0, step 4490, loss: 0.558362
+2025-05-06 20:02:28,371 - seed_vc_trainer - INFO - epoch 0, step 4500, loss: 0.557995
+2025-05-06 20:02:39,850 - seed_vc_trainer - INFO - epoch 0, step 4510, loss: 0.559409
+2025-05-06 20:02:52,564 - seed_vc_trainer - INFO - epoch 0, step 4520, loss: 0.559876
+2025-05-06 20:03:04,211 - seed_vc_trainer - INFO - epoch 0, step 4530, loss: 0.560635
+2025-05-06 20:03:15,701 - seed_vc_trainer - INFO - epoch 0, step 4540, loss: 0.562041
+2025-05-06 20:03:28,594 - seed_vc_trainer - INFO - epoch 0, step 4550, loss: 0.562871
+2025-05-06 20:03:40,384 - seed_vc_trainer - INFO - epoch 0, step 4560, loss: 0.561611
+2025-05-06 20:03:51,251 - seed_vc_trainer - INFO - epoch 0, step 4570, loss: 0.562317
+2025-05-06 20:04:02,783 - seed_vc_trainer - INFO - epoch 0, step 4580, loss: 0.561642
+2025-05-06 20:04:14,685 - seed_vc_trainer - INFO - epoch 0, step 4590, loss: 0.561944
+2025-05-06 20:04:25,989 - seed_vc_trainer - INFO - epoch 0, step 4600, loss: 0.559459
+2025-05-06 20:04:37,833 - seed_vc_trainer - INFO - epoch 0, step 4610, loss: 0.560614
+2025-05-06 20:04:48,975 - seed_vc_trainer - INFO - epoch 0, step 4620, loss: 0.561108
+2025-05-06 20:05:00,207 - seed_vc_trainer - INFO - epoch 0, step 4630, loss: 0.560163
+2025-05-06 20:05:12,332 - seed_vc_trainer - INFO - epoch 0, step 4640, loss: 0.559965
+2025-05-06 20:05:23,718 - seed_vc_trainer - INFO - epoch 0, step 4650, loss: 0.560197
+2025-05-06 20:05:35,295 - seed_vc_trainer - INFO - epoch 0, step 4660, loss: 0.561471
+2025-05-06 20:05:47,159 - seed_vc_trainer - INFO - epoch 0, step 4670, loss: 0.561718
+2025-05-06 20:05:58,968 - seed_vc_trainer - INFO - epoch 0, step 4680, loss: 0.561823
+2025-05-06 20:06:10,242 - seed_vc_trainer - INFO - epoch 0, step 4690, loss: 0.562797
+2025-05-06 20:06:21,693 - seed_vc_trainer - INFO - epoch 0, step 4700, loss: 0.563242
+2025-05-06 20:06:33,834 - seed_vc_trainer - INFO - epoch 0, step 4710, loss: 0.564181
+2025-05-06 20:06:45,480 - seed_vc_trainer - INFO - epoch 0, step 4720, loss: 0.565384
+2025-05-06 20:06:56,888 - seed_vc_trainer - INFO - epoch 0, step 4730, loss: 0.564341
+2025-05-06 20:07:07,512 - seed_vc_trainer - INFO - epoch 0, step 4740, loss: 0.564792
+2025-05-06 20:07:19,291 - seed_vc_trainer - INFO - epoch 0, step 4750, loss: 0.564229
+2025-05-06 20:07:31,832 - seed_vc_trainer - INFO - epoch 0, step 4760, loss: 0.562995
+2025-05-06 20:07:43,547 - seed_vc_trainer - INFO - epoch 0, step 4770, loss: 0.562045
+2025-05-06 20:07:54,754 - seed_vc_trainer - INFO - epoch 0, step 4780, loss: 0.563847
+2025-05-06 20:08:07,168 - seed_vc_trainer - INFO - epoch 0, step 4790, loss: 0.563321
+2025-05-06 20:08:18,396 - seed_vc_trainer - INFO - epoch 0, step 4800, loss: 0.562578
+2025-05-06 20:08:31,305 - seed_vc_trainer - INFO - epoch 0, step 4810, loss: 0.562598
+2025-05-06 20:08:43,230 - seed_vc_trainer - INFO - epoch 0, step 4820, loss: 0.560915
+2025-05-06 20:08:56,218 - seed_vc_trainer - INFO - epoch 0, step 4830, loss: 0.562845
+2025-05-06 20:09:07,032 - seed_vc_trainer - INFO - epoch 0, step 4840, loss: 0.561582
+2025-05-06 20:09:18,958 - seed_vc_trainer - INFO - epoch 0, step 4850, loss: 0.561500
+2025-05-06 20:09:29,895 - seed_vc_trainer - INFO - epoch 0, step 4860, loss: 0.562900
+2025-05-06 20:09:42,215 - seed_vc_trainer - INFO - epoch 0, step 4870, loss: 0.562774
+2025-05-06 20:09:52,678 - seed_vc_trainer - INFO - epoch 0, step 4880, loss: 0.563382
+2025-05-06 20:10:03,396 - seed_vc_trainer - INFO - epoch 0, step 4890, loss: 0.562666
+2025-05-06 20:10:14,867 - seed_vc_trainer - INFO - epoch 0, step 4900, loss: 0.564675
+2025-05-06 20:10:26,785 - seed_vc_trainer - INFO - epoch 0, step 4910, loss: 0.565391
+2025-05-06 20:10:38,937 - seed_vc_trainer - INFO - epoch 0, step 4920, loss: 0.565697
+2025-05-06 20:10:49,776 - seed_vc_trainer - INFO - epoch 0, step 4930, loss: 0.564025
+2025-05-06 20:11:01,927 - seed_vc_trainer - INFO - epoch 0, step 4940, loss: 0.563459
+2025-05-06 20:11:13,291 - seed_vc_trainer - INFO - epoch 0, step 4950, loss: 0.561900
+2025-05-06 20:11:25,008 - seed_vc_trainer - INFO - epoch 0, step 4960, loss: 0.560162
+2025-05-06 20:11:36,669 - seed_vc_trainer - INFO - epoch 0, step 4970, loss: 0.559291
+2025-05-06 20:11:48,438 - seed_vc_trainer - INFO - epoch 0, step 4980, loss: 0.560639
+2025-05-06 20:11:59,435 - seed_vc_trainer - INFO - epoch 0, step 4990, loss: 0.561148
+2025-05-06 20:12:09,175 - seed_vc_trainer - INFO - Saving checkpoint at epoch 0, step 5000
+2025-05-06 20:12:09,674 - seed_vc_trainer - INFO - Checkpoint saved to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/DiT_epoch_00000_step_05000.pth
+2025-05-06 20:12:10,941 - seed_vc_trainer - INFO - epoch 0, step 5000, loss: 0.561818
+2025-05-06 20:12:10,942 - seed_vc_trainer - INFO - Starting evaluation at step 5000
+2025-05-06 20:12:11,578 - seed_vc_trainer - INFO - RTF: 0.08
+2025-05-06 20:12:11,585 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_5000/vc_s1_ref_1.0_30_0.7.wav
+2025-05-06 20:12:12,059 - seed_vc_trainer - INFO - RTF: 0.07
+2025-05-06 20:12:12,065 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_5000/vc_s2_ref_1.0_30_0.7.wav
+2025-05-06 20:12:12,550 - seed_vc_trainer - INFO - RTF: 0.06
+2025-05-06 20:12:12,558 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_5000/vc_s3_ref_1.0_30_0.7.wav
+2025-05-06 20:12:13,057 - seed_vc_trainer - INFO - RTF: 0.07
+2025-05-06 20:12:13,063 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_5000/vc_s4_ref_1.0_30_0.7.wav
+2025-05-06 20:12:13,539 - seed_vc_trainer - INFO - RTF: 0.07
+2025-05-06 20:12:13,544 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_5000/vc_s5_ref_1.0_30_0.7.wav
+2025-05-06 20:12:13,544 - seed_vc_trainer - INFO - Completed evaluation at step 5000
+2025-05-06 20:12:25,276 - seed_vc_trainer - INFO - epoch 0, step 5010, loss: 0.562579
+2025-05-06 20:12:36,614 - seed_vc_trainer - INFO - epoch 0, step 5020, loss: 0.562027
+2025-05-06 20:12:47,826 - seed_vc_trainer - INFO - epoch 0, step 5030, loss: 0.560461
+2025-05-06 20:13:00,205 - seed_vc_trainer - INFO - epoch 0, step 5040, loss: 0.560013
+2025-05-06 20:13:11,165 - seed_vc_trainer - INFO - epoch 0, step 5050, loss: 0.561442
+2025-05-06 20:13:21,173 - seed_vc_trainer - INFO - epoch 0, step 5060, loss: 0.560687
+2025-05-06 20:13:31,886 - seed_vc_trainer - INFO - epoch 0, step 5070, loss: 0.560613
+2025-05-06 20:13:43,482 - seed_vc_trainer - INFO - epoch 0, step 5080, loss: 0.562517
+2025-05-06 20:13:55,215 - seed_vc_trainer - INFO - epoch 0, step 5090, loss: 0.561308
+2025-05-06 20:14:07,034 - seed_vc_trainer - INFO - epoch 0, step 5100, loss: 0.559503
+2025-05-06 20:14:18,476 - seed_vc_trainer - INFO - epoch 0, step 5110, loss: 0.559658
+2025-05-06 20:14:31,447 - seed_vc_trainer - INFO - epoch 0, step 5120, loss: 0.558968
+2025-05-06 20:14:42,030 - seed_vc_trainer - INFO - epoch 0, step 5130, loss: 0.559596
+2025-05-06 20:14:53,420 - seed_vc_trainer - INFO - epoch 0, step 5140, loss: 0.558420
+2025-05-06 20:15:05,662 - seed_vc_trainer - INFO - epoch 0, step 5150, loss: 0.557718
+2025-05-06 20:15:16,628 - seed_vc_trainer - INFO - epoch 0, step 5160, loss: 0.556822
+2025-05-06 20:15:29,252 - seed_vc_trainer - INFO - epoch 0, step 5170, loss: 0.556787
+2025-05-06 20:15:40,019 - seed_vc_trainer - INFO - epoch 0, step 5180, loss: 0.555460
+2025-05-06 20:15:51,201 - seed_vc_trainer - INFO - epoch 0, step 5190, loss: 0.555525
+2025-05-06 20:16:03,757 - seed_vc_trainer - INFO - epoch 0, step 5200, loss: 0.554035
+2025-05-06 20:16:14,931 - seed_vc_trainer - INFO - epoch 0, step 5210, loss: 0.556270
+2025-05-06 20:16:28,161 - seed_vc_trainer - INFO - epoch 0, step 5220, loss: 0.557535
+2025-05-06 20:16:39,777 - seed_vc_trainer - INFO - epoch 0, step 5230, loss: 0.559878
+2025-05-06 20:16:50,384 - seed_vc_trainer - INFO - epoch 0, step 5240, loss: 0.561160
+2025-05-06 20:17:01,434 - seed_vc_trainer - INFO - epoch 0, step 5250, loss: 0.559088
+2025-05-06 20:17:13,899 - seed_vc_trainer - INFO - epoch 0, step 5260, loss: 0.559242
+2025-05-06 20:17:25,539 - seed_vc_trainer - INFO - epoch 0, step 5270, loss: 0.559016
+2025-05-06 20:17:37,464 - seed_vc_trainer - INFO - epoch 0, step 5280, loss: 0.559992
+2025-05-06 20:17:48,568 - seed_vc_trainer - INFO - epoch 0, step 5290, loss: 0.559552
+2025-05-06 20:18:00,133 - seed_vc_trainer - INFO - epoch 0, step 5300, loss: 0.560353
+2025-05-06 20:18:12,500 - seed_vc_trainer - INFO - epoch 0, step 5310, loss: 0.561017
+2025-05-06 20:18:24,417 - seed_vc_trainer - INFO - epoch 0, step 5320, loss: 0.562153
+2025-05-06 20:18:36,053 - seed_vc_trainer - INFO - epoch 0, step 5330, loss: 0.560072
+2025-05-06 20:18:48,441 - seed_vc_trainer - INFO - epoch 0, step 5340, loss: 0.560590
+2025-05-06 20:19:01,504 - seed_vc_trainer - INFO - epoch 0, step 5350, loss: 0.559498
+2025-05-06 20:19:12,677 - seed_vc_trainer - INFO - epoch 0, step 5360, loss: 0.561062
+2025-05-06 20:19:23,733 - seed_vc_trainer - INFO - epoch 0, step 5370, loss: 0.559076
+2025-05-06 20:19:33,260 - seed_vc_trainer - INFO - epoch 0, step 5380, loss: 0.557699
+2025-05-06 20:19:45,928 - seed_vc_trainer - INFO - epoch 0, step 5390, loss: 0.557765
+2025-05-06 20:19:57,794 - seed_vc_trainer - INFO - epoch 0, step 5400, loss: 0.559445
+2025-05-06 20:20:09,192 - seed_vc_trainer - INFO - epoch 0, step 5410, loss: 0.559658
+2025-05-06 20:20:20,071 - seed_vc_trainer - INFO - epoch 0, step 5420, loss: 0.559627
+2025-05-06 20:20:31,219 - seed_vc_trainer - INFO - epoch 0, step 5430, loss: 0.558960
+2025-05-06 20:20:44,535 - seed_vc_trainer - INFO - epoch 0, step 5440, loss: 0.558881
+2025-05-06 20:20:56,432 - seed_vc_trainer - INFO - epoch 0, step 5450, loss: 0.558917
+2025-05-06 20:21:09,520 - seed_vc_trainer - INFO - epoch 0, step 5460, loss: 0.559034
+2025-05-06 20:21:20,254 - seed_vc_trainer - INFO - epoch 0, step 5470, loss: 0.557768
+2025-05-06 20:21:31,165 - seed_vc_trainer - INFO - epoch 0, step 5480, loss: 0.557890
+2025-05-06 20:21:43,350 - seed_vc_trainer - INFO - epoch 0, step 5490, loss: 0.557738
+2025-05-06 20:21:56,173 - seed_vc_trainer - INFO - epoch 0, step 5500, loss: 0.559195
+2025-05-06 20:22:07,277 - seed_vc_trainer - INFO - epoch 0, step 5510, loss: 0.560379
+2025-05-06 20:22:19,583 - seed_vc_trainer - INFO - epoch 0, step 5520, loss: 0.560109
+2025-05-06 20:22:30,664 - seed_vc_trainer - INFO - epoch 0, step 5530, loss: 0.560361
+2025-05-06 20:22:41,407 - seed_vc_trainer - INFO - epoch 0, step 5540, loss: 0.558585
+2025-05-06 20:22:52,421 - seed_vc_trainer - INFO - epoch 0, step 5550, loss: 0.557039
+2025-05-06 20:23:04,180 - seed_vc_trainer - INFO - epoch 0, step 5560, loss: 0.557165
+2025-05-06 20:23:15,522 - seed_vc_trainer - INFO - epoch 0, step 5570, loss: 0.556501
+2025-05-06 20:23:26,527 - seed_vc_trainer - INFO - epoch 0, step 5580, loss: 0.555073
+2025-05-06 20:23:37,089 - seed_vc_trainer - INFO - epoch 0, step 5590, loss: 0.556850
+2025-05-06 20:23:48,263 - seed_vc_trainer - INFO - epoch 0, step 5600, loss: 0.557594
+2025-05-06 20:23:58,872 - seed_vc_trainer - INFO - epoch 0, step 5610, loss: 0.558401
+2025-05-06 20:24:09,713 - seed_vc_trainer - INFO - epoch 0, step 5620, loss: 0.559422
+2025-05-06 20:24:20,700 - seed_vc_trainer - INFO - epoch 0, step 5630, loss: 0.559531
+2025-05-06 20:24:31,693 - seed_vc_trainer - INFO - epoch 0, step 5640, loss: 0.561384
+2025-05-06 20:24:43,142 - seed_vc_trainer - INFO - epoch 0, step 5650, loss: 0.561183
+2025-05-06 20:24:54,098 - seed_vc_trainer - INFO - epoch 0, step 5660, loss: 0.560420
+2025-05-06 20:25:05,657 - seed_vc_trainer - INFO - epoch 0, step 5670, loss: 0.560550
+2025-05-06 20:25:17,029 - seed_vc_trainer - INFO - epoch 0, step 5680, loss: 0.559579
+2025-05-06 20:25:28,614 - seed_vc_trainer - INFO - epoch 0, step 5690, loss: 0.558572
+2025-05-06 20:25:41,925 - seed_vc_trainer - INFO - epoch 0, step 5700, loss: 0.559341
+2025-05-06 20:25:52,339 - seed_vc_trainer - INFO - epoch 0, step 5710, loss: 0.559312
+2025-05-06 20:26:04,591 - seed_vc_trainer - INFO - epoch 0, step 5720, loss: 0.559595
+2025-05-06 20:26:16,424 - seed_vc_trainer - INFO - epoch 0, step 5730, loss: 0.558779
+2025-05-06 20:26:28,682 - seed_vc_trainer - INFO - epoch 0, step 5740, loss: 0.559646
+2025-05-06 20:26:41,005 - seed_vc_trainer - INFO - epoch 0, step 5750, loss: 0.558511
+2025-05-06 20:26:52,914 - seed_vc_trainer - INFO - epoch 0, step 5760, loss: 0.556896
+2025-05-06 20:27:04,786 - seed_vc_trainer - INFO - epoch 0, step 5770, loss: 0.557689
+2025-05-06 20:27:14,892 - seed_vc_trainer - INFO - epoch 0, step 5780, loss: 0.556246
+2025-05-06 20:27:26,836 - seed_vc_trainer - INFO - epoch 0, step 5790, loss: 0.555644
+2025-05-06 20:27:37,413 - seed_vc_trainer - INFO - epoch 0, step 5800, loss: 0.558478
+2025-05-06 20:27:48,688 - seed_vc_trainer - INFO - epoch 0, step 5810, loss: 0.557594
+2025-05-06 20:27:59,971 - seed_vc_trainer - INFO - epoch 0, step 5820, loss: 0.556566
+2025-05-06 20:28:10,693 - seed_vc_trainer - INFO - epoch 0, step 5830, loss: 0.555298
+2025-05-06 20:28:24,150 - seed_vc_trainer - INFO - epoch 0, step 5840, loss: 0.554367
+2025-05-06 20:28:35,619 - seed_vc_trainer - INFO - epoch 0, step 5850, loss: 0.553586
+2025-05-06 20:28:47,384 - seed_vc_trainer - INFO - epoch 0, step 5860, loss: 0.553947
+2025-05-06 20:28:59,417 - seed_vc_trainer - INFO - epoch 0, step 5870, loss: 0.554550
+2025-05-06 20:29:12,089 - seed_vc_trainer - INFO - epoch 0, step 5880, loss: 0.554184
+2025-05-06 20:29:24,121 - seed_vc_trainer - INFO - epoch 0, step 5890, loss: 0.555118
+2025-05-06 20:29:35,966 - seed_vc_trainer - INFO - epoch 0, step 5900, loss: 0.555294
+2025-05-06 20:29:48,240 - seed_vc_trainer - INFO - epoch 0, step 5910, loss: 0.555554
+2025-05-06 20:29:59,951 - seed_vc_trainer - INFO - epoch 0, step 5920, loss: 0.555221
+2025-05-06 20:30:12,025 - seed_vc_trainer - INFO - epoch 0, step 5930, loss: 0.555411
+2025-05-06 20:30:22,803 - seed_vc_trainer - INFO - epoch 0, step 5940, loss: 0.554808
+2025-05-06 20:30:34,836 - seed_vc_trainer - INFO - epoch 0, step 5950, loss: 0.554877
+2025-05-06 20:30:46,409 - seed_vc_trainer - INFO - epoch 0, step 5960, loss: 0.553836
+2025-05-06 20:30:58,416 - seed_vc_trainer - INFO - epoch 0, step 5970, loss: 0.553437
+2025-05-06 20:31:10,104 - seed_vc_trainer - INFO - epoch 0, step 5980, loss: 0.553992
+2025-05-06 20:31:21,234 - seed_vc_trainer - INFO - epoch 0, step 5990, loss: 0.552925
+2025-05-06 20:31:33,088 - seed_vc_trainer - INFO - epoch 0, step 6000, loss: 0.554924
+2025-05-06 20:31:33,089 - seed_vc_trainer - INFO - Starting evaluation at step 6000
+2025-05-06 20:31:33,665 - seed_vc_trainer - INFO - RTF: 0.07
+2025-05-06 20:31:33,670 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_6000/vc_s1_ref_1.0_30_0.7.wav
+2025-05-06 20:31:34,131 - seed_vc_trainer - INFO - RTF: 0.06
+2025-05-06 20:31:34,137 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_6000/vc_s2_ref_1.0_30_0.7.wav
+2025-05-06 20:31:34,660 - seed_vc_trainer - INFO - RTF: 0.06
+2025-05-06 20:31:34,666 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_6000/vc_s3_ref_1.0_30_0.7.wav
+2025-05-06 20:31:35,179 - seed_vc_trainer - INFO - RTF: 0.07
+2025-05-06 20:31:35,183 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_6000/vc_s4_ref_1.0_30_0.7.wav
+2025-05-06 20:31:35,674 - seed_vc_trainer - INFO - RTF: 0.07
+2025-05-06 20:31:35,679 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_6000/vc_s5_ref_1.0_30_0.7.wav
+2025-05-06 20:31:35,680 - seed_vc_trainer - INFO - Completed evaluation at step 6000
+2025-05-06 20:31:46,873 - seed_vc_trainer - INFO - epoch 0, step 6010, loss: 0.556152
+2025-05-06 20:31:58,136 - seed_vc_trainer - INFO - epoch 0, step 6020, loss: 0.555126
+2025-05-06 20:32:10,096 - seed_vc_trainer - INFO - epoch 0, step 6030, loss: 0.554262
+2025-05-06 20:32:21,055 - seed_vc_trainer - INFO - epoch 0, step 6040, loss: 0.554197
+2025-05-06 20:32:33,532 - seed_vc_trainer - INFO - epoch 0, step 6050, loss: 0.554035
+2025-05-06 20:32:45,431 - seed_vc_trainer - INFO - epoch 0, step 6060, loss: 0.555744
+2025-05-06 20:32:56,420 - seed_vc_trainer - INFO - epoch 0, step 6070, loss: 0.554490
+2025-05-06 20:33:07,597 - seed_vc_trainer - INFO - epoch 0, step 6080, loss: 0.554433
+2025-05-06 20:33:18,480 - seed_vc_trainer - INFO - epoch 0, step 6090, loss: 0.556545
+2025-05-06 20:33:29,310 - seed_vc_trainer - INFO - epoch 0, step 6100, loss: 0.554837
+2025-05-06 20:33:40,645 - seed_vc_trainer - INFO - epoch 0, step 6110, loss: 0.554973
+2025-05-06 20:33:52,486 - seed_vc_trainer - INFO - epoch 0, step 6120, loss: 0.554564
+2025-05-06 20:34:03,314 - seed_vc_trainer - INFO - epoch 0, step 6130, loss: 0.557011
+2025-05-06 20:34:14,018 - seed_vc_trainer - INFO - epoch 0, step 6140, loss: 0.555859
+2025-05-06 20:34:26,980 - seed_vc_trainer - INFO - epoch 0, step 6150, loss: 0.556745
+2025-05-06 20:34:38,318 - seed_vc_trainer - INFO - epoch 0, step 6160, loss: 0.556041
+2025-05-06 20:34:49,501 - seed_vc_trainer - INFO - epoch 0, step 6170, loss: 0.554506
+2025-05-06 20:35:01,821 - seed_vc_trainer - INFO - epoch 0, step 6180, loss: 0.554086
+2025-05-06 20:35:12,984 - seed_vc_trainer - INFO - epoch 0, step 6190, loss: 0.553343
+2025-05-06 20:35:24,485 - seed_vc_trainer - INFO - epoch 0, step 6200, loss: 0.556161
+2025-05-06 20:35:36,955 - seed_vc_trainer - INFO - epoch 0, step 6210, loss: 0.555573
+2025-05-06 20:35:48,394 - seed_vc_trainer - INFO - epoch 0, step 6220, loss: 0.558126
+2025-05-06 20:35:59,136 - seed_vc_trainer - INFO - epoch 0, step 6230, loss: 0.559485
+2025-05-06 20:36:11,498 - seed_vc_trainer - INFO - epoch 0, step 6240, loss: 0.559322
+2025-05-06 20:36:22,721 - seed_vc_trainer - INFO - epoch 0, step 6250, loss: 0.558879
+2025-05-06 20:36:34,938 - seed_vc_trainer - INFO - epoch 0, step 6260, loss: 0.557463
+2025-05-06 20:36:47,096 - seed_vc_trainer - INFO - epoch 0, step 6270, loss: 0.557734
+2025-05-06 20:37:00,986 - seed_vc_trainer - INFO - epoch 0, step 6280, loss: 0.558931
+2025-05-06 20:37:11,551 - seed_vc_trainer - INFO - epoch 0, step 6290, loss: 0.557626
+2025-05-06 20:37:21,689 - seed_vc_trainer - INFO - epoch 0, step 6300, loss: 0.559035
+2025-05-06 20:37:32,711 - seed_vc_trainer - INFO - epoch 0, step 6310, loss: 0.559062
+2025-05-06 20:37:43,797 - seed_vc_trainer - INFO - epoch 0, step 6320, loss: 0.557506
+2025-05-06 20:37:55,132 - seed_vc_trainer - INFO - epoch 0, step 6330, loss: 0.559536
+2025-05-06 20:38:06,320 - seed_vc_trainer - INFO - epoch 0, step 6340, loss: 0.560087
+2025-05-06 20:38:18,420 - seed_vc_trainer - INFO - epoch 0, step 6350, loss: 0.558814
+2025-05-06 20:38:29,074 - seed_vc_trainer - INFO - epoch 0, step 6360, loss: 0.558330
+2025-05-06 20:38:40,652 - seed_vc_trainer - INFO - epoch 0, step 6370, loss: 0.558241
+2025-05-06 20:38:51,134 - seed_vc_trainer - INFO - epoch 0, step 6380, loss: 0.557731
+2025-05-06 20:39:01,861 - seed_vc_trainer - INFO - epoch 0, step 6390, loss: 0.557058
+2025-05-06 20:39:12,121 - seed_vc_trainer - INFO - epoch 0, step 6400, loss: 0.558477
+2025-05-06 20:39:24,663 - seed_vc_trainer - INFO - epoch 0, step 6410, loss: 0.557965
+2025-05-06 20:39:36,461 - seed_vc_trainer - INFO - epoch 0, step 6420, loss: 0.556174
+2025-05-06 20:39:48,520 - seed_vc_trainer - INFO - epoch 0, step 6430, loss: 0.555906
+2025-05-06 20:40:00,821 - seed_vc_trainer - INFO - epoch 0, step 6440, loss: 0.556823
+2025-05-06 20:40:12,324 - seed_vc_trainer - INFO - epoch 0, step 6450, loss: 0.557972
+2025-05-06 20:40:24,680 - seed_vc_trainer - INFO - epoch 0, step 6460, loss: 0.557923
+2025-05-06 20:40:36,649 - seed_vc_trainer - INFO - epoch 0, step 6470, loss: 0.558603
+2025-05-06 20:40:47,827 - seed_vc_trainer - INFO - epoch 0, step 6480, loss: 0.557045
+2025-05-06 20:40:59,673 - seed_vc_trainer - INFO - epoch 0, step 6490, loss: 0.557239
+2025-05-06 20:41:11,419 - seed_vc_trainer - INFO - epoch 0, step 6500, loss: 0.556214
+2025-05-06 20:41:24,010 - seed_vc_trainer - INFO - epoch 0, step 6510, loss: 0.556118
+2025-05-06 20:41:35,372 - seed_vc_trainer - INFO - epoch 0, step 6520, loss: 0.556704
+2025-05-06 20:41:47,052 - seed_vc_trainer - INFO - epoch 0, step 6530, loss: 0.556694
+2025-05-06 20:41:59,002 - seed_vc_trainer - INFO - epoch 0, step 6540, loss: 0.556179
+2025-05-06 20:42:11,533 - seed_vc_trainer - INFO - epoch 0, step 6550, loss: 0.556169
+2025-05-06 20:42:24,112 - seed_vc_trainer - INFO - epoch 0, step 6560, loss: 0.554811
+2025-05-06 20:42:36,382 - seed_vc_trainer - INFO - epoch 0, step 6570, loss: 0.555645
+2025-05-06 20:42:47,595 - seed_vc_trainer - INFO - epoch 0, step 6580, loss: 0.555444
+2025-05-06 20:42:58,989 - seed_vc_trainer - INFO - epoch 0, step 6590, loss: 0.555157
+2025-05-06 20:43:10,697 - seed_vc_trainer - INFO - epoch 0, step 6600, loss: 0.555236
+2025-05-06 20:43:21,961 - seed_vc_trainer - INFO - epoch 0, step 6610, loss: 0.556248
+2025-05-06 20:43:33,298 - seed_vc_trainer - INFO - epoch 0, step 6620, loss: 0.556506
+2025-05-06 20:43:45,184 - seed_vc_trainer - INFO - epoch 0, step 6630, loss: 0.557023
+2025-05-06 20:43:56,679 - seed_vc_trainer - INFO - epoch 0, step 6640, loss: 0.556981
+2025-05-06 20:44:08,347 - seed_vc_trainer - INFO - epoch 0, step 6650, loss: 0.557493
+2025-05-06 20:44:20,851 - seed_vc_trainer - INFO - epoch 0, step 6660, loss: 0.556857
+2025-05-06 20:44:33,391 - seed_vc_trainer - INFO - epoch 0, step 6670, loss: 0.555973
+2025-05-06 20:44:44,716 - seed_vc_trainer - INFO - epoch 0, step 6680, loss: 0.554369
+2025-05-06 20:44:57,022 - seed_vc_trainer - INFO - epoch 0, step 6690, loss: 0.552591
+2025-05-06 20:45:08,594 - seed_vc_trainer - INFO - epoch 0, step 6700, loss: 0.553784
+2025-05-06 20:45:20,820 - seed_vc_trainer - INFO - epoch 0, step 6710, loss: 0.554282
+2025-05-06 20:45:32,535 - seed_vc_trainer - INFO - epoch 0, step 6720, loss: 0.555524
+2025-05-06 20:45:44,653 - seed_vc_trainer - INFO - epoch 0, step 6730, loss: 0.554848
+2025-05-06 20:45:55,760 - seed_vc_trainer - INFO - epoch 0, step 6740, loss: 0.552659
+2025-05-06 20:46:07,760 - seed_vc_trainer - INFO - epoch 0, step 6750, loss: 0.554149
+2025-05-06 20:46:20,383 - seed_vc_trainer - INFO - epoch 0, step 6760, loss: 0.555465
+2025-05-06 20:46:32,009 - seed_vc_trainer - INFO - epoch 0, step 6770, loss: 0.554860
+2025-05-06 20:46:44,474 - seed_vc_trainer - INFO - epoch 0, step 6780, loss: 0.554057
+2025-05-06 20:46:55,721 - seed_vc_trainer - INFO - epoch 0, step 6790, loss: 0.553505
+2025-05-06 20:47:07,091 - seed_vc_trainer - INFO - epoch 0, step 6800, loss: 0.554097
+2025-05-06 20:47:18,256 - seed_vc_trainer - INFO - epoch 0, step 6810, loss: 0.554573
+2025-05-06 20:47:28,943 - seed_vc_trainer - INFO - epoch 0, step 6820, loss: 0.553702
+2025-05-06 20:47:40,093 - seed_vc_trainer - INFO - epoch 0, step 6830, loss: 0.553447
+2025-05-06 20:47:50,722 - seed_vc_trainer - INFO - epoch 0, step 6840, loss: 0.553286
+2025-05-06 20:48:03,176 - seed_vc_trainer - INFO - epoch 0, step 6850, loss: 0.552996
+2025-05-06 20:48:14,436 - seed_vc_trainer - INFO - epoch 0, step 6860, loss: 0.552735
+2025-05-06 20:48:26,014 - seed_vc_trainer - INFO - epoch 0, step 6870, loss: 0.553078
+2025-05-06 20:48:37,527 - seed_vc_trainer - INFO - epoch 0, step 6880, loss: 0.553330
+2025-05-06 20:48:49,474 - seed_vc_trainer - INFO - epoch 0, step 6890, loss: 0.552707
+2025-05-06 20:49:00,632 - seed_vc_trainer - INFO - epoch 0, step 6900, loss: 0.551630
+2025-05-06 20:49:13,353 - seed_vc_trainer - INFO - epoch 0, step 6910, loss: 0.551803
+2025-05-06 20:49:27,034 - seed_vc_trainer - INFO - epoch 0, step 6920, loss: 0.550637
+2025-05-06 20:49:38,434 - seed_vc_trainer - INFO - epoch 0, step 6930, loss: 0.550078
+2025-05-06 20:49:50,685 - seed_vc_trainer - INFO - epoch 0, step 6940, loss: 0.550789
+2025-05-06 20:50:03,283 - seed_vc_trainer - INFO - epoch 0, step 6950, loss: 0.552328
+2025-05-06 20:50:14,875 - seed_vc_trainer - INFO - epoch 0, step 6960, loss: 0.552328
+2025-05-06 20:50:26,276 - seed_vc_trainer - INFO - epoch 0, step 6970, loss: 0.552021
+2025-05-06 20:50:37,272 - seed_vc_trainer - INFO - epoch 0, step 6980, loss: 0.552039
+2025-05-06 20:50:48,916 - seed_vc_trainer - INFO - epoch 0, step 6990, loss: 0.555011
+2025-05-06 20:51:00,508 - seed_vc_trainer - INFO - epoch 0, step 7000, loss: 0.553904
+2025-05-06 20:51:00,510 - seed_vc_trainer - INFO - Starting evaluation at step 7000
+2025-05-06 20:51:01,032 - seed_vc_trainer - INFO - RTF: 0.06
+2025-05-06 20:51:01,038 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_7000/vc_s1_ref_1.0_30_0.7.wav
+2025-05-06 20:51:01,579 - seed_vc_trainer - INFO - RTF: 0.07
+2025-05-06 20:51:01,584 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_7000/vc_s2_ref_1.0_30_0.7.wav
+2025-05-06 20:51:02,119 - seed_vc_trainer - INFO - RTF: 0.06
+2025-05-06 20:51:02,124 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_7000/vc_s3_ref_1.0_30_0.7.wav
+2025-05-06 20:51:02,697 - seed_vc_trainer - INFO - RTF: 0.08
+2025-05-06 20:51:02,702 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_7000/vc_s4_ref_1.0_30_0.7.wav
+2025-05-06 20:51:03,244 - seed_vc_trainer - INFO - RTF: 0.08
+2025-05-06 20:51:03,250 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_7000/vc_s5_ref_1.0_30_0.7.wav
+2025-05-06 20:51:03,251 - seed_vc_trainer - INFO - Completed evaluation at step 7000
+2025-05-06 20:51:16,093 - seed_vc_trainer - INFO - epoch 0, step 7010, loss: 0.554960
+2025-05-06 20:51:27,563 - seed_vc_trainer - INFO - epoch 0, step 7020, loss: 0.554937
+2025-05-06 20:51:39,076 - seed_vc_trainer - INFO - epoch 0, step 7030, loss: 0.555839
+2025-05-06 20:51:51,493 - seed_vc_trainer - INFO - epoch 0, step 7040, loss: 0.555625
+2025-05-06 20:52:02,873 - seed_vc_trainer - INFO - epoch 0, step 7050, loss: 0.557061
+2025-05-06 20:52:13,801 - seed_vc_trainer - INFO - epoch 0, step 7060, loss: 0.556393
+2025-05-06 20:52:24,481 - seed_vc_trainer - INFO - epoch 0, step 7070, loss: 0.555852
+2025-05-06 20:52:35,871 - seed_vc_trainer - INFO - epoch 0, step 7080, loss: 0.554256
+2025-05-06 20:52:47,144 - seed_vc_trainer - INFO - epoch 0, step 7090, loss: 0.552236
+2025-05-06 20:52:58,419 - seed_vc_trainer - INFO - epoch 0, step 7100, loss: 0.554603
+2025-05-06 20:53:09,801 - seed_vc_trainer - INFO - epoch 0, step 7110, loss: 0.554976
+2025-05-06 20:53:21,727 - seed_vc_trainer - INFO - epoch 0, step 7120, loss: 0.554839
+2025-05-06 20:53:32,084 - seed_vc_trainer - INFO - epoch 0, step 7130, loss: 0.554291
+2025-05-06 20:53:43,994 - seed_vc_trainer - INFO - epoch 0, step 7140, loss: 0.552789
+2025-05-06 20:53:54,935 - seed_vc_trainer - INFO - epoch 0, step 7150, loss: 0.552897
+2025-05-06 20:54:05,582 - seed_vc_trainer - INFO - epoch 0, step 7160, loss: 0.553669
+2025-05-06 20:54:16,528 - seed_vc_trainer - INFO - epoch 0, step 7170, loss: 0.553982
+2025-05-06 20:54:28,721 - seed_vc_trainer - INFO - epoch 0, step 7180, loss: 0.551814
+2025-05-06 20:54:40,332 - seed_vc_trainer - INFO - epoch 0, step 7190, loss: 0.551835
+2025-05-06 20:54:52,021 - seed_vc_trainer - INFO - epoch 0, step 7200, loss: 0.551385
+2025-05-06 20:55:03,207 - seed_vc_trainer - INFO - epoch 0, step 7210, loss: 0.550053
+2025-05-06 20:55:14,987 - seed_vc_trainer - INFO - epoch 0, step 7220, loss: 0.550890
+2025-05-06 20:55:25,732 - seed_vc_trainer - INFO - epoch 0, step 7230, loss: 0.553295
+2025-05-06 20:55:37,047 - seed_vc_trainer - INFO - epoch 0, step 7240, loss: 0.553207
+2025-05-06 20:55:47,528 - seed_vc_trainer - INFO - epoch 0, step 7250, loss: 0.552628
+2025-05-06 20:55:59,276 - seed_vc_trainer - INFO - epoch 0, step 7260, loss: 0.551921
+2025-05-06 20:56:11,026 - seed_vc_trainer - INFO - epoch 0, step 7270, loss: 0.552632
+2025-05-06 20:56:23,519 - seed_vc_trainer - INFO - epoch 0, step 7280, loss: 0.553632
+2025-05-06 20:56:34,605 - seed_vc_trainer - INFO - epoch 0, step 7290, loss: 0.554017
+2025-05-06 20:56:47,013 - seed_vc_trainer - INFO - epoch 0, step 7300, loss: 0.551573
+2025-05-06 20:56:59,600 - seed_vc_trainer - INFO - epoch 0, step 7310, loss: 0.552169
+2025-05-06 20:57:10,738 - seed_vc_trainer - INFO - epoch 0, step 7320, loss: 0.553154
+2025-05-06 20:57:22,539 - seed_vc_trainer - INFO - epoch 0, step 7330, loss: 0.552882
+2025-05-06 20:57:33,998 - seed_vc_trainer - INFO - epoch 0, step 7340, loss: 0.554107
+2025-05-06 20:57:45,679 - seed_vc_trainer - INFO - epoch 0, step 7350, loss: 0.554952
+2025-05-06 20:57:57,442 - seed_vc_trainer - INFO - epoch 0, step 7360, loss: 0.552473
+2025-05-06 20:58:08,386 - seed_vc_trainer - INFO - epoch 0, step 7370, loss: 0.553411
+2025-05-06 20:58:20,260 - seed_vc_trainer - INFO - epoch 0, step 7380, loss: 0.553915
+2025-05-06 20:58:30,584 - seed_vc_trainer - INFO - epoch 0, step 7390, loss: 0.553407
+2025-05-06 20:58:43,445 - seed_vc_trainer - INFO - epoch 0, step 7400, loss: 0.553775
+2025-05-06 20:58:55,320 - seed_vc_trainer - INFO - epoch 0, step 7410, loss: 0.554257
+2025-05-06 20:59:08,726 - seed_vc_trainer - INFO - epoch 0, step 7420, loss: 0.554689
+2025-05-06 20:59:21,826 - seed_vc_trainer - INFO - epoch 0, step 7430, loss: 0.555375
+2025-05-06 20:59:34,353 - seed_vc_trainer - INFO - epoch 0, step 7440, loss: 0.554382
+2025-05-06 20:59:46,356 - seed_vc_trainer - INFO - epoch 0, step 7450, loss: 0.553835
+2025-05-06 20:59:57,976 - seed_vc_trainer - INFO - epoch 0, step 7460, loss: 0.554233
+2025-05-06 21:00:09,616 - seed_vc_trainer - INFO - epoch 0, step 7470, loss: 0.554964
+2025-05-06 21:00:20,845 - seed_vc_trainer - INFO - epoch 0, step 7480, loss: 0.557111
+2025-05-06 21:00:32,920 - seed_vc_trainer - INFO - epoch 0, step 7490, loss: 0.555979
+2025-05-06 21:00:44,469 - seed_vc_trainer - INFO - epoch 0, step 7500, loss: 0.556796
+2025-05-06 21:00:55,721 - seed_vc_trainer - INFO - epoch 0, step 7510, loss: 0.557293
+2025-05-06 21:01:06,470 - seed_vc_trainer - INFO - epoch 0, step 7520, loss: 0.558639
+2025-05-06 21:01:17,047 - seed_vc_trainer - INFO - epoch 0, step 7530, loss: 0.559158
+2025-05-06 21:01:27,982 - seed_vc_trainer - INFO - epoch 0, step 7540, loss: 0.557801
+2025-05-06 21:01:39,578 - seed_vc_trainer - INFO - epoch 0, step 7550, loss: 0.557644
+2025-05-06 21:01:51,290 - seed_vc_trainer - INFO - epoch 0, step 7560, loss: 0.559953
+2025-05-06 21:02:02,366 - seed_vc_trainer - INFO - epoch 0, step 7570, loss: 0.558558
+2025-05-06 21:02:14,052 - seed_vc_trainer - INFO - epoch 0, step 7580, loss: 0.557057
+2025-05-06 21:02:25,809 - seed_vc_trainer - INFO - epoch 0, step 7590, loss: 0.557536
+2025-05-06 21:02:36,790 - seed_vc_trainer - INFO - epoch 0, step 7600, loss: 0.558612
+2025-05-06 21:02:47,379 - seed_vc_trainer - INFO - epoch 0, step 7610, loss: 0.557306
+2025-05-06 21:02:58,535 - seed_vc_trainer - INFO - epoch 0, step 7620, loss: 0.557481
+2025-05-06 21:03:10,446 - seed_vc_trainer - INFO - epoch 0, step 7630, loss: 0.556183
+2025-05-06 21:03:20,717 - seed_vc_trainer - INFO - epoch 0, step 7640, loss: 0.557386
+2025-05-06 21:03:33,958 - seed_vc_trainer - INFO - epoch 0, step 7650, loss: 0.558478
+2025-05-06 21:03:45,745 - seed_vc_trainer - INFO - epoch 0, step 7660, loss: 0.556010
+2025-05-06 21:03:56,825 - seed_vc_trainer - INFO - epoch 0, step 7670, loss: 0.554590
+2025-05-06 21:04:08,265 - seed_vc_trainer - INFO - epoch 0, step 7680, loss: 0.554746
+2025-05-06 21:04:18,753 - seed_vc_trainer - INFO - epoch 0, step 7690, loss: 0.556312
+2025-05-06 21:04:30,816 - seed_vc_trainer - INFO - epoch 0, step 7700, loss: 0.554850
+2025-05-06 21:04:42,878 - seed_vc_trainer - INFO - epoch 0, step 7710, loss: 0.553205
+2025-05-06 21:04:54,012 - seed_vc_trainer - INFO - epoch 0, step 7720, loss: 0.553959
+2025-05-06 21:05:05,566 - seed_vc_trainer - INFO - epoch 0, step 7730, loss: 0.552883
+2025-05-06 21:05:17,278 - seed_vc_trainer - INFO - epoch 0, step 7740, loss: 0.552578
+2025-05-06 21:05:28,696 - seed_vc_trainer - INFO - epoch 0, step 7750, loss: 0.554324
+2025-05-06 21:05:39,759 - seed_vc_trainer - INFO - epoch 0, step 7760, loss: 0.554259
+2025-05-06 21:05:51,270 - seed_vc_trainer - INFO - epoch 0, step 7770, loss: 0.554749
+2025-05-06 21:06:03,482 - seed_vc_trainer - INFO - epoch 0, step 7780, loss: 0.554357
+2025-05-06 21:06:15,717 - seed_vc_trainer - INFO - epoch 0, step 7790, loss: 0.556485
+2025-05-06 21:06:27,230 - seed_vc_trainer - INFO - epoch 0, step 7800, loss: 0.555548
+2025-05-06 21:06:38,487 - seed_vc_trainer - INFO - epoch 0, step 7810, loss: 0.555633
+2025-05-06 21:06:50,434 - seed_vc_trainer - INFO - epoch 0, step 7820, loss: 0.556472
+2025-05-06 21:07:01,085 - seed_vc_trainer - INFO - epoch 0, step 7830, loss: 0.555587
+2025-05-06 21:07:12,572 - seed_vc_trainer - INFO - epoch 0, step 7840, loss: 0.555704
+2025-05-06 21:07:24,120 - seed_vc_trainer - INFO - epoch 0, step 7850, loss: 0.558052
+2025-05-06 21:07:35,556 - seed_vc_trainer - INFO - epoch 0, step 7860, loss: 0.557277
+2025-05-06 21:07:47,551 - seed_vc_trainer - INFO - epoch 0, step 7870, loss: 0.556897
+2025-05-06 21:07:59,303 - seed_vc_trainer - INFO - epoch 0, step 7880, loss: 0.557364
+2025-05-06 21:08:11,242 - seed_vc_trainer - INFO - epoch 0, step 7890, loss: 0.556892
+2025-05-06 21:08:22,984 - seed_vc_trainer - INFO - epoch 0, step 7900, loss: 0.557727
+2025-05-06 21:08:34,140 - seed_vc_trainer - INFO - epoch 0, step 7910, loss: 0.557789
+2025-05-06 21:08:44,535 - seed_vc_trainer - INFO - epoch 0, step 7920, loss: 0.555898
+2025-05-06 21:08:55,652 - seed_vc_trainer - INFO - epoch 0, step 7930, loss: 0.556889
+2025-05-06 21:09:06,744 - seed_vc_trainer - INFO - epoch 0, step 7940, loss: 0.556891
+2025-05-06 21:09:17,815 - seed_vc_trainer - INFO - epoch 0, step 7950, loss: 0.555147
+2025-05-06 21:09:28,356 - seed_vc_trainer - INFO - epoch 0, step 7960, loss: 0.554380
+2025-05-06 21:09:39,157 - seed_vc_trainer - INFO - epoch 0, step 7970, loss: 0.553330
+2025-05-06 21:09:49,894 - seed_vc_trainer - INFO - epoch 0, step 7980, loss: 0.553698
+2025-05-06 21:10:01,362 - seed_vc_trainer - INFO - epoch 0, step 7990, loss: 0.553671
+2025-05-06 21:10:13,563 - seed_vc_trainer - INFO - epoch 0, step 8000, loss: 0.553370
+2025-05-06 21:10:13,564 - seed_vc_trainer - INFO - Starting evaluation at step 8000
+2025-05-06 21:10:14,114 - seed_vc_trainer - INFO - RTF: 0.07
+2025-05-06 21:10:14,120 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_8000/vc_s1_ref_1.0_30_0.7.wav
+2025-05-06 21:10:14,657 - seed_vc_trainer - INFO - RTF: 0.07
+2025-05-06 21:10:14,662 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_8000/vc_s2_ref_1.0_30_0.7.wav
+2025-05-06 21:10:15,166 - seed_vc_trainer - INFO - RTF: 0.06
+2025-05-06 21:10:15,172 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_8000/vc_s3_ref_1.0_30_0.7.wav
+2025-05-06 21:10:15,672 - seed_vc_trainer - INFO - RTF: 0.07
+2025-05-06 21:10:15,677 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_8000/vc_s4_ref_1.0_30_0.7.wav
+2025-05-06 21:10:16,260 - seed_vc_trainer - INFO - RTF: 0.09
+2025-05-06 21:10:16,265 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_8000/vc_s5_ref_1.0_30_0.7.wav
+2025-05-06 21:10:16,265 - seed_vc_trainer - INFO - Completed evaluation at step 8000
+2025-05-06 21:10:28,196 - seed_vc_trainer - INFO - epoch 0, step 8010, loss: 0.555667
+2025-05-06 21:10:40,142 - seed_vc_trainer - INFO - epoch 0, step 8020, loss: 0.556415
+2025-05-06 21:10:52,073 - seed_vc_trainer - INFO - epoch 0, step 8030, loss: 0.556772
+2025-05-06 21:11:02,717 - seed_vc_trainer - INFO - epoch 0, step 8040, loss: 0.555871
+2025-05-06 21:11:14,356 - seed_vc_trainer - INFO - epoch 0, step 8050, loss: 0.555525
+2025-05-06 21:11:24,992 - seed_vc_trainer - INFO - epoch 0, step 8060, loss: 0.556209
+2025-05-06 21:11:38,206 - seed_vc_trainer - INFO - epoch 0, step 8070, loss: 0.554841
+2025-05-06 21:11:50,025 - seed_vc_trainer - INFO - epoch 0, step 8080, loss: 0.552658
+2025-05-06 21:12:01,708 - seed_vc_trainer - INFO - epoch 0, step 8090, loss: 0.552552
+2025-05-06 21:12:13,187 - seed_vc_trainer - INFO - epoch 0, step 8100, loss: 0.552453
+2025-05-06 21:12:24,054 - seed_vc_trainer - INFO - epoch 0, step 8110, loss: 0.553124
+2025-05-06 21:12:37,431 - seed_vc_trainer - INFO - epoch 0, step 8120, loss: 0.554542
+2025-05-06 21:12:48,975 - seed_vc_trainer - INFO - epoch 0, step 8130, loss: 0.555613
+2025-05-06 21:13:00,598 - seed_vc_trainer - INFO - epoch 0, step 8140, loss: 0.556494
+2025-05-06 21:13:12,127 - seed_vc_trainer - INFO - epoch 0, step 8150, loss: 0.556876
+2025-05-06 21:13:23,022 - seed_vc_trainer - INFO - epoch 0, step 8160, loss: 0.554499
+2025-05-06 21:13:34,211 - seed_vc_trainer - INFO - epoch 0, step 8170, loss: 0.553267
+2025-05-06 21:13:45,225 - seed_vc_trainer - INFO - epoch 0, step 8180, loss: 0.552484
+2025-05-06 21:13:56,708 - seed_vc_trainer - INFO - epoch 0, step 8190, loss: 0.552831
+2025-05-06 21:14:08,578 - seed_vc_trainer - INFO - epoch 0, step 8200, loss: 0.552003
+2025-05-06 21:14:20,153 - seed_vc_trainer - INFO - epoch 0, step 8210, loss: 0.551185
+2025-05-06 21:14:30,543 - seed_vc_trainer - INFO - epoch 0, step 8220, loss: 0.552137
+2025-05-06 21:14:42,721 - seed_vc_trainer - INFO - epoch 0, step 8230, loss: 0.551960
+2025-05-06 21:14:54,723 - seed_vc_trainer - INFO - epoch 0, step 8240, loss: 0.551304
+2025-05-06 21:15:05,573 - seed_vc_trainer - INFO - epoch 0, step 8250, loss: 0.551450
+2025-05-06 21:15:16,564 - seed_vc_trainer - INFO - epoch 0, step 8260, loss: 0.551172
+2025-05-06 21:15:28,241 - seed_vc_trainer - INFO - epoch 0, step 8270, loss: 0.551053
+2025-05-06 21:15:40,418 - seed_vc_trainer - INFO - epoch 0, step 8280, loss: 0.551771
+2025-05-06 21:15:51,966 - seed_vc_trainer - INFO - epoch 0, step 8290, loss: 0.555936
+2025-05-06 21:16:05,710 - seed_vc_trainer - INFO - epoch 0, step 8300, loss: 0.555044
+2025-05-06 21:16:16,842 - seed_vc_trainer - INFO - epoch 0, step 8310, loss: 0.555209
+2025-05-06 21:16:30,412 - seed_vc_trainer - INFO - epoch 0, step 8320, loss: 0.555657
+2025-05-06 21:16:42,167 - seed_vc_trainer - INFO - epoch 0, step 8330, loss: 0.555425
+2025-05-06 21:16:53,112 - seed_vc_trainer - INFO - epoch 0, step 8340, loss: 0.556094
+2025-05-06 21:17:04,248 - seed_vc_trainer - INFO - epoch 0, step 8350, loss: 0.556980
+2025-05-06 21:17:16,740 - seed_vc_trainer - INFO - epoch 0, step 8360, loss: 0.558696
+2025-05-06 21:17:28,591 - seed_vc_trainer - INFO - epoch 0, step 8370, loss: 0.558490
+2025-05-06 21:17:40,933 - seed_vc_trainer - INFO - epoch 0, step 8380, loss: 0.558456
+2025-05-06 21:17:53,004 - seed_vc_trainer - INFO - epoch 0, step 8390, loss: 0.557736
+2025-05-06 21:18:05,173 - seed_vc_trainer - INFO - epoch 0, step 8400, loss: 0.556064
+2025-05-06 21:18:16,952 - seed_vc_trainer - INFO - epoch 0, step 8410, loss: 0.555974
+2025-05-06 21:18:28,019 - seed_vc_trainer - INFO - epoch 0, step 8420, loss: 0.556051
+2025-05-06 21:18:39,847 - seed_vc_trainer - INFO - epoch 0, step 8430, loss: 0.553847
+2025-05-06 21:18:51,416 - seed_vc_trainer - INFO - epoch 0, step 8440, loss: 0.554094
+2025-05-06 21:19:01,917 - seed_vc_trainer - INFO - epoch 0, step 8450, loss: 0.555369
+2025-05-06 21:19:14,877 - seed_vc_trainer - INFO - epoch 0, step 8460, loss: 0.554506
+2025-05-06 21:19:25,984 - seed_vc_trainer - INFO - epoch 0, step 8470, loss: 0.552491
+2025-05-06 21:19:37,707 - seed_vc_trainer - INFO - epoch 0, step 8480, loss: 0.551826
+2025-05-06 21:19:49,686 - seed_vc_trainer - INFO - epoch 0, step 8490, loss: 0.554167
+2025-05-06 21:20:01,209 - seed_vc_trainer - INFO - epoch 0, step 8500, loss: 0.553833
+2025-05-06 21:20:12,912 - seed_vc_trainer - INFO - epoch 0, step 8510, loss: 0.554884
+2025-05-06 21:20:25,740 - seed_vc_trainer - INFO - epoch 0, step 8520, loss: 0.555994
+2025-05-06 21:20:37,071 - seed_vc_trainer - INFO - epoch 0, step 8530, loss: 0.556342
+2025-05-06 21:20:49,120 - seed_vc_trainer - INFO - epoch 0, step 8540, loss: 0.555897
+2025-05-06 21:21:00,761 - seed_vc_trainer - INFO - epoch 0, step 8550, loss: 0.556661
+2025-05-06 21:21:11,850 - seed_vc_trainer - INFO - epoch 0, step 8560, loss: 0.559903
+2025-05-06 21:21:23,503 - seed_vc_trainer - INFO - epoch 0, step 8570, loss: 0.559522
+2025-05-06 21:21:34,956 - seed_vc_trainer - INFO - epoch 0, step 8580, loss: 0.558964
+2025-05-06 21:21:47,094 - seed_vc_trainer - INFO - epoch 0, step 8590, loss: 0.559375
+2025-05-06 21:21:58,941 - seed_vc_trainer - INFO - epoch 0, step 8600, loss: 0.560394
+2025-05-06 21:22:09,964 - seed_vc_trainer - INFO - epoch 0, step 8610, loss: 0.557749
+2025-05-06 21:22:22,873 - seed_vc_trainer - INFO - epoch 0, step 8620, loss: 0.557424
+2025-05-06 21:22:34,608 - seed_vc_trainer - INFO - epoch 0, step 8630, loss: 0.557551
+2025-05-06 21:22:46,021 - seed_vc_trainer - INFO - epoch 0, step 8640, loss: 0.556864
+2025-05-06 21:22:58,137 - seed_vc_trainer - INFO - epoch 0, step 8650, loss: 0.557691
+2025-05-06 21:23:09,572 - seed_vc_trainer - INFO - epoch 0, step 8660, loss: 0.557691
+2025-05-06 21:23:21,682 - seed_vc_trainer - INFO - epoch 0, step 8670, loss: 0.558862
+2025-05-06 21:23:31,917 - seed_vc_trainer - INFO - epoch 0, step 8680, loss: 0.559423
+2025-05-06 21:23:43,698 - seed_vc_trainer - INFO - epoch 0, step 8690, loss: 0.559356
+2025-05-06 21:23:55,377 - seed_vc_trainer - INFO - epoch 0, step 8700, loss: 0.560504
+2025-05-06 21:24:06,737 - seed_vc_trainer - INFO - epoch 0, step 8710, loss: 0.560537
+2025-05-06 21:24:17,870 - seed_vc_trainer - INFO - epoch 0, step 8720, loss: 0.559537
+2025-05-06 21:24:30,016 - seed_vc_trainer - INFO - epoch 0, step 8730, loss: 0.559216
+2025-05-06 21:24:40,408 - seed_vc_trainer - INFO - epoch 0, step 8740, loss: 0.558129
+2025-05-06 21:24:50,976 - seed_vc_trainer - INFO - epoch 0, step 8750, loss: 0.556377
+2025-05-06 21:25:02,723 - seed_vc_trainer - INFO - epoch 0, step 8760, loss: 0.555618
+2025-05-06 21:25:14,236 - seed_vc_trainer - INFO - epoch 0, step 8770, loss: 0.555127
+2025-05-06 21:25:27,300 - seed_vc_trainer - INFO - epoch 0, step 8780, loss: 0.554555
+2025-05-06 21:25:38,881 - seed_vc_trainer - INFO - epoch 0, step 8790, loss: 0.555771
+2025-05-06 21:25:50,361 - seed_vc_trainer - INFO - epoch 0, step 8800, loss: 0.555075
+2025-05-06 21:26:02,514 - seed_vc_trainer - INFO - epoch 0, step 8810, loss: 0.556854
+2025-05-06 21:26:14,380 - seed_vc_trainer - INFO - epoch 0, step 8820, loss: 0.556786
+2025-05-06 21:26:26,871 - seed_vc_trainer - INFO - epoch 0, step 8830, loss: 0.557243
+2025-05-06 21:26:38,456 - seed_vc_trainer - INFO - epoch 0, step 8840, loss: 0.559088
+2025-05-06 21:26:49,435 - seed_vc_trainer - INFO - epoch 0, step 8850, loss: 0.558226
+2025-05-06 21:27:00,890 - seed_vc_trainer - INFO - epoch 0, step 8860, loss: 0.556313
+2025-05-06 21:27:12,313 - seed_vc_trainer - INFO - epoch 0, step 8870, loss: 0.555533
+2025-05-06 21:27:25,324 - seed_vc_trainer - INFO - epoch 0, step 8880, loss: 0.554798
+2025-05-06 21:27:37,333 - seed_vc_trainer - INFO - epoch 0, step 8890, loss: 0.555473
+2025-05-06 21:27:48,994 - seed_vc_trainer - INFO - epoch 0, step 8900, loss: 0.556335
+2025-05-06 21:27:59,526 - seed_vc_trainer - INFO - epoch 0, step 8910, loss: 0.556153
+2025-05-06 21:28:10,480 - seed_vc_trainer - INFO - epoch 0, step 8920, loss: 0.555581
+2025-05-06 21:28:21,629 - seed_vc_trainer - INFO - epoch 0, step 8930, loss: 0.556949
+2025-05-06 21:28:32,573 - seed_vc_trainer - INFO - epoch 0, step 8940, loss: 0.556882
+2025-05-06 21:28:43,833 - seed_vc_trainer - INFO - epoch 0, step 8950, loss: 0.558226
+2025-05-06 21:28:55,209 - seed_vc_trainer - INFO - epoch 0, step 8960, loss: 0.557455
+2025-05-06 21:29:06,661 - seed_vc_trainer - INFO - epoch 0, step 8970, loss: 0.556529
+2025-05-06 21:29:17,801 - seed_vc_trainer - INFO - epoch 0, step 8980, loss: 0.554437
+2025-05-06 21:29:29,117 - seed_vc_trainer - INFO - epoch 0, step 8990, loss: 0.554543
+2025-05-06 21:29:40,209 - seed_vc_trainer - INFO - epoch 0, step 9000, loss: 0.554185
+2025-05-06 21:29:40,210 - seed_vc_trainer - INFO - Starting evaluation at step 9000
+2025-05-06 21:29:40,731 - seed_vc_trainer - INFO - RTF: 0.06
+2025-05-06 21:29:40,737 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_9000/vc_s1_ref_1.0_30_0.7.wav
+2025-05-06 21:29:41,291 - seed_vc_trainer - INFO - RTF: 0.08
+2025-05-06 21:29:41,298 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_9000/vc_s2_ref_1.0_30_0.7.wav
+2025-05-06 21:29:41,873 - seed_vc_trainer - INFO - RTF: 0.07
+2025-05-06 21:29:41,879 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_9000/vc_s3_ref_1.0_30_0.7.wav
+2025-05-06 21:29:42,379 - seed_vc_trainer - INFO - RTF: 0.07
+2025-05-06 21:29:42,384 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_9000/vc_s4_ref_1.0_30_0.7.wav
+2025-05-06 21:29:42,877 - seed_vc_trainer - INFO - RTF: 0.07
+2025-05-06 21:29:42,880 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_9000/vc_s5_ref_1.0_30_0.7.wav
+2025-05-06 21:29:42,880 - seed_vc_trainer - INFO - Completed evaluation at step 9000
+2025-05-06 21:29:55,774 - seed_vc_trainer - INFO - epoch 0, step 9010, loss: 0.555135
+2025-05-06 21:30:07,917 - seed_vc_trainer - INFO - epoch 0, step 9020, loss: 0.554049
+2025-05-06 21:30:19,801 - seed_vc_trainer - INFO - epoch 0, step 9030, loss: 0.553639
+2025-05-06 21:30:30,921 - seed_vc_trainer - INFO - epoch 0, step 9040, loss: 0.553631
+2025-05-06 21:30:42,234 - seed_vc_trainer - INFO - epoch 0, step 9050, loss: 0.553106
+2025-05-06 21:30:54,224 - seed_vc_trainer - INFO - epoch 0, step 9060, loss: 0.553888
+2025-05-06 21:31:06,614 - seed_vc_trainer - INFO - epoch 0, step 9070, loss: 0.557440
+2025-05-06 21:31:17,935 - seed_vc_trainer - INFO - epoch 0, step 9080, loss: 0.557508
+2025-05-06 21:31:30,647 - seed_vc_trainer - INFO - epoch 0, step 9090, loss: 0.556963
+2025-05-06 21:31:42,710 - seed_vc_trainer - INFO - epoch 0, step 9100, loss: 0.556537
+2025-05-06 21:31:53,822 - seed_vc_trainer - INFO - epoch 0, step 9110, loss: 0.558467
+2025-05-06 21:32:03,952 - seed_vc_trainer - INFO - epoch 0, step 9120, loss: 0.558920
+2025-05-06 21:32:15,155 - seed_vc_trainer - INFO - epoch 0, step 9130, loss: 0.561364
+2025-05-06 21:32:26,963 - seed_vc_trainer - INFO - epoch 0, step 9140, loss: 0.561484
+2025-05-06 21:32:39,709 - seed_vc_trainer - INFO - epoch 0, step 9150, loss: 0.561156
+2025-05-06 21:32:52,320 - seed_vc_trainer - INFO - epoch 0, step 9160, loss: 0.560067
+2025-05-06 21:33:03,581 - seed_vc_trainer - INFO - epoch 0, step 9170, loss: 0.559933
+2025-05-06 21:33:14,726 - seed_vc_trainer - INFO - epoch 0, step 9180, loss: 0.558590
+2025-05-06 21:33:28,170 - seed_vc_trainer - INFO - epoch 0, step 9190, loss: 0.556928
+2025-05-06 21:33:39,124 - seed_vc_trainer - INFO - epoch 0, step 9200, loss: 0.557254
+2025-05-06 21:33:50,797 - seed_vc_trainer - INFO - epoch 0, step 9210, loss: 0.558652
+2025-05-06 21:34:02,657 - seed_vc_trainer - INFO - epoch 0, step 9220, loss: 0.556937
+2025-05-06 21:34:13,884 - seed_vc_trainer - INFO - epoch 0, step 9230, loss: 0.557185
+2025-05-06 21:34:24,249 - seed_vc_trainer - INFO - epoch 0, step 9240, loss: 0.559062
+2025-05-06 21:34:36,490 - seed_vc_trainer - INFO - epoch 0, step 9250, loss: 0.559084
+2025-05-06 21:34:48,256 - seed_vc_trainer - INFO - epoch 0, step 9260, loss: 0.558681
+2025-05-06 21:35:00,464 - seed_vc_trainer - INFO - epoch 0, step 9270, loss: 0.556980
+2025-05-06 21:35:12,295 - seed_vc_trainer - INFO - epoch 0, step 9280, loss: 0.555741
+2025-05-06 21:35:24,051 - seed_vc_trainer - INFO - epoch 0, step 9290, loss: 0.556160
+2025-05-06 21:35:35,399 - seed_vc_trainer - INFO - epoch 0, step 9300, loss: 0.557966
+2025-05-06 21:35:47,397 - seed_vc_trainer - INFO - epoch 0, step 9310, loss: 0.556932
+2025-05-06 21:35:59,798 - seed_vc_trainer - INFO - epoch 0, step 9320, loss: 0.556647
+2025-05-06 21:36:11,128 - seed_vc_trainer - INFO - epoch 0, step 9330, loss: 0.556572
+2025-05-06 21:36:22,662 - seed_vc_trainer - INFO - epoch 0, step 9340, loss: 0.555803
+2025-05-06 21:36:35,490 - seed_vc_trainer - INFO - epoch 0, step 9350, loss: 0.556587
+2025-05-06 21:36:47,112 - seed_vc_trainer - INFO - epoch 0, step 9360, loss: 0.557350
+2025-05-06 21:36:57,767 - seed_vc_trainer - INFO - epoch 0, step 9370, loss: 0.557287
+2025-05-06 21:37:09,564 - seed_vc_trainer - INFO - epoch 0, step 9380, loss: 0.556016
+2025-05-06 21:37:20,276 - seed_vc_trainer - INFO - epoch 0, step 9390, loss: 0.556130
+2025-05-06 21:37:30,610 - seed_vc_trainer - INFO - epoch 0, step 9400, loss: 0.554111
+2025-05-06 21:37:42,258 - seed_vc_trainer - INFO - epoch 0, step 9410, loss: 0.554504
+2025-05-06 21:37:54,402 - seed_vc_trainer - INFO - epoch 0, step 9420, loss: 0.556725
+2025-05-06 21:38:05,247 - seed_vc_trainer - INFO - epoch 0, step 9430, loss: 0.555839
+2025-05-06 21:38:16,622 - seed_vc_trainer - INFO - epoch 0, step 9440, loss: 0.554852
+2025-05-06 21:38:28,314 - seed_vc_trainer - INFO - epoch 0, step 9450, loss: 0.553766
+2025-05-06 21:38:39,969 - seed_vc_trainer - INFO - epoch 0, step 9460, loss: 0.555182
+2025-05-06 21:38:51,422 - seed_vc_trainer - INFO - epoch 0, step 9470, loss: 0.555325
+2025-05-06 21:39:03,800 - seed_vc_trainer - INFO - epoch 0, step 9480, loss: 0.553656
+2025-05-06 21:39:15,353 - seed_vc_trainer - INFO - epoch 0, step 9490, loss: 0.553208
+2025-05-06 21:39:27,159 - seed_vc_trainer - INFO - epoch 0, step 9500, loss: 0.553239
+2025-05-06 21:39:39,373 - seed_vc_trainer - INFO - epoch 0, step 9510, loss: 0.552756
+2025-05-06 21:39:50,776 - seed_vc_trainer - INFO - epoch 0, step 9520, loss: 0.552344
+2025-05-06 21:40:02,727 - seed_vc_trainer - INFO - epoch 0, step 9530, loss: 0.553448
+2025-05-06 21:40:14,221 - seed_vc_trainer - INFO - epoch 0, step 9540, loss: 0.552601
+2025-05-06 21:40:25,452 - seed_vc_trainer - INFO - epoch 0, step 9550, loss: 0.551014
+2025-05-06 21:40:36,505 - seed_vc_trainer - INFO - epoch 0, step 9560, loss: 0.553627
+2025-05-06 21:40:48,009 - seed_vc_trainer - INFO - epoch 0, step 9570, loss: 0.554910
+2025-05-06 21:41:00,097 - seed_vc_trainer - INFO - epoch 0, step 9580, loss: 0.555436
+2025-05-06 21:41:11,173 - seed_vc_trainer - INFO - epoch 0, step 9590, loss: 0.555786
+2025-05-06 21:41:24,167 - seed_vc_trainer - INFO - epoch 0, step 9600, loss: 0.555321
+2025-05-06 21:41:36,635 - seed_vc_trainer - INFO - epoch 0, step 9610, loss: 0.555012
+2025-05-06 21:41:48,393 - seed_vc_trainer - INFO - epoch 0, step 9620, loss: 0.553842
+2025-05-06 21:41:59,594 - seed_vc_trainer - INFO - epoch 0, step 9630, loss: 0.554691
+2025-05-06 21:42:11,098 - seed_vc_trainer - INFO - epoch 0, step 9640, loss: 0.553701
+2025-05-06 21:42:22,677 - seed_vc_trainer - INFO - epoch 0, step 9650, loss: 0.553377
+2025-05-06 21:42:33,988 - seed_vc_trainer - INFO - epoch 0, step 9660, loss: 0.552923
+2025-05-06 21:42:45,980 - seed_vc_trainer - INFO - epoch 0, step 9670, loss: 0.551624
+2025-05-06 21:42:56,311 - seed_vc_trainer - INFO - epoch 0, step 9680, loss: 0.551375
+2025-05-06 21:43:07,004 - seed_vc_trainer - INFO - epoch 0, step 9690, loss: 0.551207
+2025-05-06 21:43:18,507 - seed_vc_trainer - INFO - epoch 0, step 9700, loss: 0.552034
+2025-05-06 21:43:29,881 - seed_vc_trainer - INFO - epoch 0, step 9710, loss: 0.551966
+2025-05-06 21:43:41,194 - seed_vc_trainer - INFO - epoch 0, step 9720, loss: 0.554050
+2025-05-06 21:43:52,734 - seed_vc_trainer - INFO - epoch 0, step 9730, loss: 0.553523
+2025-05-06 21:44:03,344 - seed_vc_trainer - INFO - epoch 0, step 9740, loss: 0.553922
+2025-05-06 21:44:15,855 - seed_vc_trainer - INFO - epoch 0, step 9750, loss: 0.552997
+2025-05-06 21:44:29,384 - seed_vc_trainer - INFO - epoch 0, step 9760, loss: 0.552389
+2025-05-06 21:44:40,738 - seed_vc_trainer - INFO - epoch 0, step 9770, loss: 0.552774
+2025-05-06 21:44:51,589 - seed_vc_trainer - INFO - epoch 0, step 9780, loss: 0.552346
+2025-05-06 21:45:03,145 - seed_vc_trainer - INFO - epoch 0, step 9790, loss: 0.552323
+2025-05-06 21:45:14,298 - seed_vc_trainer - INFO - epoch 0, step 9800, loss: 0.552698
+2025-05-06 21:45:26,464 - seed_vc_trainer - INFO - epoch 0, step 9810, loss: 0.555048
+2025-05-06 21:45:37,634 - seed_vc_trainer - INFO - epoch 0, step 9820, loss: 0.555695
+2025-05-06 21:45:49,083 - seed_vc_trainer - INFO - epoch 0, step 9830, loss: 0.555697
+2025-05-06 21:46:01,141 - seed_vc_trainer - INFO - epoch 0, step 9840, loss: 0.555549
+2025-05-06 21:46:11,842 - seed_vc_trainer - INFO - epoch 0, step 9850, loss: 0.555239
+2025-05-06 21:46:23,743 - seed_vc_trainer - INFO - epoch 0, step 9860, loss: 0.555691
+2025-05-06 21:46:35,644 - seed_vc_trainer - INFO - epoch 0, step 9870, loss: 0.555797
+2025-05-06 21:46:47,190 - seed_vc_trainer - INFO - epoch 0, step 9880, loss: 0.555492
+2025-05-06 21:47:00,209 - seed_vc_trainer - INFO - epoch 0, step 9890, loss: 0.556654
+2025-05-06 21:47:12,494 - seed_vc_trainer - INFO - epoch 0, step 9900, loss: 0.557095
+2025-05-06 21:47:23,875 - seed_vc_trainer - INFO - epoch 0, step 9910, loss: 0.555394
+2025-05-06 21:47:36,578 - seed_vc_trainer - INFO - epoch 0, step 9920, loss: 0.554952
+2025-05-06 21:47:48,677 - seed_vc_trainer - INFO - epoch 0, step 9930, loss: 0.554888
+2025-05-06 21:48:01,337 - seed_vc_trainer - INFO - epoch 0, step 9940, loss: 0.553396
+2025-05-06 21:48:13,117 - seed_vc_trainer - INFO - epoch 0, step 9950, loss: 0.551728
+2025-05-06 21:48:24,983 - seed_vc_trainer - INFO - epoch 0, step 9960, loss: 0.552101
+2025-05-06 21:48:37,220 - seed_vc_trainer - INFO - epoch 0, step 9970, loss: 0.549982
+2025-05-06 21:48:50,136 - seed_vc_trainer - INFO - epoch 0, step 9980, loss: 0.549890
+2025-05-06 21:49:01,652 - seed_vc_trainer - INFO - epoch 0, step 9990, loss: 0.551188
+2025-05-06 21:49:12,592 - seed_vc_trainer - INFO - Saving checkpoint at epoch 0, step 10000
+2025-05-06 21:49:13,089 - seed_vc_trainer - INFO - Checkpoint saved to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/DiT_epoch_00000_step_10000.pth
+2025-05-06 21:49:14,065 - seed_vc_trainer - INFO - epoch 0, step 10000, loss: 0.549804
+2025-05-06 21:49:14,065 - seed_vc_trainer - INFO - Starting evaluation at step 10000
+2025-05-06 21:49:14,616 - seed_vc_trainer - INFO - RTF: 0.07
+2025-05-06 21:49:14,621 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_10000/vc_s1_ref_1.0_30_0.7.wav
+2025-05-06 21:49:15,112 - seed_vc_trainer - INFO - RTF: 0.07
+2025-05-06 21:49:15,117 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_10000/vc_s2_ref_1.0_30_0.7.wav
+2025-05-06 21:49:15,703 - seed_vc_trainer - INFO - RTF: 0.07
+2025-05-06 21:49:15,708 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_10000/vc_s3_ref_1.0_30_0.7.wav
+2025-05-06 21:49:16,236 - seed_vc_trainer - INFO - RTF: 0.07
+2025-05-06 21:49:16,241 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_10000/vc_s4_ref_1.0_30_0.7.wav
+2025-05-06 21:49:16,769 - seed_vc_trainer - INFO - RTF: 0.08
+2025-05-06 21:49:16,774 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_10000/vc_s5_ref_1.0_30_0.7.wav
+2025-05-06 21:49:16,774 - seed_vc_trainer - INFO - Completed evaluation at step 10000
+2025-05-06 21:49:30,026 - seed_vc_trainer - INFO - epoch 0, step 10010, loss: 0.550651
+2025-05-06 21:49:41,651 - seed_vc_trainer - INFO - epoch 0, step 10020, loss: 0.551625
+2025-05-06 21:49:53,992 - seed_vc_trainer - INFO - epoch 0, step 10030, loss: 0.553346
+2025-05-06 21:50:05,448 - seed_vc_trainer - INFO - epoch 0, step 10040, loss: 0.553678
+2025-05-06 21:50:16,873 - seed_vc_trainer - INFO - epoch 0, step 10050, loss: 0.554859
+2025-05-06 21:50:28,543 - seed_vc_trainer - INFO - epoch 0, step 10060, loss: 0.553476
+2025-05-06 21:50:39,835 - seed_vc_trainer - INFO - epoch 0, step 10070, loss: 0.552210
+2025-05-06 21:50:50,796 - seed_vc_trainer - INFO - epoch 0, step 10080, loss: 0.551265
+2025-05-06 21:51:03,240 - seed_vc_trainer - INFO - epoch 0, step 10090, loss: 0.552258
+2025-05-06 21:51:15,052 - seed_vc_trainer - INFO - epoch 0, step 10100, loss: 0.551298
+2025-05-06 21:51:25,946 - seed_vc_trainer - INFO - epoch 0, step 10110, loss: 0.552463
+2025-05-06 21:51:36,842 - seed_vc_trainer - INFO - epoch 0, step 10120, loss: 0.551958
+2025-05-06 21:51:48,869 - seed_vc_trainer - INFO - epoch 0, step 10130, loss: 0.552452
+2025-05-06 21:52:00,886 - seed_vc_trainer - INFO - epoch 0, step 10140, loss: 0.554199
+2025-05-06 21:52:13,646 - seed_vc_trainer - INFO - epoch 0, step 10150, loss: 0.553776
+2025-05-06 21:52:26,488 - seed_vc_trainer - INFO - epoch 0, step 10160, loss: 0.553225
+2025-05-06 21:52:38,222 - seed_vc_trainer - INFO - epoch 0, step 10170, loss: 0.556057
+2025-05-06 21:52:49,976 - seed_vc_trainer - INFO - epoch 0, step 10180, loss: 0.554634
+2025-05-06 21:53:01,002 - seed_vc_trainer - INFO - epoch 0, step 10190, loss: 0.554811
+2025-05-06 21:53:12,381 - seed_vc_trainer - INFO - epoch 0, step 10200, loss: 0.554989
+2025-05-06 21:53:23,341 - seed_vc_trainer - INFO - epoch 0, step 10210, loss: 0.557087
+2025-05-06 21:53:34,466 - seed_vc_trainer - INFO - epoch 0, step 10220, loss: 0.556716
+2025-05-06 21:53:46,193 - seed_vc_trainer - INFO - epoch 0, step 10230, loss: 0.554671
+2025-05-06 21:53:57,013 - seed_vc_trainer - INFO - epoch 0, step 10240, loss: 0.553307
+2025-05-06 21:54:09,572 - seed_vc_trainer - INFO - epoch 0, step 10250, loss: 0.552837
+2025-05-06 21:54:19,866 - seed_vc_trainer - INFO - epoch 0, step 10260, loss: 0.553119
+2025-05-06 21:54:32,456 - seed_vc_trainer - INFO - epoch 0, step 10270, loss: 0.551260
+2025-05-06 21:54:43,994 - seed_vc_trainer - INFO - epoch 0, step 10280, loss: 0.550580
+2025-05-06 21:54:54,594 - seed_vc_trainer - INFO - epoch 0, step 10290, loss: 0.549558
+2025-05-06 21:55:05,542 - seed_vc_trainer - INFO - epoch 0, step 10300, loss: 0.551090
+2025-05-06 21:55:16,496 - seed_vc_trainer - INFO - epoch 0, step 10310, loss: 0.551362
+2025-05-06 21:55:28,450 - seed_vc_trainer - INFO - epoch 0, step 10320, loss: 0.550065
+2025-05-06 21:55:41,780 - seed_vc_trainer - INFO - epoch 0, step 10330, loss: 0.548532
+2025-05-06 21:55:52,478 - seed_vc_trainer - INFO - epoch 0, step 10340, loss: 0.546978
+2025-05-06 21:56:05,153 - seed_vc_trainer - INFO - epoch 0, step 10350, loss: 0.548267
+2025-05-06 21:56:16,648 - seed_vc_trainer - INFO - epoch 0, step 10360, loss: 0.548680
+2025-05-06 21:56:27,619 - seed_vc_trainer - INFO - epoch 0, step 10370, loss: 0.549175
+2025-05-06 21:56:39,147 - seed_vc_trainer - INFO - epoch 0, step 10380, loss: 0.549680
+2025-05-06 21:56:50,118 - seed_vc_trainer - INFO - epoch 0, step 10390, loss: 0.548275
+2025-05-06 21:57:02,606 - seed_vc_trainer - INFO - epoch 0, step 10400, loss: 0.548391
+2025-05-06 21:57:14,855 - seed_vc_trainer - INFO - epoch 0, step 10410, loss: 0.549399
+2025-05-06 21:57:27,049 - seed_vc_trainer - INFO - epoch 0, step 10420, loss: 0.549234
+2025-05-06 21:57:39,245 - seed_vc_trainer - INFO - epoch 0, step 10430, loss: 0.549361
+2025-05-06 21:57:50,519 - seed_vc_trainer - INFO - epoch 0, step 10440, loss: 0.548878
+2025-05-06 21:58:01,791 - seed_vc_trainer - INFO - epoch 0, step 10450, loss: 0.549137
+2025-05-06 21:58:13,901 - seed_vc_trainer - INFO - epoch 0, step 10460, loss: 0.549772
+2025-05-06 21:58:25,420 - seed_vc_trainer - INFO - epoch 0, step 10470, loss: 0.550431
+2025-05-06 21:58:38,465 - seed_vc_trainer - INFO - epoch 0, step 10480, loss: 0.548923
+2025-05-06 21:58:53,333 - seed_vc_trainer - INFO - epoch 0, step 10490, loss: 0.550877
+2025-05-06 21:59:05,285 - seed_vc_trainer - INFO - epoch 0, step 10500, loss: 0.550339
+2025-05-06 21:59:16,583 - seed_vc_trainer - INFO - epoch 0, step 10510, loss: 0.548943
+2025-05-06 21:59:27,885 - seed_vc_trainer - INFO - epoch 0, step 10520, loss: 0.548761
+2025-05-06 21:59:39,446 - seed_vc_trainer - INFO - epoch 0, step 10530, loss: 0.548342
+2025-05-06 21:59:51,905 - seed_vc_trainer - INFO - epoch 0, step 10540, loss: 0.547898
+2025-05-06 22:00:03,760 - seed_vc_trainer - INFO - epoch 0, step 10550, loss: 0.547687
+2025-05-06 22:00:16,024 - seed_vc_trainer - INFO - epoch 0, step 10560, loss: 0.546982
+2025-05-06 22:00:27,269 - seed_vc_trainer - INFO - epoch 0, step 10570, loss: 0.548712
+2025-05-06 22:00:38,291 - seed_vc_trainer - INFO - epoch 0, step 10580, loss: 0.549580
+2025-05-06 22:00:50,020 - seed_vc_trainer - INFO - epoch 0, step 10590, loss: 0.549212
+2025-05-06 22:01:01,366 - seed_vc_trainer - INFO - epoch 0, step 10600, loss: 0.547203
+2025-05-06 22:01:14,018 - seed_vc_trainer - INFO - epoch 0, step 10610, loss: 0.546833
+2025-05-06 22:01:25,186 - seed_vc_trainer - INFO - epoch 0, step 10620, loss: 0.547956
+2025-05-06 22:01:35,991 - seed_vc_trainer - INFO - epoch 0, step 10630, loss: 0.549644
+2025-05-06 22:01:46,940 - seed_vc_trainer - INFO - epoch 0, step 10640, loss: 0.550008
+2025-05-06 22:01:57,850 - seed_vc_trainer - INFO - epoch 0, step 10650, loss: 0.548778
+2025-05-06 22:02:09,550 - seed_vc_trainer - INFO - epoch 0, step 10660, loss: 0.549020
+2025-05-06 22:02:20,808 - seed_vc_trainer - INFO - epoch 0, step 10670, loss: 0.549636
+2025-05-06 22:02:31,994 - seed_vc_trainer - INFO - epoch 0, step 10680, loss: 0.550129
+2025-05-06 22:02:44,429 - seed_vc_trainer - INFO - epoch 0, step 10690, loss: 0.551907
+2025-05-06 22:02:55,883 - seed_vc_trainer - INFO - epoch 0, step 10700, loss: 0.554551
+2025-05-06 22:03:08,047 - seed_vc_trainer - INFO - epoch 0, step 10710, loss: 0.552791
+2025-05-06 22:03:19,176 - seed_vc_trainer - INFO - epoch 0, step 10720, loss: 0.550491
+2025-05-06 22:03:30,128 - seed_vc_trainer - INFO - epoch 0, step 10730, loss: 0.550200
+2025-05-06 22:03:42,415 - seed_vc_trainer - INFO - epoch 0, step 10740, loss: 0.551692
+2025-05-06 22:03:54,012 - seed_vc_trainer - INFO - epoch 0, step 10750, loss: 0.549646
+2025-05-06 22:04:06,316 - seed_vc_trainer - INFO - epoch 0, step 10760, loss: 0.548328
+2025-05-06 22:04:17,650 - seed_vc_trainer - INFO - epoch 0, step 10770, loss: 0.549204
+2025-05-06 22:04:29,490 - seed_vc_trainer - INFO - epoch 0, step 10780, loss: 0.548647
+2025-05-06 22:04:41,356 - seed_vc_trainer - INFO - epoch 0, step 10790, loss: 0.547459
+2025-05-06 22:04:53,188 - seed_vc_trainer - INFO - epoch 0, step 10800, loss: 0.546379
+2025-05-06 22:05:04,370 - seed_vc_trainer - INFO - epoch 0, step 10810, loss: 0.547824
+2025-05-06 22:05:16,583 - seed_vc_trainer - INFO - epoch 0, step 10820, loss: 0.548549
+2025-05-06 22:05:27,420 - seed_vc_trainer - INFO - epoch 0, step 10830, loss: 0.550197
+2025-05-06 22:05:39,225 - seed_vc_trainer - INFO - epoch 0, step 10840, loss: 0.549419
+2025-05-06 22:05:51,635 - seed_vc_trainer - INFO - epoch 0, step 10850, loss: 0.548900
+2025-05-06 22:06:03,890 - seed_vc_trainer - INFO - epoch 0, step 10860, loss: 0.549811
+2025-05-06 22:06:15,119 - seed_vc_trainer - INFO - epoch 0, step 10870, loss: 0.549122
+2025-05-06 22:06:26,767 - seed_vc_trainer - INFO - epoch 0, step 10880, loss: 0.549029
+2025-05-06 22:06:37,768 - seed_vc_trainer - INFO - epoch 0, step 10890, loss: 0.549533
+2025-05-06 22:06:49,506 - seed_vc_trainer - INFO - epoch 0, step 10900, loss: 0.549062
+2025-05-06 22:07:02,216 - seed_vc_trainer - INFO - epoch 0, step 10910, loss: 0.547573
+2025-05-06 22:07:14,077 - seed_vc_trainer - INFO - epoch 0, step 10920, loss: 0.549573
+2025-05-06 22:07:26,028 - seed_vc_trainer - INFO - epoch 0, step 10930, loss: 0.550561
+2025-05-06 22:07:37,575 - seed_vc_trainer - INFO - epoch 0, step 10940, loss: 0.551639
+2025-05-06 22:07:48,431 - seed_vc_trainer - INFO - epoch 0, step 10950, loss: 0.553073
+2025-05-06 22:08:00,537 - seed_vc_trainer - INFO - epoch 0, step 10960, loss: 0.552394
+2025-05-06 22:08:12,581 - seed_vc_trainer - INFO - epoch 0, step 10970, loss: 0.552637
+2025-05-06 22:08:23,986 - seed_vc_trainer - INFO - epoch 0, step 10980, loss: 0.551046
+2025-05-06 22:08:36,437 - seed_vc_trainer - INFO - epoch 0, step 10990, loss: 0.551327
+2025-05-06 22:08:48,140 - seed_vc_trainer - INFO - epoch 0, step 11000, loss: 0.550200
+2025-05-06 22:08:48,141 - seed_vc_trainer - INFO - Starting evaluation at step 11000
+2025-05-06 22:08:48,655 - seed_vc_trainer - INFO - RTF: 0.06
+2025-05-06 22:08:48,661 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_11000/vc_s1_ref_1.0_30_0.7.wav
+2025-05-06 22:08:49,173 - seed_vc_trainer - INFO - RTF: 0.07
+2025-05-06 22:08:49,178 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_11000/vc_s2_ref_1.0_30_0.7.wav
+2025-05-06 22:08:49,678 - seed_vc_trainer - INFO - RTF: 0.06
+2025-05-06 22:08:49,683 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_11000/vc_s3_ref_1.0_30_0.7.wav
+2025-05-06 22:08:50,274 - seed_vc_trainer - INFO - RTF: 0.08
+2025-05-06 22:08:50,279 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_11000/vc_s4_ref_1.0_30_0.7.wav
+2025-05-06 22:08:50,806 - seed_vc_trainer - INFO - RTF: 0.08
+2025-05-06 22:08:50,810 - seed_vc_trainer - INFO - Saved output to ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/eval_step_11000/vc_s5_ref_1.0_30_0.7.wav
+2025-05-06 22:08:50,811 - seed_vc_trainer - INFO - Completed evaluation at step 11000
+2025-05-06 22:09:02,303 - seed_vc_trainer - INFO - epoch 0, step 11010, loss: 0.549689
+2025-05-06 22:09:13,621 - seed_vc_trainer - INFO - epoch 0, step 11020, loss: 0.549408
+2025-05-06 22:09:24,601 - seed_vc_trainer - INFO - epoch 0, step 11030, loss: 0.549410
+2025-05-06 22:09:37,458 - seed_vc_trainer - INFO - epoch 0, step 11040, loss: 0.549919
+2025-05-06 22:09:48,454 - seed_vc_trainer - INFO - epoch 0, step 11050, loss: 0.550165
+2025-05-06 22:10:01,179 - seed_vc_trainer - INFO - epoch 0, step 11060, loss: 0.549379
+2025-05-06 22:10:12,799 - seed_vc_trainer - INFO - epoch 0, step 11070, loss: 0.550812
+2025-05-06 22:10:24,455 - seed_vc_trainer - INFO - epoch 0, step 11080, loss: 0.550665
+2025-05-06 22:10:35,639 - seed_vc_trainer - INFO - epoch 0, step 11090, loss: 0.550751
+2025-05-06 22:10:49,907 - seed_vc_trainer - INFO - epoch 0, step 11100, loss: 0.550742
+2025-05-06 22:11:01,946 - seed_vc_trainer - INFO - epoch 0, step 11110, loss: 0.551595
+2025-05-06 22:11:13,623 - seed_vc_trainer - INFO - epoch 0, step 11120, loss: 0.550239
+2025-05-06 22:11:24,506 - seed_vc_trainer - INFO - epoch 0, step 11130, loss: 0.550601
+2025-05-06 22:11:35,745 - seed_vc_trainer - INFO - epoch 0, step 11140, loss: 0.550773
+2025-05-06 22:11:46,031 - seed_vc_trainer - INFO - epoch 0, step 11150, loss: 0.550082
+2025-05-06 22:11:57,722 - seed_vc_trainer - INFO - epoch 0, step 11160, loss: 0.549015
+2025-05-06 22:12:09,001 - seed_vc_trainer - INFO - epoch 0, step 11170, loss: 0.547887
+2025-05-06 22:12:19,929 - seed_vc_trainer - INFO - epoch 0, step 11180, loss: 0.548188
+2025-05-06 22:12:30,951 - seed_vc_trainer - INFO - epoch 0, step 11190, loss: 0.546873
+2025-05-06 22:12:41,597 - seed_vc_trainer - INFO - epoch 0, step 11200, loss: 0.546339
+2025-05-06 22:12:53,253 - seed_vc_trainer - INFO - epoch 0, step 11210, loss: 0.546769
+2025-05-06 22:13:05,882 - seed_vc_trainer - INFO - epoch 0, step 11220, loss: 0.546990
+2025-05-06 22:13:17,724 - seed_vc_trainer - INFO - epoch 0, step 11230, loss: 0.548507
+2025-05-06 22:13:28,882 - seed_vc_trainer - INFO - epoch 0, step 11240, loss: 0.550726
+2025-05-06 22:13:39,801 - seed_vc_trainer - INFO - epoch 0, step 11250, loss: 0.549606
+2025-05-06 22:13:51,281 - seed_vc_trainer - INFO - epoch 0, step 11260, loss: 0.549642
+2025-05-06 22:14:03,748 - seed_vc_trainer - INFO - epoch 0, step 11270, loss: 0.550069
+2025-05-06 22:14:15,321 - seed_vc_trainer - INFO - epoch 0, step 11280, loss: 0.551573
+2025-05-06 22:14:26,893 - seed_vc_trainer - INFO - epoch 0, step 11290, loss: 0.551196
+2025-05-06 22:14:38,303 - seed_vc_trainer - INFO - epoch 0, step 11300, loss: 0.550423
+2025-05-06 22:14:51,135 - seed_vc_trainer - INFO - epoch 0, step 11310, loss: 0.550189
+2025-05-06 22:15:02,872 - seed_vc_trainer - INFO - epoch 0, step 11320, loss: 0.549781
+2025-05-06 22:15:14,693 - seed_vc_trainer - INFO - epoch 0, step 11330, loss: 0.550496
+2025-05-06 22:15:26,392 - seed_vc_trainer - INFO - epoch 0, step 11340, loss: 0.550850
+2025-05-06 22:15:37,769 - seed_vc_trainer - INFO - epoch 0, step 11350, loss: 0.552169
+2025-05-06 22:15:49,136 - seed_vc_trainer - INFO - epoch 0, step 11360, loss: 0.551351
+2025-05-06 22:16:01,347 - seed_vc_trainer - INFO - epoch 0, step 11370, loss: 0.552012
+2025-05-06 22:16:12,072 - seed_vc_trainer - INFO - epoch 0, step 11380, loss: 0.551625
+2025-05-06 22:16:24,525 - seed_vc_trainer - INFO - epoch 0, step 11390, loss: 0.553746
+2025-05-06 22:16:37,096 - seed_vc_trainer - INFO - epoch 0, step 11400, loss: 0.554898
+2025-05-06 22:16:48,923 - seed_vc_trainer - INFO - epoch 0, step 11410, loss: 0.554245
+2025-05-06 22:17:00,912 - seed_vc_trainer - INFO - epoch 0, step 11420, loss: 0.555346
+2025-05-06 22:17:12,784 - seed_vc_trainer - INFO - epoch 0, step 11430, loss: 0.554961
+2025-05-06 22:17:24,819 - seed_vc_trainer - INFO - epoch 0, step 11440, loss: 0.553387
+2025-05-06 22:17:36,542 - seed_vc_trainer - INFO - epoch 0, step 11450, loss: 0.555036
+2025-05-06 22:17:47,454 - seed_vc_trainer - INFO - epoch 0, step 11460, loss: 0.553933
+2025-05-06 22:17:59,734 - seed_vc_trainer - INFO - epoch 0, step 11470, loss: 0.554376
+2025-05-06 22:18:10,781 - seed_vc_trainer - INFO - epoch 0, step 11480, loss: 0.555298
+2025-05-06 22:18:22,741 - seed_vc_trainer - INFO - epoch 0, step 11490, loss: 0.554180
+2025-05-06 22:18:34,098 - seed_vc_trainer - INFO - epoch 0, step 11500, loss: 0.553021
+2025-05-06 22:18:47,170 - seed_vc_trainer - INFO - epoch 0, step 11510, loss: 0.550779
+2025-05-06 22:18:59,011 - seed_vc_trainer - INFO - epoch 0, step 11520, loss: 0.552575
+2025-05-06 22:19:12,285 - seed_vc_trainer - INFO - epoch 0, step 11530, loss: 0.553046
+2025-05-06 22:19:23,863 - seed_vc_trainer - INFO - epoch 0, step 11540, loss: 0.554227
+2025-05-06 22:19:34,269 - seed_vc_trainer - INFO - epoch 0, step 11550, loss: 0.556073
+2025-05-06 22:19:46,081 - seed_vc_trainer - INFO - epoch 0, step 11560, loss: 0.556722
+2025-05-06 22:19:57,426 - seed_vc_trainer - INFO - epoch 0, step 11570, loss: 0.557371
+2025-05-06 22:20:09,406 - seed_vc_trainer - INFO - epoch 0, step 11580, loss: 0.558337
+2025-05-06 22:20:20,879 - seed_vc_trainer - INFO - epoch 0, step 11590, loss: 0.557027
+2025-05-06 22:20:33,443 - seed_vc_trainer - INFO - epoch 0, step 11600, loss: 0.555779
+2025-05-06 22:20:45,326 - seed_vc_trainer - INFO - epoch 0, step 11610, loss: 0.555090
+2025-05-06 22:20:56,897 - seed_vc_trainer - INFO - epoch 0, step 11620, loss: 0.554452
+2025-05-06 22:21:08,160 - seed_vc_trainer - INFO - epoch 0, step 11630, loss: 0.555215
+2025-05-06 22:21:19,561 - seed_vc_trainer - INFO - epoch 0, step 11640, loss: 0.553293
+2025-05-06 22:21:31,007 - seed_vc_trainer - INFO - epoch 0, step 11650, loss: 0.553003
+2025-05-06 22:21:42,571 - seed_vc_trainer - INFO - epoch 0, step 11660, loss: 0.551103
+2025-05-06 22:21:53,698 - seed_vc_trainer - INFO - epoch 0, step 11670, loss: 0.553877
+2025-05-06 22:22:04,618 - seed_vc_trainer - INFO - epoch 0, step 11680, loss: 0.553538
+2025-05-06 22:22:15,695 - seed_vc_trainer - INFO - epoch 0, step 11690, loss: 0.553778
+2025-05-06 22:22:27,834 - seed_vc_trainer - INFO - epoch 0, step 11700, loss: 0.553377
+2025-05-06 22:22:39,054 - seed_vc_trainer - INFO - epoch 0, step 11710, loss: 0.552211
+2025-05-06 22:22:50,924 - seed_vc_trainer - INFO - epoch 0, step 11720, loss: 0.552593
+2025-05-06 22:23:02,163 - seed_vc_trainer - INFO - epoch 0, step 11730, loss: 0.550934
+2025-05-06 22:23:12,944 - seed_vc_trainer - INFO - epoch 0, step 11740, loss: 0.550169
+2025-05-06 22:23:24,651 - seed_vc_trainer - INFO - epoch 0, step 11750, loss: 0.550285
+2025-05-06 22:23:37,503 - seed_vc_trainer - INFO - epoch 0, step 11760, loss: 0.549168
+2025-05-06 22:23:49,697 - seed_vc_trainer - INFO - epoch 0, step 11770, loss: 0.549582
+2025-05-06 22:24:02,038 - seed_vc_trainer - INFO - epoch 0, step 11780, loss: 0.549063
+2025-05-06 22:24:14,650 - seed_vc_trainer - INFO - epoch 0, step 11790, loss: 0.549354
+2025-05-06 22:24:25,481 - seed_vc_trainer - INFO - Completed epoch 0
+2025-05-06 22:24:25,481 - seed_vc_trainer - INFO - Saving final model..
+2025-05-06 22:24:25,654 - seed_vc_trainer - INFO - Final model saved at ./runs/run_sv_v1_small_gigaam_v2/russian_train_7/ft_model.pth

@@ -278,6 +278,7 @@ def main(args):
         f0_condition=False,
         checkpoint=args.checkpoint1,
         config=args.config1,
+        distilled=args.distilled1,
     )
     
     # Load second model
@@ -286,6 +287,7 @@ def main(args):
         f0_condition=False,
         checkpoint=args.checkpoint2,
         config=args.config2,
+        distilled=args.distilled2,
     )
 
     # Use the first model's parameters for streaming
@@ -421,6 +423,8 @@ if __name__ == "__main__":
         default=True,
     )
     parser.add_argument("--gpu", type=int, help="Which GPU id to use", default=0)
+    parser.add_argument("--distilled1", type=str2bool, help="Whether to use distilled model 1", default=False)
+    parser.add_argument("--distilled2", type=str2bool, help="Whether to use distilled model 2", default=False)
     args = parser.parse_args()
     cuda_target = f"cuda:{args.gpu}" if args.gpu else "cuda"
 

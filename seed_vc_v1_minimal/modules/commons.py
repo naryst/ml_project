@@ -417,9 +417,13 @@ def load_checkpoint(
     ignore_modules=[],
     is_distributed=False,
     load_ema=False,
+    distilled=False,
 ):
     state = torch.load(path, map_location="cpu")
-    params = state["net"]
+    if distilled:
+        params = state['student_model']
+    else:
+        params = state["net"]
     if load_ema and "ema" in state:
         print("Loading EMA")
         for key in model:

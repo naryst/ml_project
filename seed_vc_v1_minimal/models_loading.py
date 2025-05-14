@@ -60,6 +60,7 @@ def load_models(fp16, f0_condition, checkpoint, config, **kwargs):
         load_only_params=True,
         ignore_modules=[],
         is_distributed=False,
+        distilled=kwargs.get("distilled", False),
     )
     for key in model:
         model[key].eval()

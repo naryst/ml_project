@@ -1,0 +1,19 @@
+#!/bin/bash
+
+cd seed_vc_v1_minimal
+
+# Set default config paths
+CONFIG1="configs/conf_wisper.yaml"
+CONFIG2="configs/conf_wisper.yaml"
+
+
+MODEL2_CHECKPOINT="../ru_checkpoints/distill/distilled_model_iter_1_final.pth"
+
+# Run the demo with default configs
+python app_vc_compare.py \
+    --config1 $CONFIG1 \
+    --config2 $CONFIG2 \
+    --fp16 True \
+    --share True \
+    --checkpoint2 $MODEL2_CHECKPOINT \
+    --distilled2 True
